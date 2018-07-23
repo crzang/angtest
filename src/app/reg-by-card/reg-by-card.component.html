@@ -1,0 +1,37 @@
+<div class="regByCard">
+  <app-fora-logo></app-fora-logo>
+  <app-title title="{{title}}"></app-title>
+  <div #card class="cardMain">
+      <img class="group" src="assets/img/card-number-group@2x.png">
+      <img class="rectangle3" src="assets/img/card-number-rectangle-3@2x.png">
+      <div class="group5">
+        <img class="mask" src="assets/img/card-number-mask.png">
+      </div>
+    <div class="ui-float-label cardNumber">
+      <input id="cardNumber"  type="text" pInputText>
+      <label for="cardNumber" class="inputFloatingLabel">Номер карты</label>
+    </div>
+    <div class="ui-float-label cardMonth">
+      <input id="cardMonth" type="text" pInputText>
+      <label for="cardMonth" class="inputFloatingLabel">ММ</label>
+    </div>
+    <div class="cardMYSeparator">/</div>
+    <div  class="ui-float-label cardYear">
+      <input id="cardYear"  type="text" pInputText>
+      <label for="cardYear" class="inputFloatingLabel">ГГ</label>
+    </div>
+
+    <div class="ui-float-label cardCVV">
+      <input id="cardCVV"  type="password" pInputText>
+      <label for="cardCVV" class="inputFloatingLabel">CVV</label>
+    </div>
+  </div>
+
+  <div #btnContinue class="btnContinue">
+    Продолжить
+  </div>
+  <div #btnCancel class="btnCancel">
+    <app-button label="Отменить" border="true" ></app-button>
+  </div>
+
+</div>

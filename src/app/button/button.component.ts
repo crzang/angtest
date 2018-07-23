@@ -8,6 +8,7 @@ import {Component, OnInit, Input, ViewChild, AfterViewInit, OnInit, ElementRef} 
 export class ButtonComponent implements AfterViewInit, OnInit {
   @Input() label = '';
   @Input() border = false;
+  @Input() route = ''
   @ViewChild('main') main: ElementRef;
   baseWith = 1024;
   extStyleNames = [];

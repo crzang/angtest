@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body{
   margin: 0px;
+}
+
+input{
+  font-size: 24.0px;
+  text-indent: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer {
@@ -9,11 +16,11 @@ body{
 }
 
 .buttonedLabel {
-  width: 300px;
+  width: 250px;
   height: 40px;
   margin-top: 10px;
   color: white;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15.0px;
   text-align: center;
   letter-spacing: -0.29px;

@@ -3,9 +3,9 @@
   <app-title title="Регистрация"></app-title>
   <div #about class="about">Зарегистрируйтесь по карте любого банка
     либо счету или договору Фора-Банка</div>
-  <app-button class="button" label="Карта" border="true"></app-button>
-  <app-button label="Счет" border="true"></app-button>
-  <app-button label="Договор" border="true"></app-button>
+  <app-button label="Карта" border="true" route="regByCard"></app-button>
+  <app-button label="Счет" border="true" route="regByAccount"></app-button>
+  <app-button label="Договор" border="true" route="regByContract"></app-button>
 
-  <app-footer1></app-footer1>
+  <app-footer1 route="/signIn" mainTitle="Войти"></app-footer1>
 </div>

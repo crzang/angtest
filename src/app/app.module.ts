@@ -10,6 +10,9 @@ import { TitleComponent } from './title/title.component';
 import { DivMiddleComponent } from './div-middle/div-middle.component';
 import { ButtonComponent } from './button/button.component';
 import { Footer1Component } from './footer1/footer1.component';
+import { RegByCardComponent } from './reg-by-card/reg-by-card.component';
+import { RegByAccountComponent } from './reg-by-account/reg-by-account.component';
+import { RegByContractComponent } from './reg-by-contract/reg-by-contract.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { Footer1Component } from './footer1/footer1.component';
     TitleComponent,
     DivMiddleComponent,
     ButtonComponent,
-    Footer1Component
+    Footer1Component,
+    RegByCardComponent,
+    RegByAccountComponent,
+    RegByContractComponent
   ],
   imports: [
     BrowserModule,

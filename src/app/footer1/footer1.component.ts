@@ -1,4 +1,4 @@
-import {Component, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
+import {Component, ViewChild, AfterViewInit, ElementRef, Input} from '@angular/core';
 
 @Component({
   selector: 'app-footer1',
@@ -10,6 +10,8 @@ export class Footer1Component implements AfterViewInit {
   @ViewChild('helpToNewAccount') helpToNewAccount: ElementRef;
   @ViewChild('signUp') signUp: ElementRef;
   @ViewChild('helpdesk') helpdesk: ElementRef;
+  @Input() route = '/regChoice';
+  @Input() mainTitle = 'Зарегистрироваться';
   baseHeight = 768;
   baseWith = 1024;
 
