@@ -3,3 +3,29 @@
 body{
   margin: 0px;
 }
+
+.footer {
+  position: absolute;
+}
+
+.buttonedLabel {
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  color: white;
+  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-size: 15.0px;
+  text-align: center;
+  letter-spacing: -0.29px;
+  line-height: 40px;
+  cursor:pointer;
+}
+
+.underlined{
+  text-decoration-line: underline;
+}
+
+.withBorder{
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.3) ;
+}

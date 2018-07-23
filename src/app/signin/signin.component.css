@@ -1,0 +1,81 @@
+
+.signin {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(234, 68, 66, 1) 0%, rgba(198, 59, 79, 1) 100%);
+}
+
+
+.loginInputField {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  height: 40px;
+  font-size: 24.0px;
+  text-indent: 10px;
+}
+
+.passInputField {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  height: 40px;
+  font-size: 24.0px;
+  text-indent: 10px;
+}
+
+.inputFloatingLabel {
+  font-size: 24.0px;
+  margin-left: 10px;
+}
+
+.loginBlock {
+  margin-top: 3px;
+  display: inline-block;
+}
+
+.btnEnter {
+  border-radius: 20px;
+  background: #e36f75;
+  height: 40px;
+  width: 300px;
+  margin-top: 32px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  color: #d84049;
+  cursor: pointer;
+}
+
+.lostPassword {
+
+  display: inline-block;
+
+}
+
+/* breaks firefox so defined separately */
+.ui-float-label > input:-webkit-autofill ~ label {
+  left: .75em;
+  font-size: 8px;
+}
+
+.ui-float-label > input:focus ~ label,
+.ui-float-label > input.ui-state-filled ~ label,
+.ui-float-label > .ui-inputwrapper-focus ~ label,
+.ui-float-label > .ui-inputwrapper-filled ~ label {
+  left: .75em;
+  font-size: 8px;
+}
+
+.ui-float-label > label {
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: .25em;
+  top: 50%;
+  margin-top: -.5em;
+  transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  color: #898989;
+  line-height: 1;
+}
+
