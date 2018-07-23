@@ -1,17 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="signin" [style.height]="bgHeight">
+<div class="signin" [style.height]="mainHeight">
   <img [style.left]="logoOffset" src="assets/img/registration-card-fora-logo-copy-2.png" class="foralogocopy2">
 
 
   <div #titleEnter class="titleLabel">Вход</div>
   <div #loginBlock class="ui-float-label loginBlock">
-      <input id="loginInput" class="loginInputField" type="text" pInputText>
-      <label for="loginInput" class="inputFloatingLabel">Логин</label>
+    <input id="loginInput" class="loginInputField" type="text" pInputText>
+    <label for="loginInput" class="inputFloatingLabel">Логин</label>
   </div>
   <br>
   <div #passwordBlock class="ui-float-label loginBlock">
-      <input id="passwordInput" class="passInputField" type="password" pInputText>
-      <label for="passwordInput" class="inputFloatingLabel">Пароль</label>
+    <input id="passwordInput" class="passInputField" type="password" pInputText>
+    <label for="passwordInput" class="inputFloatingLabel">Пароль</label>
   </div>
+  <div #btnEnter class="btnEnter">
+    Войти
+  </div>
+  <div #lostPassword class="buttonedLabel lostPassword underlined">Забыли логин и пароль ?</div>
 
+  <div #footer class="footer">
+    <div #helpToNewAccount class="buttonedLabel helpToNewAccount">Нет аккаунта?</div>
+    <div #signUp class="buttonedLabel signUp withBorder">Зарегистрироваться</div>
+    <div #helpdesk class="buttonedLabel helpdesk underlined">Служба поддержки</div>
+  </div>
 </div>

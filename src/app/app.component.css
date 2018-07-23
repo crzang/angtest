@@ -47,6 +47,77 @@
   display: inline-block;
 }
 
+.signin .btnEnter{
+  border-radius: 20px;
+  background: #e36f75;
+  height: 40px;
+  width: 300px;
+  margin-top: 32px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  color: #d84049;
+}
+
+.signin .lostPassword {
+
+  display: inline-block;
+
+}
+
+.footer {
+  position: absolute;
+}
+
+.buttonedLabel {
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  color: white;
+  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-size: 15.0px;
+  text-align: center;
+  letter-spacing: -0.29px;
+  line-height: 40px;
+  cursor:pointer;
+}
+
+.underlined{
+  text-decoration-line: underline;
+}
+
+.withBorder{
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.3) ;
+}
+
+/* breaks firefox so defined separately */
+.signin .ui-float-label > input:-webkit-autofill ~ label {
+  left:.75em;
+  font-size:8px;
+}
+
+.signin .ui-float-label > input:focus ~ label,
+.ui-float-label > input.ui-state-filled ~ label,
+.ui-float-label > .ui-inputwrapper-focus ~ label,
+.ui-float-label > .ui-inputwrapper-filled ~ label {
+  left:.75em;
+  font-size:8px;
+}
+
+.signin .ui-float-label > label {
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left: .25em;
+  top: 50%;
+  margin-top: -.5em;
+  transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  color: #898989;
+  line-height: 1;
+}
 a {
   text-decoration: none;
 }
