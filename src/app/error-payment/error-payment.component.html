@@ -1,0 +1,26 @@
+<div class="errorPayment">
+
+  <div #image class="errorImg">
+    <img src="assets/img/error-oval-8@2x.png" class="oval8"/>
+    <img src="assets/img/error-oval-8 1@2x.png" class="oval81"/>
+    <img src="assets/img/error-oval-8 2@2x.png" class="oval82"/>
+    <img src="assets/img/error-group-9@2x.png" class="group9"/>
+  </div>
+  <div class="offset"></div>
+  <div class="title">
+    Платеж не отправлен!
+  </div>
+  <div class="info">
+    Произошла ошибка серера.
+  </div>
+  <div class="info">
+    Попробуйте повторить попытку через несколько минут.
+  </div>
+
+  <div #btnRetry class="btnRetry" routerLink="/success">
+    Повторить еще раз
+  </div>
+  <div #footerBlock class="footer">
+    <app-button label="Вернутся к платежам" border="true" ></app-button>
+  </div>
+</div>

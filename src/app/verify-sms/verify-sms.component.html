@@ -1,0 +1,16 @@
+<div class="verifySms">
+  <app-fora-logo></app-fora-logo>
+  <app-title title="SMS-код"></app-title>
+  <app-about text="Введите код, который мы прислали на номер +7 916 *****34"></app-about>
+  <div #smsCode class="ui-float-label smsBlock">
+    <input id="loginInput" class="smsCode" type="password" pInputText>
+    <label for="loginInput" class="inputFloatingLabel">SMS</label>
+  </div>
+  <div #btnNext class="btnNext" routerLink="">
+    Далее
+  </div>
+  <div #footerBlock class="btnCancel">
+    <app-button label="Прислать код еще раз" border="true" route="verifySms" ></app-button>
+    <app-button label="Отменить" border="true" ></app-button>
+  </div>
+</div>

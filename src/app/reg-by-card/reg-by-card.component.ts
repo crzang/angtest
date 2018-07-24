@@ -9,6 +9,7 @@ export class RegByCardComponent implements AfterViewInit {
 
   @ViewChild('btnContinue') btnContinue: ElementRef;
   @ViewChild('btnCancel') btnCancel: ElementRef;
+  @ViewChild('card') card: ElementRef;
 
   title = 'Введите номер карты';
   baseHeight = 768;
@@ -25,6 +26,7 @@ export class RegByCardComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.btnContinue.nativeElement.style.marginLeft = this.baseWith / 2 - this.btnContinue.nativeElement.offsetWidth / 2 + 'px';
+    this.card.nativeElement.style.left = this.baseWith / 2 - this.card.nativeElement.offsetWidth / 2 + 'px';
     const btnContinuePos = this.baseHeight - this.btnContinue.nativeElement.offsetTop - this.btnContinue.nativeElement.offsetHeight;
     this.btnCancel.nativeElement.style.marginTop = (btnContinuePos - 150) + 'px';
   }

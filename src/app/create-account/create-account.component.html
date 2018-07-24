@@ -1,0 +1,26 @@
+<div class="createAccount">
+  <app-fora-logo></app-fora-logo>
+  <app-title title="Придумайте логин и пароль"></app-title>
+  <div #loginBlock class="ui-float-label loginBlock">
+    <input id="loginInput" class="loginInputField" type="text" pInputText>
+    <label for="loginInput" class="inputFloatingLabel">Логин</label>
+  </div>
+  <br>
+  <div #passwordBlock class="ui-float-label loginBlock">
+    <input id="passwordInput" class="passInputField" type="password" pInputText>
+    <label for="passwordInput" class="inputFloatingLabel">Пароль</label>
+  </div>
+  <div #passwordConfirmBlock class="ui-float-label loginBlock">
+    <input id="passwordConfirmInput" class="passConfirmInputField" type="password" pInputText>
+    <label for="passwordConfirmInput" class="inputFloatingLabel">Повтор пароля</label>
+  </div>
+  <div #agree class="agreeBlock">
+  <p-checkbox name="groupname" value="val1" label="Я прочитал условия банка"></p-checkbox>
+  </div>
+  <div #btnNext class="btnNext" routerLink="/error">
+    Продолжить
+  </div>
+  <div #footerBlock class="btnCancel">
+    <app-button label="Отменить" border="true" ></app-button>
+  </div>
+</div>

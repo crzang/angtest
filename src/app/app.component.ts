@@ -6,7 +6,7 @@ import {InputTextModule} from 'primeng/inputtext';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent {
 
   baseHeight = 768;
   baseWith = 1024;

@@ -1,0 +1,28 @@
+.verifySms {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(234, 68, 66, 1) 0%, rgba(198, 59, 79, 1) 100%);
+}
+
+.smsCode{
+  width: 60px;
+  border-radius: 5px;
+}
+
+.smsBlock{
+  margin-top: 3px;
+  display: inline-block;
+}
+
+.btnNext{
+  border-radius: 20px;
+  background: #e36f75;
+  height: 40px;
+  width: 300px;
+  margin-top: 32px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  color: #d84049;
+  cursor: pointer;
+}

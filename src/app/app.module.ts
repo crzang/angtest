@@ -13,6 +13,12 @@ import { Footer1Component } from './footer1/footer1.component';
 import { RegByCardComponent } from './reg-by-card/reg-by-card.component';
 import { RegByAccountComponent } from './reg-by-account/reg-by-account.component';
 import { RegByContractComponent } from './reg-by-contract/reg-by-contract.component';
+import { VerifySmsComponent } from './verify-sms/verify-sms.component';
+import { AboutComponent } from './about/about.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import {CheckboxModule} from 'primeng/checkbox';
+import { ErrorPaymentComponent } from './error-payment/error-payment.component';
+import { SigninSuccessComponent } from './signin-success/signin-success.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +32,18 @@ import { RegByContractComponent } from './reg-by-contract/reg-by-contract.compon
     Footer1Component,
     RegByCardComponent,
     RegByAccountComponent,
-    RegByContractComponent
+    RegByContractComponent,
+    VerifySmsComponent,
+    AboutComponent,
+    CreateAccountComponent,
+    ErrorPaymentComponent,
+    SigninSuccessComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
