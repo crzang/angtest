@@ -1,4 +1,4 @@
-<div class="regByCard">
+<div #body class="regByCard">
   <app-fora-logo></app-fora-logo>
   <app-title title="{{title}}"></app-title>
   <div #card class="cardMain">
@@ -7,8 +7,10 @@
       <div class="group5">
         <img class="mask" src="assets/img/card-number-mask.png">
       </div>
+    <img class="bankLogo" src="{{bankLogo}}">
+    <img class="brandLogo" src="{{brandLogo}}">
     <div class="ui-float-label cardNumber">
-      <input id="cardNumber"  type="text" pInputText>
+      <input id="cardNumber"  type="text" pInputText (input)="onCardNumberChange($event)" >
       <label for="cardNumber" class="inputFloatingLabel">Номер карты</label>
     </div>
     <div class="ui-float-label cardMonth">
@@ -23,7 +25,7 @@
 
     <div class="ui-float-label cardCVV">
       <input id="cardCVV"  type="password" pInputText>
-      <label for="cardCVV" class="inputFloatingLabel">CVV</label>
+      <label for="cardCVV" class="inputFloatingLabel">{{codeName}}</label>
     </div>
   </div>
 

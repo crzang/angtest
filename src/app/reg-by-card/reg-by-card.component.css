@@ -21,7 +21,17 @@
   border-radius: 5px;
 }
 
-
+.bankLogo{
+  top: 27px;
+  height: 50px;
+  left: 140px;
+  position: absolute;
+}
+.brandLogo{
+  position: absolute;
+  top: 140px;
+  left: 365px;
+}
 .cardNumber{
   position: absolute;
   width: 300px;
