@@ -8,7 +8,12 @@ import {Component, OnInit, Input, ViewChild, AfterViewInit,  ElementRef} from '@
 export class ButtonComponent implements AfterViewInit, OnInit {
   @Input() label = '';
   @Input() border = false;
-  @Input() route = ''
+  @Input() enabled  = true;
+  @Input() underlined  = false;
+  @Input() bgColor;
+  @Input() color;
+  @Input() route = '';
+
   @ViewChild('main') main: ElementRef;
   baseWith = 1024;
   extStyleNames = [];
@@ -18,9 +23,24 @@ export class ButtonComponent implements AfterViewInit, OnInit {
     }
   }
 
-  ngOnInit() {
-    if(this.border){
-      this.extStyleNames.push("withBorder")
+  ngDoCheck() {
+    this.extStyleNames=""
+    if (this.border === true || this.border === 'true') {
+      this.extStyleNames += ' withBorder';
+    }
+    if (this.enabled === true || this.enabled === 'true') {
+      this.extStyleNames += ' labeledButtonEnabled';
+    } else {
+      this.extStyleNames += ' labeledButtonDisabled';
+    }
+    if (this.underlined) {
+      this.extStyleNames += ' underlined';
+    }
+    if (this.bgColor) {
+      this.main.nativeElement.style.background = this.bgColor;
+    }
+    if (this.color) {
+      this.main.nativeElement.style.color = this.color;
     }
   }
 

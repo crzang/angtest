@@ -7,12 +7,34 @@ body{
 
 input{
   font-size: 24.0px;
-  text-indent: 10px;
+  text-indent: 5px;
   font-family: 'Roboto', sans-serif;
+  width: 250px;
+}
+
+
+.ui-float-label>label {
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: .25em;
+  top: 50%;
+  margin-top: -.5em;
+  transition: .3s ease all;
+  -moz-transition: .3s ease all;
+  -webkit-transition: .3s ease all;
+  color: #898989;
+  line-height: 1;
+  text-indent: 5px;
 }
 
 .footer {
   position: absolute;
+}
+
+.withBorder{
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.3) ;
 }
 
 .buttonedLabel {
@@ -25,17 +47,23 @@ input{
   text-align: center;
   letter-spacing: -0.29px;
   line-height: 40px;
-  cursor:pointer;
+
 }
 
 .underlined{
   text-decoration-line: underline;
 }
 
-.withBorder{
-  border-radius: 20px;
-  border: 1px solid rgba(255,255,255,0.3) ;
+.labeledButtonDisabled{
+  opacity: 0.2;
+  pointer-events: none;
 }
+
+.labeledButtonEnabled{
+  opacity: 1;
+  cursor:pointer;
+}
+
 
 /* breaks firefox so defined separately */
 .ui-float-label > input:-webkit-autofill ~ label {

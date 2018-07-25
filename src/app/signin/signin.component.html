@@ -11,10 +11,9 @@
     <input id="passwordInput" class="passInputField" type="password" pInputText (input)="onPassChange($event)">
     <label for="passwordInput" class="inputFloatingLabel">Пароль</label>
   </div>
-  <div #btnEnter class="btnEnter {{btnEnterStyle}}" routerLink="verifySms">
-    Войти
-  </div>
-  <div #lostPassword class="buttonedLabel lostPassword underlined">Забыли логин и пароль ?</div>
+  <app-button label="Войти" route="verifySms" bgColor="#FFFFFF" color="#d84049" border=true enabled="{{btnEnterEnabled}}"></app-button>
+  <app-button label="Забыли логин и пароль ?" underlined="true"></app-button>
+  <div #lostPassword class="buttonedLabel lostPassword underlined"></div>
 
   <app-footer1 route="/regChoice" mainTitle="Зарегистрироваться"></app-footer1>
 </div>

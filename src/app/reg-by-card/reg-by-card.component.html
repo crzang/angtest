@@ -16,24 +16,25 @@
       <label for="cardNumber" class="inputFloatingLabel">Номер карты</label>
     </div>
     <div class="ui-float-label cardMonth">
-      <input id="cardMonth" type="text" pInputText>
+      <input id="cardMonth" type="text" pInputText (input)="onCardMonthChange($event)">
       <label for="cardMonth" class="inputFloatingLabel">ММ</label>
     </div>
     <div class="cardMYSeparator">/</div>
     <div  class="ui-float-label cardYear">
-      <input id="cardYear"  type="text" pInputText>
+      <input id="cardYear"  type="text" pInputText (input)="onCardYearChange($event)">
       <label for="cardYear" class="inputFloatingLabel">ГГ</label>
     </div>
 
     <div class="ui-float-label cardCVV">
-      <input id="cardCVV"  type="password" pInputText>
+      <input id="cardCVV"  type="password" pInputText (input)="onCardCVVChange($event)">
       <label for="cardCVV" class="inputFloatingLabel">{{codeName}}</label>
     </div>
   </div>
 
-  <div #btnContinue class="btnContinue" routerLink="/regChoice/createAccount">
-    Продолжить
+  <div class="btnContinue">
+    <app-button label="Продолжить" route="verifySms" bgColor="#FFFFFF" color="#d84049" border=true enabled="{{btnNextEnabled}}" route="/regChoice/createAccount"></app-button>
   </div>
+
   <div #btnCancel class="btnCancel">
     <app-button label="Отменить" border="true" ></app-button>
   </div>

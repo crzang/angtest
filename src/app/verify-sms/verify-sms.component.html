@@ -3,12 +3,11 @@
   <app-title title="SMS-код"></app-title>
   <app-about text="Введите код, который мы прислали на номер +7 916 *****34"></app-about>
   <div #smsCode class="ui-float-label smsBlock">
-    <input id="loginInput" class="smsCode" type="password" pInputText>
+    <input id="loginInput" class="smsCode" type="password" pInputText (input)="onSmsChange($event)">
     <label for="loginInput" class="inputFloatingLabel">SMS</label>
   </div>
-  <div #btnNext class="btnNext" routerLink="">
-    Далее
-  </div>
+  <app-button  label="Далее" bgColor="#FFFFFF" color="#d84049" border=true enabled="{{btnNextEnabled}}"></app-button>
+  <div #btnNext></div>
   <div #footerBlock class="btnCancel">
     <app-button label="Прислать код еще раз" border="true" route="verifySms" ></app-button>
     <app-button label="Отменить" border="true" ></app-button>

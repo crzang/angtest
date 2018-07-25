@@ -69,17 +69,4 @@ input{
 }
 
 
-.ui-float-label > label {
-  font-weight: normal;
-  position: absolute;
-  pointer-events: none;
-  left: .25em;
-  top: 50%;
-  margin-top: -.5em;
-  transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -webkit-transition: 0.3s ease all;
-  color: #898989;
-  line-height: 1;
-}
 

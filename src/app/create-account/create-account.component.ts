@@ -15,7 +15,11 @@ export class CreateAccountComponent implements AfterViewInit {
   @ViewChild('footerBlock') footerBlock: ElementRef;
   baseHeight = 768;
   baseWith = 1024;
-
+  login = '';
+  pass = '';
+  confirm = '';
+  agree = false;
+  btnNextEnabled = false;
   constructor() {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
@@ -29,11 +33,34 @@ export class CreateAccountComponent implements AfterViewInit {
     this.loginBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.loginBlock.nativeElement.offsetWidth / 2 + 'px';
     this.passwordBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordBlock.nativeElement.offsetWidth / 2 + 'px';
     this.passwordConfirmBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordConfirmBlock.nativeElement.offsetWidth / 2 + 'px';
-    this.btnNext.nativeElement.style.marginLeft = this.baseWith / 2 - this.btnNext.nativeElement.offsetWidth / 2 + 'px';
+
     this.agree.nativeElement.style.marginLeft = this.baseWith / 2 - this.agree.nativeElement.offsetWidth / 2 + 'px';
     const btnContinuePos = this.baseHeight - this.btnNext.nativeElement.offsetTop - this.btnNext.nativeElement.offsetHeight;
     this.footerBlock.nativeElement.style.marginTop = (btnContinuePos - 150) + 'px';
 
   }
 
+  onLoginChange(e) {
+    this.login = e.target.value;
+    this.checkInput();
+  }
+
+  onPassChange(e) {
+    this.pass = e.target.value;
+    this.checkInput();
+  }
+
+  onPassConfirmChange(e) {
+    this.confirm = e.target.value;
+    this.checkInput();
+  }
+
+  onAgreeChange(e) {
+    this.agree = e;
+    this.checkInput();
+  }
+
+  checkInput() {
+    this.btnNextEnabled = this.login.length !== 0 && this.pass.length !== 0 && this.confirm === this.pass && this.agree === true;
+  }
 }

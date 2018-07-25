@@ -35,46 +35,46 @@
 .cardNumber{
   position: absolute;
   width: 300px;
-  height: 33px;
+  height: 31px;
   top: 84px;
   left: 144px;
 }
 
 .cardMonth{
   position: absolute;
-  height: 33px;
+  height: 31px;
   top: 150px;
   left: 144px;
 }
 
 .cardMonth input{
-  width: 35px;
+  width: 45px;
 }
 
 .cardMYSeparator{
   position: absolute;
   height: 33px;
-  top: 150px;
-  left: 192px;
+  top: 148px;
+  left: 195px;
   font-size: 29px;
   color: rgba(0,0,0,0.3);
 }
 
 .cardYear{
   position: absolute;
-  height: 33px;
+  height: 31px;
   top: 150px;
   left: 208px;
 }
 
 .cardYear input{
-  width: 35px;
+  width: 45px;
 }
 .cardCVV{
   position: absolute;
-  height: 33px;
+  height: 31px;
   top: 150px;
-  left: 490px;
+  left: 505px;
 }
 
 .cardCVV input{
@@ -155,31 +155,10 @@
 }
 
 
-.ui-float-label > label {
-  font-weight: normal;
-  position: absolute;
-  pointer-events: none;
-  left: .25em;
-  top: 50%;
-  margin-top: -.5em;
-  transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -webkit-transition: 0.3s ease all;
-  color: #898989;
-  line-height: 1;
-}
-
 .btnContinue{
-  border-radius: 20px;
-  background: #F3936C !important;
-  height: 40px;
-  width: 250px;
-  margin-top: 260px;
-  text-align: center;
-  line-height: 40px;
-  font-size: 22px;
-  color: #F07139 !important;
-  cursor: pointer;
+
+  margin-top: 280px;
+
 }
 
 .btnCancel{

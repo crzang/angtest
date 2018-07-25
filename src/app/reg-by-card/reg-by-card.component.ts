@@ -19,6 +19,11 @@ export class RegByCardComponent implements AfterViewInit {
   bankLogo = '';
   brandLogo = '';
   codeName = '';
+  btnNextEnabled = false;
+  cardNumber = '';
+  cardMonth = '';
+  cardYear = '';
+  cardCVV = '';
   constructor() {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
@@ -40,8 +45,8 @@ export class RegByCardComponent implements AfterViewInit {
   }
 
   onCardNumberChange = (e) => {
-    const value = e.target.value;
-    const cardInfo = new CardInfo(value);
+    this.cardNumber = e.target.value;
+    const cardInfo = new CardInfo(this.cardNumber);
     console.log(cardInfo);
     if (cardInfo.backgroundGradient !== 'linear-gradient(135deg, #eeeeee, #dddddd)') {
       this.body.nativeElement.style.background = cardInfo.backgroundGradient;
@@ -53,10 +58,25 @@ export class RegByCardComponent implements AfterViewInit {
     } else {
       this.cardImg.nativeElement.style.background = '#F27B3A';
     }
-    if (cardInfo.bankLogo) {
-      this.bankLogo = cardInfo.bankLogo;
-    }
+    this.bankLogo = cardInfo.bankLogo;
+
     this.brandLogo = cardInfo.brandLogoPng;
     this.codeName = cardInfo.codeName;
+    this.checkInput();
+  }
+  onCardMonthChange(e) {
+    this.cardMonth = e.target.value;
+    this.checkInput();
+  }
+  onCardYearChange(e) {
+    this.cardYear = e.target.value;
+    this.checkInput();
+  }
+  onCardCVVChange(e) {
+    this.cardCVV = e.target.value;
+    this.checkInput();
+  }
+  checkInput() {
+    this.btnNextEnabled = this.cardNumber.length === 16 && this.cardMonth.length === 2 && this.cardYear.length === 2 && this.cardCVV.length === 3;
   }
 }

@@ -1,6 +1,6 @@
 <div #footer class="footer">
-  <div #helpToNewAccount class="buttonedLabel helpToNewAccount">Нет аккаунта?</div>
-  <div #signUp class="buttonedLabel signUp withBorder" routerLink="{{route}}">
-    {{mainTitle}}</div>
-  <div #helpdesk class="buttonedLabel helpdesk underlined">Служба поддержки</div>
+  <app-button label="Нет аккаунта?"></app-button>
+  <app-button label="{{mainTitle}}" border="true" route="{{route}}"></app-button>
+  <app-button label="Служба поддержки" underlined="true"></app-button>
+
 </div>

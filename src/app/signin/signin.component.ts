@@ -10,15 +10,13 @@ export class SigninComponent implements AfterViewInit {
 
   @ViewChild('loginBlock') loginBlock: ElementRef;
   @ViewChild('passwordBlock') passwordBlock: ElementRef;
-  @ViewChild('btnEnter') btnEnter: ElementRef;
-  @ViewChild('lostPassword') lostPassword: ElementRef;
 
   baseHeight = 768;
   baseWith = 1024;
   mainHeight = this.baseHeight + 'px';
   login = '';
   pass = '';
-  btnEnterStyle = 'btnEnter_disabled';
+  btnEnterEnabled = false;
 
   constructor() {
     if (window.innerHeight > 768) {
@@ -41,18 +39,11 @@ export class SigninComponent implements AfterViewInit {
   }
 
   checkData() {
-    const btnEnterEnabled = this.login.length !== 0 && this.pass.length !== 0;
-    if (btnEnterEnabled) {
-      this.btnEnterStyle = 'btnEnter_enabled';
-    } else {
-      this.btnEnterStyle = 'btnEnter_disabled';
-    }
+    this.btnEnterEnabled= this.login.length !== 0 && this.pass.length !== 0;
   }
 
   ngAfterViewInit() {
     this.loginBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.loginBlock.nativeElement.offsetWidth / 2 + 'px';
     this.passwordBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordBlock.nativeElement.offsetWidth / 2 + 'px';
-    this.btnEnter.nativeElement.style.marginLeft = this.baseWith / 2 - this.btnEnter.nativeElement.offsetWidth / 2 + 'px';
-    this.lostPassword.nativeElement.style.marginLeft = this.baseWith / 2 - this.lostPassword.nativeElement.offsetWidth / 2 + 'px';
   }
 }

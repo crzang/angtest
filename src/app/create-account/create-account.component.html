@@ -2,24 +2,27 @@
   <app-fora-logo></app-fora-logo>
   <app-title title="Придумайте логин и пароль"></app-title>
   <div #loginBlock class="ui-float-label loginBlock">
-    <input id="loginInput" class="loginInputField" type="text" pInputText>
+    <input id="loginInput" class="loginInputField" type="text" pInputText (input)="onLoginChange($event)">
     <label for="loginInput" class="inputFloatingLabel">Логин</label>
   </div>
   <br>
   <div #passwordBlock class="ui-float-label loginBlock">
-    <input id="passwordInput" class="passInputField" type="password" pInputText>
+    <input id="passwordInput" class="passInputField" type="password" pInputText (input)="onPassChange($event)">
     <label for="passwordInput" class="inputFloatingLabel">Пароль</label>
   </div>
   <div #passwordConfirmBlock class="ui-float-label loginBlock">
-    <input id="passwordConfirmInput" class="passConfirmInputField" type="password" pInputText>
+    <input id="passwordConfirmInput" class="passConfirmInputField" type="password" pInputText (input)="onPassConfirmChange($event)">
     <label for="passwordConfirmInput" class="inputFloatingLabel">Повтор пароля</label>
   </div>
   <div #agree class="agreeBlock">
-  <p-checkbox name="groupname" value="val1" label="Я прочитал условия банка"></p-checkbox>
+  <p-checkbox name="groupname" value="val1" label="Я прочитал условия банка" (onChange)="onAgreeChange($event)"></p-checkbox>
   </div>
-  <div #btnNext class="btnNext" routerLink="/error">
-    Продолжить
+
+  <div #btnNext class="btnContinue">
+    <app-button label="Продолжить" route="verifySms" bgColor="#FFFFFF" color="#d84049" border=true enabled="{{btnNextEnabled}}" route="/error"></app-button>
   </div>
+
+
   <div #footerBlock class="btnCancel">
     <app-button label="Отменить" border="true" ></app-button>
   </div>
