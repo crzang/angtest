@@ -17,6 +17,7 @@ import { VerifySmsComponent } from './verify-sms/verify-sms.component';
 import { AboutComponent } from './about/about.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import {CheckboxModule} from 'primeng/checkbox';
+import {InputTextModule} from 'primeng/inputtext';
 import { ErrorPaymentComponent } from './error-payment/error-payment.component';
 import { SigninSuccessComponent } from './signin-success/signin-success.component';
 
@@ -43,7 +44,8 @@ import { SigninSuccessComponent } from './signin-success/signin-success.componen
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CheckboxModule
+    CheckboxModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

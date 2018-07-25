@@ -36,3 +36,15 @@ input{
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.3) ;
 }
+
+/* breaks firefox so defined separately */
+.ui-float-label > input:-webkit-autofill ~ label {
+  opacity: 0;
+}
+
+.ui-float-label > input:focus ~ label,
+.ui-float-label > input.ui-state-filled ~ label,
+.ui-float-label > .ui-inputwrapper-focus ~ label,
+.ui-float-label > .ui-inputwrapper-filled ~ label {
+  opacity: 0;
+}

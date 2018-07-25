@@ -10,6 +10,7 @@ export class RegByCardComponent implements AfterViewInit {
   @ViewChild('btnContinue') btnContinue: ElementRef;
   @ViewChild('btnCancel') btnCancel: ElementRef;
   @ViewChild('card') card: ElementRef;
+  @ViewChild('cardImg') cardImg: ElementRef;
   @ViewChild('body') body: ElementRef;
 
   title = 'Введите номер карты';
@@ -44,6 +45,13 @@ export class RegByCardComponent implements AfterViewInit {
     console.log(cardInfo);
     if (cardInfo.backgroundGradient !== 'linear-gradient(135deg, #eeeeee, #dddddd)') {
       this.body.nativeElement.style.background = cardInfo.backgroundGradient;
+    } else {
+      this.body.nativeElement.style.background = 'linear-gradient(45deg, #EC5741 0%, #F68B40 100%)';
+    }
+    if (cardInfo.backgroundColor !== '#eeeeee') {
+      this.cardImg.nativeElement.style.background = cardInfo.backgroundColor;
+    } else {
+      this.cardImg.nativeElement.style.background = '#F27B3A';
     }
     if (cardInfo.bankLogo) {
       this.bankLogo = cardInfo.bankLogo;
