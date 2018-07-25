@@ -3,15 +3,15 @@
   <app-fora-logo></app-fora-logo>
   <app-title title="Вход"></app-title>
   <div #loginBlock class="ui-float-label loginBlock">
-    <input id="loginInput" class="loginInputField" type="text" pInputText>
+    <input id="loginInput" class="loginInputField" type="text" pInputText (input)="onLoginChange($event)">
     <label for="loginInput" class="inputFloatingLabel">Логин</label>
   </div>
   <br>
   <div #passwordBlock class="ui-float-label loginBlock">
-    <input id="passwordInput" class="passInputField" type="password" pInputText>
+    <input id="passwordInput" class="passInputField" type="password" pInputText (input)="onPassChange($event)">
     <label for="passwordInput" class="inputFloatingLabel">Пароль</label>
   </div>
-  <div #btnEnter class="btnEnter" routerLink="verifySms">
+  <div #btnEnter class="btnEnter {{btnEnterStyle}}" routerLink="verifySms">
     Войти
   </div>
   <div #lostPassword class="buttonedLabel lostPassword underlined">Забыли логин и пароль ?</div>

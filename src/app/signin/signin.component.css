@@ -36,14 +36,23 @@
 
 .btnEnter {
   border-radius: 20px;
-  background: #e36f75;
   height: 40px;
   width: 300px;
   margin-top: 32px;
   text-align: center;
   line-height: 40px;
   font-size: 22px;
+}
+
+.btnEnter_disabled {
+  background: #e36f75;
   color: #d84049;
+  pointer-events: none;
+}
+
+.btnEnter_enabled {
+  color: #000000;
+  background: #FFFFFF;
   cursor: pointer;
 }
 

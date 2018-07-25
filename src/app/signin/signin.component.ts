@@ -16,6 +16,9 @@ export class SigninComponent implements AfterViewInit {
   baseHeight = 768;
   baseWith = 1024;
   mainHeight = this.baseHeight + 'px';
+  login = '';
+  pass = '';
+  btnEnterStyle = 'btnEnter_disabled';
 
   constructor() {
     if (window.innerHeight > 768) {
@@ -25,6 +28,25 @@ export class SigninComponent implements AfterViewInit {
       this.baseWith = window.innerWidth;
     }
     this.mainHeight = this.baseHeight + 'px';
+  }
+
+  onLoginChange(e) {
+    this.login = e.target.value;
+    this.checkData();
+  }
+
+  onPassChange(e) {
+    this.pass = e.target.value;
+    this.checkData();
+  }
+
+  checkData() {
+    const btnEnterEnabled = this.login.length !== 0 && this.pass.length !== 0;
+    if (btnEnterEnabled) {
+      this.btnEnterStyle = 'btnEnter_enabled';
+    } else {
+      this.btnEnterStyle = 'btnEnter_disabled';
+    }
   }
 
   ngAfterViewInit() {
