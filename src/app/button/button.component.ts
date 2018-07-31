@@ -1,30 +1,41 @@
-import {Component, OnInit, Input, ViewChild, AfterViewInit,  ElementRef} from '@angular/core';
+import {Component, OnInit, DoCheck, Input, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css']
 })
-export class ButtonComponent implements AfterViewInit, OnInit {
+export class ButtonComponent implements AfterViewInit, DoCheck, OnInit {
   @Input() label = '';
   @Input() border = false;
-  @Input() enabled  = true;
-  @Input() underlined  = false;
+  @Input() useWindowWidth = true;
+  @Input() width = '250px';
+  @Input() enabled = true;
+  @Input() underlined = false;
   @Input() bgColor;
   @Input() color;
   @Input() route = '';
 
   @ViewChild('main') main: ElementRef;
-  baseWith = 1024;
-  extStyleNames = [];
+  baseWidth = 1024;
+  extStyleNames = '';
+
   constructor() {
-    if (window.innerWidth > 1024) {
-      this.baseWith = window.innerWidth;
+
+  }
+
+  ngOnInit() {
+    if (this.useWindowWidth === true) {
+      if (window.innerWidth > 1024) {
+        this.baseWidth = window.innerWidth;
+      }
+    } else {
+      this.baseWidth = this.main.nativeElement.parentElement.parentElement.innerWidth;
     }
   }
 
   ngDoCheck() {
-    this.extStyleNames=""
+    this.extStyleNames = '';
     if (this.border === true || this.border === 'true') {
       this.extStyleNames += ' withBorder';
     }
@@ -45,7 +56,8 @@ export class ButtonComponent implements AfterViewInit, OnInit {
   }
 
   ngAfterViewInit() {
-    this.main.nativeElement.style.marginLeft = this.baseWith / 2 - this.main.nativeElement.offsetWidth / 2 + 'px';
+    this.main.nativeElement.style.marginLeft = this.baseWidth / 2 - this.main.nativeElement.offsetWidth / 2 + 'px';
+    this.main.nativeElement.style.width = this.width;
   }
 
 }

@@ -18,8 +18,15 @@ import { AboutComponent } from './about/about.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import {CheckboxModule} from 'primeng/checkbox';
 import {InputTextModule} from 'primeng/inputtext';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
 import { ErrorPaymentComponent } from './error-payment/error-payment.component';
 import { SigninSuccessComponent } from './signin-success/signin-success.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LeftMenuComponent } from './left-menu/left-menu.component';
+import { DashboardCurrentItemComponent } from './dashboard-current-item/dashboard-current-item.component';
+import { DashboardFirstBannerItemComponent } from './dashboard-first-banner-item/dashboard-first-banner-item.component';
+import { DashboardCurrentBlockComponent } from './dashboard-current-block/dashboard-current-block.component';
+import { DashboardFutureBlockComponent } from './dashboard-future-block/dashboard-future-block.component';
 
 @NgModule({
   declarations: [
@@ -38,14 +45,21 @@ import { SigninSuccessComponent } from './signin-success/signin-success.componen
     AboutComponent,
     CreateAccountComponent,
     ErrorPaymentComponent,
-    SigninSuccessComponent
+    SigninSuccessComponent,
+    DashboardComponent,
+    LeftMenuComponent,
+    DashboardCurrentItemComponent,
+    DashboardFirstBannerItemComponent,
+    DashboardCurrentBlockComponent,
+    DashboardFutureBlockComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     CheckboxModule,
-    InputTextModule
+    InputTextModule,
+    ScrollPanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

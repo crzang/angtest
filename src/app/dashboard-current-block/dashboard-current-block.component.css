@@ -1,0 +1,53 @@
+.current {
+  margin-top: 50px;
+
+}
+
+.label {
+  font-size: 2.5em;
+  font-weight: bold;
+  float: left;
+}
+
+.tabs {
+  position: absolute;
+  right: 0px;
+  margin-top: 10px;
+}
+
+.tabs div {
+  height: 30px;
+  width: 100px;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+}
+
+.tabs .active {
+  background: #EF8D35;
+  color: white;
+
+}
+
+.tabs .inactive {
+  background: #FFFFFF;
+  color: #DBDBDB;
+  border: 1px solid #DBDBDB;
+  cursor: pointer;
+}
+
+.tabs .first {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tabs .last {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.body {
+  margin-top: 20px;
+}
+
+

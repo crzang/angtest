@@ -6,10 +6,11 @@ import { RegChoiceComponent } from './reg-choice/reg-choice.component';
 import {RegByCardComponent} from './reg-by-card/reg-by-card.component';
 import {RegByContractComponent} from './reg-by-contract/reg-by-contract.component';
 import {RegByAccountComponent} from './reg-by-account/reg-by-account.component';
-import {VerifySmsComponent} from "./verify-sms/verify-sms.component";
-import {CreateAccountComponent} from "./create-account/create-account.component";
-import {ErrorPaymentComponent} from "./error-payment/error-payment.component";
-import {SigninSuccessComponent} from "./signin-success/signin-success.component";
+import {VerifySmsComponent} from './verify-sms/verify-sms.component';
+import {CreateAccountComponent} from './create-account/create-account.component';
+import {ErrorPaymentComponent} from './error-payment/error-payment.component';
+import {SigninSuccessComponent} from './signin-success/signin-success.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/signIn', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'regChoice/createAccount', component: CreateAccountComponent },
   { path: 'error', component: ErrorPaymentComponent },
   { path: 'success', component: SigninSuccessComponent },
+  { path: 'main', component: DashboardComponent}
 ];
 
 @NgModule({
