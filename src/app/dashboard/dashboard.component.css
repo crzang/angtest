@@ -38,50 +38,11 @@
   overflow: auto;
 }
 
-.firstBanners{
-  display: inline-flex;
-  margin-top: 20px;
+.mainFooter{
+  height: 100px;
+  width: 100%;
 }
 
-
-.future {
-  margin-top: 50px;
-
-}
-
-.future .label{
-  font-size: 2.5em;
-  font-weight: bold;
-  float: left;
-}
-
-
-.future .tabs div{
-  height: 30px;
-  width: 100px;
-  display: inline-block;
-  line-height: 30px;
-  text-align: center;
-}
-
-.future .tabs .active{
-  background: #EF8D35;
-  color: white;
-
-}
-
-.future .tabs .inactive{
-  background: #FFFFFF;
-  color: #DBDBDB;
-  border: 1px solid #DBDBDB;
-  cursor: pointer;
-}
-.future .tabs .first{
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.future .tabs .last{
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+.mainContainer{
+  margin-right: 20px;
 }

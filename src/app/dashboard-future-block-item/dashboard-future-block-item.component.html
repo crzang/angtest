@@ -1,0 +1,39 @@
+<div #main class="futureItem" [style.color]="color" [style.background]="background" [style.backgroungImage]="backgroundImg">
+  <img width="60px" src="{{icon}}" class="icon"/>
+  <table #table class="itemTable">
+    <thead>
+    <tr>
+      <td width="450px" class="title">{{title}}</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td width="450px" class="{{nameStyle}}">
+        {{description}}
+      </td>
+    </tr>
+    <tr>
+      <td width="33%" class="{{nameStyle}}">
+        Сумма
+      </td>
+      <td width="33%">
+        {{value}}
+      </td>
+      <td width="33%">
+
+      </td>
+    </tr>
+    <tr>
+      <td width="33%" class="{{nameStyle}}">
+        Дата платежа
+      </td>
+      <td width="33%">
+        {{date}}
+      </td>
+      <td width="33%" class="link">
+        Оплатить сейчас >
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

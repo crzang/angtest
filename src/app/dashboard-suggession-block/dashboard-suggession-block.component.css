@@ -1,0 +1,27 @@
+.suggestion{
+  margin-top: 85px;
+}
+
+.block{
+  display: inline-flex;
+  margin-top: 20px;
+}
+.label {
+  font-family: "San Francisco", Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 29.0px;
+  float: left;
+
+}
+
+.label .inactive{
+  color: rgba(0,0,0,0.3);
+}
+
+.label .active{
+  color: rgba(0,0,0,1);
+  cursor: pointer;
+}
