@@ -4,8 +4,8 @@
 }
 
 .gr1{
-  position: relative;
-  right: -200px;
+  position: absolute;
+  left: 21%;
 }
 .label {
   font-family:  Helvetica, Arial, serif;
@@ -543,7 +543,7 @@
   width: 1050px;
   position: absolute;
   margin: 0;
-  left: 205px;
+  left: 20%;
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
@@ -567,6 +567,26 @@
   letter-spacing: -0.25px;
   line-height: 23.0px;
 }
+
+.info2 .group8copy .u04 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 153px;
+  height: auto;
+  width: 308px;
+  position: absolute;
+  margin: 0;
+  left: 742px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  font-family:  Helvetica, Arial, serif;
+  font-size: 19.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.25px;
+  line-height: 23.0px;
+}
+
 
 .info2 .group8copy .a900 {
   background-color: rgba(255, 255, 255, 0.0);
@@ -833,22 +853,21 @@
 }
 
 .info2 .u0417u0430u043du044fu0442u044cu043eu0447u0435u0440u0435u0434u044c {
-  background-color: rgba(255, 255, 255, 0.0);
-  top: 172px;
+  /* background-color: rgba(255, 255, 255, 0.0); */
+  top: 150px;
   height: auto;
   width: 290px;
   position: absolute;
-  margin: 0;
-  left: 658px;
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  left: 63%;
+  -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  font-family:  Helvetica, Arial, serif;
+  font-family: Helvetica, Arial, serif;
   font-size: 16.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: center;
   line-height: 45.0px;
   cursor: pointer;
+
 }
 
 .info2 .path362 {

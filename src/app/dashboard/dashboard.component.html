@@ -1,6 +1,6 @@
 <div class="main">
   <app-left-menu></app-left-menu>
-  <div class="mainBody">
+  <div #main class="mainBody" [style.width]="baseWith">
     <div class="header">
       <span class="active">Состояние дел</span>
       <span class="notactive">Карты</span>
@@ -10,7 +10,7 @@
       <span class="notactive">История операций</span>
     </div>
 
-    <p-scrollPanel [style]="{width: '100%', height: mainHeight,border: 'none'}">
+    <p-scrollPanel [style]="{minWidth:'970px', width: baseWith, height: mainHeight,border: 'none'}">
       <div class="mainContainer">
         <app-dashboard-current-block></app-dashboard-current-block>
         <app-dashboard-banner-block></app-dashboard-banner-block>

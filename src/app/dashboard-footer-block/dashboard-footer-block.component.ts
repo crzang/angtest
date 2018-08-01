@@ -24,7 +24,7 @@ export class DashboardFooterBlockComponent implements AfterViewInit {
       this.path1.nativeElement.style.width = clientWidth + "px";
       this.path2.nativeElement.style.width = clientWidth + "px";
       this.path3.nativeElement.style.width = (clientWidth-200) + "px";
-      this.path4.nativeElement.style.left = (clientWidth-100) + "px";
+      //this.path4.nativeElement.style.left = (clientWidth-100) + "px";
     }
   }
 

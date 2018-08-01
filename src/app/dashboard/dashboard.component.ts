@@ -6,7 +6,7 @@ import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
+  @ViewChild('main') footer: ElementRef;
   baseHeight = 768;
   baseWith = 1024;
   mainHeight = this.baseHeight + 'px';
@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
       this.baseHeight = window.innerHeight;
     }
     if (window.innerWidth > 1024) {
-      this.baseWith = window.innerWidth;
+      this.baseWith = (window.innerWidth-350)+"px";
     }
     this.mainHeight = (this.baseHeight - 41 ) + 'px';
   }
