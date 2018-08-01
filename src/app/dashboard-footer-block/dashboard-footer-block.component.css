@@ -8,7 +8,7 @@
   right: -200px;
 }
 .label {
-  font-family: "San Francisco", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 32.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -63,7 +63,7 @@
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
-  font-family: "San Francisco", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 33.0px;
   color: rgba(255, 255, 255, 1.0);
   text-align: left;
@@ -120,7 +120,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.75;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 15.0px;
   color: rgba(187, 187, 187, 1.0);
   text-align: left;
@@ -139,7 +139,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.64;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 15.0px;
   color: rgba(255, 255, 255, 1.0);
   text-align: left;
@@ -158,7 +158,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.64;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 15.0px;
   color: rgba(255, 255, 255, 1.0);
   text-align: left;
@@ -177,7 +177,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.64;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 15.0px;
   color: rgba(255, 255, 255, 1.0);
   text-align: left;
@@ -196,7 +196,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.75;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 15.0px;
   color: rgba(187, 187, 187, 1.0);
   text-align: left;
@@ -215,7 +215,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.75;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 16.0px;
   color: rgba(187, 187, 187, 1.0);
   text-align: left;
@@ -247,7 +247,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.9;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 16.0px;
   color: rgba(255, 255, 255, 1.0);
   text-align: center;
@@ -293,7 +293,7 @@
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 13.0px;
   color: rgba(109, 109, 109, 1.0);
   text-align: left;
@@ -311,7 +311,7 @@
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 13.0px;
   color: rgba(109, 109, 109, 1.0);
   text-align: left;
@@ -329,7 +329,7 @@
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 13.0px;
   color: rgba(109, 109, 109, 1.0);
   text-align: left;
@@ -347,7 +347,7 @@
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 13.0px;
   color: rgba(109, 109, 109, 1.0);
   text-align: left;
@@ -560,7 +560,7 @@
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 19.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -580,7 +580,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.5;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 12.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: center;
@@ -599,7 +599,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.5;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 12.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: center;
@@ -618,7 +618,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.5;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 12.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: center;
@@ -637,7 +637,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.5;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 12.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: center;
@@ -656,7 +656,7 @@
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
   opacity: 0.5;
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 12.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: center;
@@ -843,7 +843,7 @@
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 16.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: center;

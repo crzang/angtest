@@ -12,7 +12,7 @@
 .title {
   margin-bottom: 30px;
   height: auto;
-  font-family: "San Francisco", Helvetica, Arial, serif;
+  font-family: Helvetica, Arial, serif;
   font-size: 32.0px;
   color: rgba(255, 255, 255, 1.0);
   text-align: center;
@@ -22,7 +22,7 @@
 
 
 .info {
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family: Helvetica, Arial, serif;
   font-size: 16.0px;
   color: rgba(255, 255, 255, 1.0);
   text-align: center;

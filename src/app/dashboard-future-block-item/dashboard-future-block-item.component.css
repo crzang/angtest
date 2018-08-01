@@ -22,7 +22,7 @@
 }
 
 .title{
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family: Helvetica, Arial, serif;
   font-size: 19px;
 }
 
@@ -31,7 +31,7 @@
   text-align: right;
 }
 .name{
-  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
+  font-family:  Helvetica, Arial, serif;
   font-size: 15px;
   color: rgba(121, 121, 121, 1.0);
   text-align: left;
