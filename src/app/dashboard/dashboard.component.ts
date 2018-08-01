@@ -16,9 +16,9 @@ export class DashboardComponent implements OnInit {
       this.baseHeight = window.innerHeight;
     }
     if (window.innerWidth > 1024) {
-      this.baseWith = (window.innerWidth-350)+"px";
+      this.baseWith = (window.innerWidth-310)+"px";
     }
-    this.mainHeight = (this.baseHeight - 41 ) + 'px';
+    this.mainHeight = (this.baseHeight - 21 ) + 'px';
   }
   ngOnInit() {
   }
