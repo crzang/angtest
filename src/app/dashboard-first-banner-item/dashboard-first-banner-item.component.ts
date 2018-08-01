@@ -1,4 +1,4 @@
-import { Component, OnInit, Input,ElementRef,ViewChild } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-first-banner-item',
@@ -9,7 +9,7 @@ export class DashboardFirstBannerItemComponent implements OnInit {
   @Input() icon = '';
   @Input() extraIcon = '';
   @Input() iconDetails = '';
-  @Input() amount=0
+  @Input() amount = 0;
   @Input() text = '';
   @Input() button0 = '';
   @Input() button1 = '';
@@ -20,8 +20,8 @@ export class DashboardFirstBannerItemComponent implements OnInit {
   }
 
   ngOnInit() {
-      this.secondButton.nativeElement.hidden=this.button1 === ''
-      this.value.nativeElement.hidden=this.amount===0
+      this.secondButton.nativeElement.hidden = this.button1 === '';
+      this.value.nativeElement.hidden = this.amount === 0;
   }
 
 }

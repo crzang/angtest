@@ -4,9 +4,10 @@
 }
 
 .label {
-  font-size: 2.5em;
+  font-size: 32px;
   font-weight: bold;
   float: left;
+  font-family: "AppleSystemUIFont", Helvetica, Arial, serif;
 }
 
 .tabs {
@@ -49,5 +50,4 @@
 .body {
   margin-top: 20px;
 }
-
 

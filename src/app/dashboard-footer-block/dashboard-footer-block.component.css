@@ -3,6 +3,10 @@
 
 }
 
+.gr1{
+  position: relative;
+  right: -200px;
+}
 .label {
   font-family: "San Francisco", Helvetica, Arial, serif;
   font-size: 32.0px;
@@ -248,6 +252,7 @@
   color: rgba(255, 255, 255, 1.0);
   text-align: center;
   line-height: 45.0px;
+  cursor: pointer;
 }
 
 .info .path362 {
@@ -508,8 +513,8 @@
 
 .info2 .rectangle5 {
   background-color: rgba(255, 255, 255, 0.0);
-  top: 1px;
-  height: 236px;
+  top: 0px;
+  height: 238px;
   width: 618px;
   position: absolute;
   margin: 0;
@@ -538,7 +543,7 @@
   width: 1050px;
   position: absolute;
   margin: 0;
-  left: 0px;
+  left: 205px;
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
@@ -843,6 +848,7 @@
   color: rgba(0, 0, 0, 1.0);
   text-align: center;
   line-height: 45.0px;
+  cursor: pointer;
 }
 
 .info2 .path362 {
