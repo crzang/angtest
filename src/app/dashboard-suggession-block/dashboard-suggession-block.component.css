@@ -5,6 +5,7 @@
 .block{
   display: inline-flex;
   margin-top: 20px;
+  margin-left: -262px;
 }
 .label {
   font-family: "San Francisco", Helvetica, Arial, serif;

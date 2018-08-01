@@ -31,6 +31,7 @@ import { DashboardFutureBlockItemComponent } from './dashboard-future-block-item
 import { DashboardSuggessionBlockComponent } from './dashboard-suggession-block/dashboard-suggession-block.component';
 import { DashboardSuggessionBlockItemComponent } from './dashboard-suggession-block-item/dashboard-suggession-block-item.component';
 import { DashboardBannerBlockComponent } from './dashboard-banner-block/dashboard-banner-block.component';
+import { DashboardFooterBlockComponent } from './dashboard-footer-block/dashboard-footer-block.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { DashboardBannerBlockComponent } from './dashboard-banner-block/dashboar
     DashboardFutureBlockItemComponent,
     DashboardSuggessionBlockComponent,
     DashboardSuggessionBlockItemComponent,
-    DashboardBannerBlockComponent
+    DashboardBannerBlockComponent,
+    DashboardFooterBlockComponent
   ],
   imports: [
     BrowserModule,
