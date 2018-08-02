@@ -1,4 +1,5 @@
-import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -8,17 +9,19 @@ import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
 export class DashboardComponent implements OnInit {
   @ViewChild('main') footer: ElementRef;
   baseHeight = 768;
-  baseWith = 1024;
+  baseWidth = '1024';
   mainHeight = this.baseHeight + 'px';
+
 
   constructor() {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
     }
     if (window.innerWidth > 1024) {
-      this.baseWith = (window.innerWidth-310)+"px";
+      this.baseWidth = (window.innerWidth - 230) + 'px';
     }
     this.mainHeight = (this.baseHeight - 21 ) + 'px';
+
   }
   ngOnInit() {
   }

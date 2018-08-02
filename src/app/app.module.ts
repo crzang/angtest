@@ -19,6 +19,8 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import {CheckboxModule} from 'primeng/checkbox';
 import {InputTextModule} from 'primeng/inputtext';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
+import {TabViewModule} from 'primeng/tabview';
+import {DropdownModule} from 'primeng/dropdown';
 import { ErrorPaymentComponent } from './error-payment/error-payment.component';
 import { SigninSuccessComponent } from './signin-success/signin-success.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -32,6 +34,7 @@ import { DashboardSuggessionBlockComponent } from './dashboard-suggession-block/
 import { DashboardSuggessionBlockItemComponent } from './dashboard-suggession-block-item/dashboard-suggession-block-item.component';
 import { DashboardBannerBlockComponent } from './dashboard-banner-block/dashboard-banner-block.component';
 import { DashboardFooterBlockComponent } from './dashboard-footer-block/dashboard-footer-block.component';
+import { CardsComponent } from './cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +64,8 @@ import { DashboardFooterBlockComponent } from './dashboard-footer-block/dashboar
     DashboardSuggessionBlockComponent,
     DashboardSuggessionBlockItemComponent,
     DashboardBannerBlockComponent,
-    DashboardFooterBlockComponent
+    DashboardFooterBlockComponent,
+    CardsComponent,
   ],
   imports: [
     BrowserModule,
@@ -69,7 +73,10 @@ import { DashboardFooterBlockComponent } from './dashboard-footer-block/dashboar
     AppRoutingModule,
     CheckboxModule,
     InputTextModule,
-    ScrollPanelModule
+    ScrollPanelModule,
+    TabViewModule,
+    DropdownModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

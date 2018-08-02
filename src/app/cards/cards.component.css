@@ -1,0 +1,97 @@
+.cards{
+  background-color: #FFFFFF;
+}
+
+.title{
+  margin-top: 50px;
+  height: auto;
+  width: 262px;
+  margin-left: 0px;
+  font-size: 32.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 29.0px;
+}
+
+.container{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.dropdown{
+  width: 366px;
+  height: 44px;
+}
+
+.addCardButton{
+  float: right;
+  border-color: rgba(0,0,0,0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  height: 45px;
+  width: 215px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: -27px;
+}
+
+.addCardButton:hover{
+  background: #F0F0F0;
+}
+
+.cardBlock{
+  width: 366px;
+}
+
+.cards .card2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 235px;
+  height              : 234px;
+  width               : 387px;
+  position            : absolute;
+  margin              : 0;
+  left                : 100px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.cards .card3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 315px;
+  height              : 234px;
+  width               : 387px;
+  position            : absolute;
+  margin              : 0;
+  left                : 100px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.cards .card44 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 395px;
+  height              : 234px;
+  width               : 388px;
+  position            : absolute;
+  margin              : 0;
+  left                : 100px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.cards .card1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 474px;
+  height              : 234px;
+  width               : 388px;
+  position            : absolute;
+  margin              : 0;
+  left                : 100px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}

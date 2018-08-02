@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-fora-logo',
@@ -6,7 +6,7 @@ import { Component, OnInit, Input, ViewChild } from '@angular/core';
   styleUrls: ['./fora-logo.component.css']
 })
 export class ForaLogoComponent implements OnInit {
-  @Input() width = 0;
+  @Input() width ='0';
   @Input() scale = 1;
   @ViewChild('mainImg') mainImg: ElementRef;
 
@@ -20,7 +20,7 @@ export class ForaLogoComponent implements OnInit {
     if (window.innerWidth > 1024) {
       baseWidth = window.innerWidth;
     }
-    if (this.width !== 0) {
+    if (this.width !== '0') {
       baseWidth = parseFloat(this.width);
     }
     this.logoOffset = baseWidth / 2 - 188 / 2 + 'px';

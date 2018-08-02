@@ -36,10 +36,10 @@ export class ButtonComponent implements AfterViewInit, DoCheck, OnInit {
 
   ngDoCheck() {
     this.extStyleNames = '';
-    if (this.border === true || this.border === 'true') {
+    if (this.border === true || this.border.toString() === 'true') {
       this.extStyleNames += ' withBorder';
     }
-    if (this.enabled === true || this.enabled === 'true') {
+    if (this.enabled === true || this.enabled.toString() === 'true') {
       this.extStyleNames += ' labeledButtonEnabled';
     } else {
       this.extStyleNames += ' labeledButtonDisabled';

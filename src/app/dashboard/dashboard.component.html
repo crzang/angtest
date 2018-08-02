@@ -1,25 +1,39 @@
 <div class="main">
   <app-left-menu></app-left-menu>
-  <div #main class="mainBody" [style.width]="baseWith">
-    <div class="header">
-      <span class="active">Состояние дел</span>
-      <span class="notactive">Карты</span>
-      <span class="notactive">Счета</span>
-      <span class="notactive">Кредиты</span>
-      <span class="notactive">Статистика</span>
-      <span class="notactive">История операций</span>
-    </div>
+  <div #main class="mainBody" [style.width]="baseWidth">
+    <p-tabView styleClass="tab1" >
+      <p-tabPanel header="Состояние дел" [style]="{padding: '0px'}">
+        <p-scrollPanel [style]="{minWidth:'970px', width: baseWidth, height: mainHeight,border: 'none'}">
+          <div class="mainContainer">
+            <app-dashboard-current-block></app-dashboard-current-block>
+            <app-dashboard-banner-block></app-dashboard-banner-block>
+            <app-dashboard-future-block></app-dashboard-future-block>
+            <app-dashboard-suggession-block></app-dashboard-suggession-block>
+            <app-dashboard-footer-block></app-dashboard-footer-block>
+            <div class="mainFooter"></div>
+          </div>
+        </p-scrollPanel>
+      </p-tabPanel>
+      <p-tabPanel header="Карты">
+        <ng-template pTemplate="content">
+          <app-cards width="{{baseWidth}}" height="{{mainHeight}}"></app-cards>
+        </ng-template>
+      </p-tabPanel>
+      <p-tabPanel header="Счета">
+        Content 3
+      </p-tabPanel>
+      <p-tabPanel header="Кредиты">
+        Content 3
+      </p-tabPanel>
+      <p-tabPanel header="Статистика">
+        Content 3
+      </p-tabPanel>
+      <p-tabPanel header="История операций">
+        Content 3
+      </p-tabPanel>
+    </p-tabView>
 
-    <p-scrollPanel [style]="{minWidth:'970px', width: baseWith, height: mainHeight,border: 'none'}">
-      <div class="mainContainer">
-        <app-dashboard-current-block></app-dashboard-current-block>
-        <app-dashboard-banner-block></app-dashboard-banner-block>
-        <app-dashboard-future-block></app-dashboard-future-block>
-        <app-dashboard-suggession-block></app-dashboard-suggession-block>
-        <app-dashboard-footer-block></app-dashboard-footer-block>
-        <div class="mainFooter"></div>
-      </div>
-    </p-scrollPanel>
+
   </div>
 
 </div>

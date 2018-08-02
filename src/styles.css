@@ -77,4 +77,34 @@ input{
   opacity: 0;
 }
 
+.ui-tabview.ui-tabview-top>.ui-tabview-nav li {
+  border: 0;
+  top: 1px;
+}
 
+.ui-tabview .ui-tabview-panel {
+  border-width: 0;
+  padding: 0px;
+  background: 0;
+}
+
+.ui-dropdown label.ui-dropdown-label{
+  font-family: Helvetica, Arial, serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.53px;
+  line-height: 32px;
+
+}
+
+.dropDownIcon{
+  /*background: url('assets/img/cards-dropdown-input@2x.png');*/
+}
+
+.dropDownIcon:before {
+  content: "\2195";
+  font-size: 48px;
+  line-height: 12px;
+  margin-left: -4px;
+}

@@ -18,7 +18,7 @@ export class CreateAccountComponent implements AfterViewInit {
   login = '';
   pass = '';
   confirm = '';
-  agree = false;
+  agreeI = false;
   btnNextEnabled = false;
   constructor() {
     if (window.innerHeight > 768) {
@@ -56,11 +56,11 @@ export class CreateAccountComponent implements AfterViewInit {
   }
 
   onAgreeChange(e) {
-    this.agree = e;
+    this.agreeI = e;
     this.checkInput();
   }
 
   checkInput() {
-    this.btnNextEnabled = this.login.length !== 0 && this.pass.length !== 0 && this.confirm === this.pass && this.agree === true;
+    this.btnNextEnabled = this.login.length !== 0 && this.pass.length !== 0 && this.confirm === this.pass && this.agreeI === true;
   }
 }
