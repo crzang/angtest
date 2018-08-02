@@ -21,6 +21,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {TabViewModule} from 'primeng/tabview';
 import {DropdownModule} from 'primeng/dropdown';
+import {ProgressBarModule} from 'primeng/progressbar';
 import { ErrorPaymentComponent } from './error-payment/error-payment.component';
 import { SigninSuccessComponent } from './signin-success/signin-success.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -36,6 +37,10 @@ import { DashboardBannerBlockComponent } from './dashboard-banner-block/dashboar
 import { DashboardFooterBlockComponent } from './dashboard-footer-block/dashboard-footer-block.component';
 import { CardsComponent } from './cards/cards.component';
 import { AccountsComponent } from './accounts/accounts.component';
+import { CreditsComponent } from './credits/credits.component';
+import { CreditItemComponent } from './credit-item/credit-item.component';
+import { CardInfoComponent } from './card-info/card-info.component';
+import { CreditInfoComponent } from './credit-info/credit-info.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +73,10 @@ import { AccountsComponent } from './accounts/accounts.component';
     DashboardFooterBlockComponent,
     CardsComponent,
     AccountsComponent,
+    CreditsComponent,
+    CreditItemComponent,
+    CardInfoComponent,
+    CreditInfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -78,6 +87,7 @@ import { AccountsComponent } from './accounts/accounts.component';
     ScrollPanelModule,
     TabViewModule,
     DropdownModule,
+    ProgressBarModule
 
   ],
   providers: [],

@@ -1,0 +1,678 @@
+.creditInfo {
+  width: 100%;
+  min-width: 1280px;
+  height: 100%;
+  min-height: 760px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+.creditInfo .rectangle17 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  width: 689px;
+  position: absolute;
+  margin: 0;
+  left: -36px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.creditInfo .group5copy5 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 1px;
+  height: 761px;
+  width: 194px;
+  position: absolute;
+  margin: 0;
+  left: 32px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.creditInfo .group5copy5 .rectangle172 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  width: 193px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.creditInfo .group5copy51 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: -2px;
+  height: 761px;
+  width: 194px;
+  position: absolute;
+  margin: 0;
+  left: 17px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.creditInfo .group5copy51 .rectangle172 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  width: 193px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.foralogocopy2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 29px;
+  height: 20px;
+  width: 136px;
+  position: absolute;
+  margin: 0;
+  left: 28px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.buttonsBar {
+  position: absolute;
+  top: 20em;
+  height: auto;
+  width: 125px;
+  margin-left: 30px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: left;
+  letter-spacing: -0.27px;
+  line-height: 21.0px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.userName {
+  width: 132px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: left;
+  letter-spacing: -0.27px;
+  line-height: 26.0px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer {
+  width: 175px;
+  left: 30px;
+  bottom: 20px;
+}
+
+.footerButtons {
+  margin-top: 20px;
+  text-decoration: underline;
+  font-family: Helvetica, Arial, serif;
+  font-size: 15.0px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: left;
+  letter-spacing: -0.25px;
+  line-height: 52.0px;
+}
+
+.footerButtons span {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.mainBlock {
+  position: absolute;
+  left: 300px;
+  min-width: 400px;
+}
+
+.mainBlock .title{
+  margin-top: 114px;
+  width: 300px;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: rgba(242, 242, 242, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 36.0px;
+}
+.topMenu {
+  margin-top: 27px;
+  height: auto;
+  width: 358px;
+  margin-left: 30px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(255, 255, 255, 1.0);
+  letter-spacing: 0.73px;
+  line-height: 21.0px;
+}
+
+.topMenu .item {
+  text-decoration: underline;
+}
+
+.topMenu .separator {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card4 {
+  margin-top: 2em;
+  height: 247px;
+  width: 412px;
+  margin-left: -40px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.buttonedBlock {
+  margin-left: 0px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.group12 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 61px;
+  width: 221px;
+  position: relative;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group3 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 61px;
+  width: 61px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group3 .oval20copy {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 61px;
+  width: 61px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  opacity: 0.61;
+  cursor: pointer;
+}
+
+.group12 .group3 .iconreplenish {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 20px;
+  height: 16px;
+  width: 15px;
+  position: absolute;
+  margin: 0;
+  left: 22px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group3 .iconreplenish .line {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 11px;
+  height: 4px;
+  width: 5px;
+  position: absolute;
+  margin: 0;
+  left: 1px;
+  -ms-transform: rotate(-47deg); /* IE 9 */
+  -webkit-transform: rotate(-47deg); /* Chrome, Safari, Opera */
+  transform: rotate(-47deg);
+}
+
+.group12 .group3 .iconreplenish .line5 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 15px;
+  width: 13px;
+  position: absolute;
+  margin: 0;
+  left: 2px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group3 .iconreplenish .line1 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 8px;
+  height: 7px;
+  width: 11px;
+  position: absolute;
+  margin: 0;
+  left: -1px;
+  -ms-transform: rotate(-135deg); /* IE 9 */
+  -webkit-transform: rotate(-135deg); /* Chrome, Safari, Opera */
+  transform: rotate(-135deg);
+}
+
+.group12 .group5 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 61px;
+  width: 61px;
+  position: absolute;
+  margin: 0;
+  left: 53px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group5 .oval20copy2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 61px;
+  width: 61px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  opacity: 0.61;
+  cursor: pointer;
+}
+
+.group12 .group5 .iconplatperev {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 20px;
+  height: 16px;
+  width: 19px;
+  position: absolute;
+  margin: 0;
+  left: 21px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group5 .iconplatperev .line {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 7px;
+  width: 15px;
+  position: absolute;
+  margin: 0;
+  left: 4px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group5 .iconplatperev .line1 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 9px;
+  height: 7px;
+  width: 15px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group8 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 61px;
+  width: 61px;
+  position: absolute;
+  margin: 0;
+  left: 107px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group8 .oval20copy3 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 61px;
+  width: 61px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  opacity: 0.61;
+  cursor: pointer;
+}
+
+.group12 .group8 .group4 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 19px;
+  height: 18px;
+  width: 16px;
+  position: absolute;
+  margin: 0;
+  left: 22px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group8 .group4 .rectangle5 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 7px;
+  height: 11px;
+  width: 16px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  border-radius: 1px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 1.0);
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group8 .group4 .line2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 9px;
+  width: 12px;
+  position: absolute;
+  margin: 0;
+  left: 2px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group10 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 61px;
+  width: 61px;
+  position: absolute;
+  margin: 0;
+  left: 160px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group10 .oval20 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 61px;
+  width: 61px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  opacity: 0.61;
+  cursor: pointer;
+}
+
+.group12 .group10 .group2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 27px;
+  height: 4px;
+  width: 20px;
+  position: absolute;
+  margin: 0;
+  left: 21px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group10 .group2 .oval7 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group10 .group2 .oval7copy {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  margin: 0;
+  left: 8px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.group12 .group10 .group2 .oval7copy2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 4px;
+  width: 4px;
+  position: absolute;
+  margin: 0;
+  left: 16px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.summary .itemLine{
+  height: 30px;
+}
+
+.summary .name{
+  color: rgba(255,255,255,0.6);
+}
+
+.summary .value{
+  color: white;
+  text-align: right;
+}
+
+
+.detailBlock{
+  position: absolute;
+  right: 10em;
+  min-width: 480px;
+  margin-top: 20px;
+  width: 40%;
+}
+
+.detailBlock .alreadyPaid label{
+  font-family: Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+}
+
+.detailBlock .alreadyPaid div{
+  font-family:  Helvetica, Arial, serif;
+  font-size: 14.0px;
+  color: rgba(118, 118, 118, 1.0);
+  text-align: left;
+  line-height: 17.0px;
+}
+
+
+.detailBlock .leftPay{
+  right: 20px;
+  text-align: right;
+}
+
+.detailBlock .leftPay label{
+  margin-top: 10px;
+  opacity: 0.5;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: right;
+  line-height: 21.0px;
+}
+
+.detailBlock .leftPay div{
+  margin-top: -15px;
+  font-family: Helvetica, Arial, serif;
+  font-size: 14.0px;
+  color: rgba(118, 118, 118, 1.0);
+  text-align: right;
+  line-height: 17.0px;
+  margin-bottom: 15px;
+}
+
+progress {
+  margin-top: 10px;
+  width: 100%;
+  height: 5px;
+  display: block;
+  /* Important Thing */
+  -webkit-appearance: none;
+  border: none;
+}
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+  background: #dfdfdf;
+  border-radius: 1px;
+  padding: 0px;
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+  border-radius: 1px;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+  background:#1acd91;
+
+  /* Looks great, now animating it */
+  background-size: 25px 14px, 100% 100%, 100% 100%;
+  -webkit-animation: move 5s linear 0 infinite;
+}
+
+/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+
+@-webkit-keyframes move {
+  0% {background-position: 0px 0px, 0 0, 0 0}
+  100% {background-position: -100px 0px, 0 0, 0 0}
+}
+
+.detail{
+  text-align: center;
+}
+
+.detail .item{
+  border-bottom: 1px solid;
+  border-color: #000000;
+  height: 50px;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(0, 0, 0, 1.0);
+  letter-spacing: -0.11px;
+  line-height: 36.0px;
+}
+
+.detail .done{
+  background: #F7F7F7;
+}
+
+.detail .current{
+  background: #FFCB00;
+}
+
+.detail .doned{
+  visibility: hidden;
+  margin-top: -19px;
+  background: none;
+  font-family: Helvetica, Arial, serif;
+  font-size: 14.0px;
+  color: rgba(14, 166, 29, 1.0);
+  text-align: center;
+  letter-spacing: -0.1px;
+  line-height: 36.0px;
+}
+
+.detail .item .done{
+  visibility: visible;
+}
+
+.detail .autopayment{
+  visibility: hidden;
+  margin-top: -19px;
+  background: none;
+  font-family: Helvetica, Arial, serif;
+  font-size: 14.0px;
+  color: rgba(118, 118, 118, 1.0);
+  text-align: center;
+}
+
+.detail .item .auto{
+  visibility: visible;
+}
+
+.detail .changePayment{
+  visibility: hidden;
+
+  background: none;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 14.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  line-height: 16.0px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.detail .item .changePaymentY{
+  visibility: visible;
+}

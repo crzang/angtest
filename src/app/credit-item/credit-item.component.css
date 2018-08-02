@@ -1,0 +1,71 @@
+.item{
+  height: 90px;
+  background: #F8F8F8;
+  border-bottom: 1px solid #898989;
+  cursor: pointer;
+}
+
+.nameBlock{
+  margin-top: 23px;
+  margin-left: 5%;
+  margin-right: 10%;
+  font-family: Helvetica, Arial, serif;
+  font-size: 18.0px;
+  color: rgba(0, 0, 0, 1.0);
+  letter-spacing: -0.38px;
+  line-height: 25.08px;
+  height: 55px;
+  text-align: center;
+}
+
+.date{
+  text-align: center;
+  color: #898989;
+}
+
+.percent{
+  text-align: center;
+  color: #898989;
+}
+
+.value{
+  text-align: right;
+}
+
+.value label{
+  margin-right: 5%;
+}
+progress {
+  width: 100%;
+  height: 4px;
+  display: block;
+  /* Important Thing */
+  -webkit-appearance: none;
+  border: none;
+}
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+  background: #dfdfdf;
+  border-radius: 1px;
+  padding: 0px;
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+  border-radius: 1px;
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+  background:#1acd91;
+
+  /* Looks great, now animating it */
+  background-size: 25px 14px, 100% 100%, 100% 100%;
+  -webkit-animation: move 5s linear 0 infinite;
+}
+
+/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+
+@-webkit-keyframes move {
+  0% {background-position: 0px 0px, 0 0, 0 0}
+  100% {background-position: -100px 0px, 0 0, 0 0}
+}

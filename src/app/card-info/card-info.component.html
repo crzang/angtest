@@ -1,0 +1,110 @@
+<div class="cardInfo">
+
+  <div>
+    <img class="rectangle17" height="{{baseHeight}}" src="assets/img/ard3-rectangle-17.png">
+    <div class="group5copy5" [style.height]="baseHeight">
+      <img class="rectangle172" height="{{baseHeight}}" src="assets/img/ard3-rectangle-17 1.png">
+    </div>
+    <div class="group5copy51" [style.height]="baseHeight">
+      <img class="rectangle172" height="{{baseHeight}}" src="assets/img/ard3-rectangle-17 2.png">
+    </div>
+    <img class="foralogocopy2" src="assets/img/ard3-fora-logo-copy-2.png">
+    <div class="buttonsBar">
+      <div class="link">Мои финансы</div>
+      <br>
+      <div class="link">Платежи и переводы</div>
+      <br>
+      <div class="link">Партнерские сервисы</div>
+      <br>
+      <div class="link">Отделения и банкоматы</div>
+    </div>
+
+    <div #footer class="footer">
+      <label class="userName">Евгений Кожемякин</label>
+      <div class="footerButtons">
+        <span>Помощь</span>
+        <span routerLink="/">Выход</span>
+      </div>
+    </div>
+  </div>
+  <div class="mainBlock">
+    <div class="topMenu">
+      <span class="item" routerLink="/main">Мои финансы</span> <span class="separator">/</span> <span class="item">Карты</span>
+    </div>
+    <img class="card4" src="assets/img/ard3-card4@2x.png">
+    <div class="buttonedBlock">
+      <div class="group12">
+        <div class="group3">
+          <img class="oval20copy" src="assets/img/ard3-oval-20-copy-2@2x.png">
+          <div class="iconreplenish">
+            <img class="line" src="assets/img/ard3-line 1@2x.png">
+            <img class="line5" src="assets/img/ard3-line-5@2x.png">
+            <img class="line1" src="assets/img/ard3-line 2@2x.png">
+          </div>
+        </div>
+        <div class="group5">
+          <img class="oval20copy2" src="assets/img/ard3-oval-20-copy-2@2x.png">
+          <div class="iconplatperev">
+            <img class="line" src="assets/img/ard3-line 3@2x.png">
+            <img class="line1" src="assets/img/ard3-line 4@2x.png">
+          </div>
+        </div>
+        <div class="group8">
+          <img class="oval20copy3" src="assets/img/ard3-oval-20@2x.png">
+          <div class="group4">
+            <div class="rectangle5">
+            </div>
+            <img class="line2" src="assets/img/ard3-line-2@2x.png">
+          </div>
+        </div>
+        <div class="group10">
+          <img class="oval20" src="assets/img/ard3-oval-20@2x.png">
+          <div class="group2">
+            <img class="oval7" src="assets/img/ard3-oval-7-copy@2x.png">
+            <img class="oval7copy" src="assets/img/ard3-oval-7-copy@2x.png">
+            <img class="oval7copy2" src="assets/img/ard3-oval-7-copy@2x.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="summary">
+      <table width="80%">
+        <tr class="itemLine" *ngFor="let card of cards">
+          <td width="75%" class="name">
+            {{card.name}}
+          </td>
+          <td class="value">
+            {{card.value}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="detailBlock">
+    <div class="title">История операций</div>
+    <div class="view1">
+      <img class="oval2" src="assets/img/ard3-oval-2@2x.png">
+      <img class="line" src="assets/img/ard3-line@2x.png">
+
+    </div>
+    <div class="detailsBody">
+      <div class="detailDay" *ngFor="let detail of details">
+        <div class="day">{{detail.date}}</div>
+        <div class="items" *ngFor="let data of detail.data">
+          <div class="item">
+            <div class="icon">
+              <img width="30px" src="{{data.icon}}">
+            </div>
+            <div class="name">{{data.name}}</div>
+            <div class="extraName">{{data.extraName}}</div>
+            <div class="data">
+              <div class="value">- {{data.value}}</div>
+              <div class="bonus">+ {{data.bonus}} бонусов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

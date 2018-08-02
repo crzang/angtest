@@ -11,6 +11,8 @@ import {CreateAccountComponent} from './create-account/create-account.component'
 import {ErrorPaymentComponent} from './error-payment/error-payment.component';
 import {SigninSuccessComponent} from './signin-success/signin-success.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import {CardInfoComponent} from './card-info/card-info.component';
+import {CreditInfoComponent} from "./credit-info/credit-info.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/signIn', pathMatch: 'full' },
@@ -23,7 +25,9 @@ const routes: Routes = [
   { path: 'regChoice/createAccount', component: CreateAccountComponent },
   { path: 'error', component: ErrorPaymentComponent },
   { path: 'success', component: SigninSuccessComponent },
-  { path: 'main', component: DashboardComponent}
+  { path: 'main', component: DashboardComponent},
+  { path: 'main/cards/item0', component: CardInfoComponent},
+  { path: 'main/credits/item0', component: CreditInfoComponent}
 ];
 
 @NgModule({
