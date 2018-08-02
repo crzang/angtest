@@ -1,0 +1,102 @@
+.accounts{
+  background-color: #FFFFFF;
+
+}
+
+.container{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+
+.title{
+  margin-top: 50px;
+  height: auto;
+  width: 262px;
+  margin-left: 0px;
+  font-size: 32.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 29.0px;
+}
+.tabs {
+  position: absolute;
+  right: 80px;
+  margin-top: -27px;
+}
+
+.tabs div {
+  height: 30px;
+  width: 100px;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+}
+
+.tabs .active {
+  background: #EF8D35;
+  color: white;
+
+}
+
+.tabs .inactive {
+  background: #FFFFFF;
+  color: #DBDBDB;
+  border: 1px solid #DBDBDB;
+  cursor: pointer;
+}
+
+.tabs .first {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tabs .last {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.body {
+  margin-top: 20px;
+}
+
+.addAccountButton{
+  overflow: hidden;
+  border-color: rgba(0,0,0,0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  height: 45px;
+  width: 215px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 70px;
+}
+
+.addAccountButton:hover{
+  background: #F0F0F0;
+}
+
+.total{
+  height: 60px;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 36.0px;
+}
+
+.totalValue {
+  color: rgba(120, 120, 120, 1.0);
+}
+
+.total label{
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 1.0);
+  float: right;
+}

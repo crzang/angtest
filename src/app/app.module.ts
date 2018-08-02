@@ -35,6 +35,7 @@ import { DashboardSuggessionBlockItemComponent } from './dashboard-suggession-bl
 import { DashboardBannerBlockComponent } from './dashboard-banner-block/dashboard-banner-block.component';
 import { DashboardFooterBlockComponent } from './dashboard-footer-block/dashboard-footer-block.component';
 import { CardsComponent } from './cards/cards.component';
+import { AccountsComponent } from './accounts/accounts.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { CardsComponent } from './cards/cards.component';
     DashboardBannerBlockComponent,
     DashboardFooterBlockComponent,
     CardsComponent,
+    AccountsComponent,
   ],
   imports: [
     BrowserModule,
