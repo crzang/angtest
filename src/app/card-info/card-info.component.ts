@@ -40,7 +40,7 @@ export class CardInfoComponent implements OnInit {
         date: '5 октября',
         data: [{icon: 'assets/img/cardDetailItem3.png', name: 'Пятерочка', extraName: 'Продуктовый магазин', value: '2964 руб', bonus: '65'},
           {icon: 'assets/img/cardDetailItem4.png', name: 'Dyadushka FHO', extraName: 'Гипермаркет', value: '550 руб', bonus: '0'},
-          {icon: 'assets/img/cardDetailItem2.png', name: 'Азбука вкуса', extraName: 'Супермаркет', value: '2100 руб', bonus: '1200'}
+          {icon: 'assets/img/cardDetailItem2.png', name: 'Азбука вкуса', extraName: 'Супермаркет', value: '2100 руб', bonus: '1200'}]
       }
     ];
   }
