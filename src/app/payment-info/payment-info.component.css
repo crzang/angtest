@@ -1,0 +1,727 @@
+.cardInfo {
+  width: 100%;
+  min-width: 1280px;
+  height: 100%;
+  min-height: 760px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+.cardInfo .rectangle17 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  width: 689px;
+  position: absolute;
+  margin: 0;
+  left: -36px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.cardInfo .group5copy5 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 1px;
+  height: 761px;
+  width: 194px;
+  position: absolute;
+  margin: 0;
+  left: 32px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.cardInfo .group5copy5 .rectangle172 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  width: 193px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.cardInfo .group5copy51 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: -2px;
+  height: 761px;
+  width: 194px;
+  position: absolute;
+  margin: 0;
+  left: 17px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.cardInfo .group5copy51 .rectangle172 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  width: 193px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.foralogocopy2 {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 29px;
+  height: 20px;
+  width: 136px;
+  position: absolute;
+  margin: 0;
+  left: 28px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.buttonsBar {
+  position: absolute;
+  top: 20em;
+  height: auto;
+  width: 125px;
+  margin-left: 30px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: left;
+  letter-spacing: -0.27px;
+  line-height: 21.0px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.userName {
+  width: 132px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: left;
+  letter-spacing: -0.27px;
+  line-height: 26.0px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer {
+  width: 175px;
+  left: 30px;
+  bottom: 20px;
+}
+
+.footerButtons {
+  margin-top: 20px;
+  text-decoration: underline;
+  font-family: Helvetica, Arial, serif;
+  font-size: 15.0px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: left;
+  letter-spacing: -0.25px;
+  line-height: 52.0px;
+}
+
+.footerButtons span {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.mainBlock {
+  position: absolute;
+  left: 300px;
+  min-width: 400px;
+}
+
+.topMenu {
+  margin-top: 27px;
+  height: auto;
+  margin-left: 30px;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(255, 255, 255, 1.0);
+  letter-spacing: 0.73px;
+  line-height: 21.0px;
+}
+
+.topMenu .item {
+  text-decoration: underline;
+}
+
+.topMenu .separator {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card4 {
+  margin-top: 2em;
+  height: 247px;
+  width: 412px;
+  margin-left: -40px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.buttonedBlock {
+  margin-left: 0px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+
+.summary .itemLine{
+  height: 30px;
+}
+
+.summary .name{
+  color: rgba(255,255,255,0.6);
+}
+
+.summary .value{
+  color: white;
+  text-align: right;
+}
+
+
+.detailBlock{
+  position: absolute;
+  right: 10em;
+  min-width: 420px;
+}
+
+.detailBlock .total{
+  margin-top: 10em;
+}
+.detailBlock .title{
+  margin-top: 3em;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: right;
+  letter-spacing: -0.22px;
+  line-height: 36.0px;
+}
+
+.detailBlock .total .totalBonus{
+  font-family:  Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(128, 128, 128, 1.0);
+  text-align: right;
+  line-height: 18.0px;
+}
+.detailBlock .view1 {
+  margin-top: -30px;
+  height: 27px;
+  width: 28px;
+  right: 1em;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  opacity: 0.7
+}
+.detailBlock .view1 .oval2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 22px;
+  width               : 22px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.detailBlock .view1 .line {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 17px;
+  height              : 10px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 18px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+
+.detailsBody{
+  margin-top: 10px;
+}
+
+.detailDay{
+  margin-top: 20px;
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.5px;
+  line-height: 18.0px;
+}
+.detailsBody .day{
+  font-family:  Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.5px;
+  line-height: 18.0px;
+}
+
+.detailsBody .item {
+  background: #F7F7F7;
+  height: 90px;
+  border-bottom: 1px solid;
+  border-color: #E0E0E0;
+}
+
+.detailsBody .item .icon{
+  margin-left: 20px;
+  position: absolute;
+}
+
+.detailsBody .item .icon img{
+  margin-top:30px
+}
+
+.detailsBody .item .name{
+  position: absolute;
+  left: 70px;
+  margin-top: 35px;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 15.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.25px;
+  line-height: 19.0px;
+}
+
+.detailsBody .item .extraName{
+  position: absolute;
+  left: 70px;
+  margin-top: 50px;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.25px;
+  line-height: 19.0px;
+}
+.detailsBody .item .data{
+  position: absolute;
+  right: 20px;
+  margin-top: 35px;
+}
+
+.detailsBody .item .data .value{
+  font-family: Helvetica, Arial, serif;
+  font-size: 18.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: right;
+  letter-spacing: -0.28px;
+}
+
+.detailsBody .item .data .bonus{
+  font-family:  Helvetica, Arial, serif;
+  font-size: 14.0px;
+  color: rgba(128, 128, 128, 1.0);
+  text-align: right;
+  line-height: 17.6px;
+}
+
+.logo {
+  background-color: rgba(44, 91, 165, 1.0);
+  margin-top: 30px;
+  height: 90px;
+  width: 90px;
+  margin-left: 20px;
+  border-radius: 45px;
+  overflow: hidden;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.logo .mask {
+  background-color    : rgba(44, 91, 165, 1.0);
+  top                 : 0px;
+  height              : 90px;
+  width               : 90px;
+
+  margin              : 0;
+  left                : 0px;
+  border-radius       : 45px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+
+.logo .bitmap {
+  background-color: rgba(255,255,255,0.0);
+  top: 30px;
+  position: absolute;
+  height: 28px;
+  width: 79px;
+  /* margin: 0; */
+  left: 4px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.title{
+  margin-top: 10px;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: rgba(242, 242, 242, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 36.0px;
+}
+
+
+.buttonedBlock .group5 .group11 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 61px;
+  width               : 61px;
+  cursor: pointer;
+  margin              : 0;
+  left                : 105px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group11 .oval20 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 61px;
+  width               : 61px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.61;
+}
+.buttonedBlock .group5 .group11 .group9 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 20px;
+  height              : 17px;
+  width               : 18px;
+  position            : absolute;
+  margin              : 0;
+  left                : 21px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group11 .group9 .rectangle6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 3px;
+  height              : 14px;
+  width               : 14px;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group11 .group9 .line2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 3px;
+  height              : 2px;
+  width               : 19px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group11 .group9 .rectangle {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 4px;
+  width               : 8px;
+  position            : absolute;
+  margin              : 0;
+  left                : 6px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group11 .group9 .line3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 5px;
+  height              : 9px;
+  width               : 2px;
+  position            : absolute;
+  margin              : 0;
+  left                : 9px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group11 .group9 .line3copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 5px;
+  height              : 9px;
+  width               : 2px;
+  position            : absolute;
+  margin              : 0;
+  left                : 5px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group11 .group9 .line3copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 5px;
+  height              : 9px;
+  width               : 2px;
+  position            : absolute;
+  margin              : 0;
+  left                : 12px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group {
+  background-color: rgba(255,255,255,0.0);
+  height: 61px;
+  width: 61px;
+  margin-left: 70px;
+  margin-top: -60px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.buttonedBlock .group5 .group .oval20copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 61px;
+  width               : 61px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.61;
+}
+.buttonedBlock .group5 .group .iconraspredelitcopy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 21px;
+  height              : 16px;
+  width               : 18px;
+  position            : absolute;
+  margin              : 0;
+  left                : 22px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group .iconraspredelitcopy .group6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1px;
+  height              : 14px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group .iconraspredelitcopy .group6 .path2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 14px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group .iconraspredelitcopy .group6 .path21 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 14px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group .iconraspredelitcopy .path3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 4px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 14px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group .iconraspredelitcopy .path31 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 4px;
+  width               : 4px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group .iconraspredelitcopy .path4 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 11px;
+  height              : 5px;
+  width               : 2px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group .iconraspredelitcopy .path41 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 11px;
+  height              : 5px;
+  width               : 2px;
+  position            : absolute;
+  margin              : 0;
+  left                : 15px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group3 {
+  background-color: rgba(255,255,255,0.0);
+  height: 61px;
+  width: 61px;
+  margin-left: 140px;
+  margin-top: -60px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+.buttonedBlock .group5 .group3 .oval20copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 61px;
+  width               : 61px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.61;
+}
+.buttonedBlock .group5 .group3 .group8copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 21px;
+  height              : 14px;
+  width               : 16px;
+  position            : absolute;
+  margin              : 0;
+  left                : 23px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group3 .group8copy .rectangle6 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 16px;
+  width               : 15px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(-90deg); /* IE 9 */
+  -webkit-transform   : rotate(-90deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-90deg);
+}
+.buttonedBlock .group5 .group3 .group8copy .path3 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 7px;
+  width               : 5px;
+  position            : absolute;
+  margin              : 0;
+  left                : 11px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.buttonedBlock .group5 .group3 .group8copy .path5 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 2px;
+  height              : 10px;
+  width               : 13px;
+  position            : absolute;
+  margin              : 0;
+  left                : 3px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+
+.detailBlock .items .value{
+  font-family: Helvetica, Arial, serif;
+  font-size: 18.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: right;
+  letter-spacing: -0.28px;
+  line-height: 25.08px;
+}
+
+.detailBlock table{
+  border-spacing: 0px;
+  border-color: rgba(120,120,120,0.3);
+  border-top: 1px solid;
+  padding: 5px;
+}
+.detailBlock .items {
+  margin-top: 20px;
+}
+
+.detailBlock .items td{
+  text-align: left;
+
+}
+
+.detailBlock .items .name{
+  font-family:  Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  line-height: 19.0px;
+}

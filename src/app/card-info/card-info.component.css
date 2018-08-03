@@ -589,6 +589,7 @@
   height: 90px;
   border-bottom: 1px solid;
   border-color: #E0E0E0;
+  cursor: pointer;
 }
 
 .detailsBody .item .icon{

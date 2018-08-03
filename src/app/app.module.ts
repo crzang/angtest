@@ -41,6 +41,7 @@ import { CreditsComponent } from './credits/credits.component';
 import { CreditItemComponent } from './credit-item/credit-item.component';
 import { CardInfoComponent } from './card-info/card-info.component';
 import { CreditInfoComponent } from './credit-info/credit-info.component';
+import { PaymentInfoComponent } from './payment-info/payment-info.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { CreditInfoComponent } from './credit-info/credit-info.component';
     CreditItemComponent,
     CardInfoComponent,
     CreditInfoComponent,
+    PaymentInfoComponent,
   ],
   imports: [
     BrowserModule,

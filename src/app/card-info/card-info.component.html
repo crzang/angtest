@@ -90,7 +90,7 @@
     <div class="detailsBody">
       <div class="detailDay" *ngFor="let detail of details">
         <div class="day">{{detail.date}}</div>
-        <div class="items" *ngFor="let data of detail.data">
+        <div class="items" *ngFor="let data of detail.data" routerLink="details">
           <div class="item">
             <div class="icon">
               <img width="30px" src="{{data.icon}}">

@@ -1,0 +1,111 @@
+<div class="cardInfo">
+
+  <div>
+    <img class="rectangle17" height="{{baseHeight}}" src="assets/img/history-card--rectangle-17.png">
+    <div class="group5copy5" [style.height]="baseHeight">
+      <img class="rectangle172" height="{{baseHeight}}" src="assets/img/history-card--rectangle-17 1.png">
+    </div>
+    <div class="group5copy51" [style.height]="baseHeight">
+      <img class="rectangle172" height="{{baseHeight}}" src="assets/img/history-card--rectangle-17 2.png">
+    </div>
+    <img class="foralogocopy2" src="assets/img/ard3-fora-logo-copy-2.png">
+    <div class="buttonsBar">
+      <div class="link">Мои финансы</div>
+      <br>
+      <div class="link">Платежи и переводы</div>
+      <br>
+      <div class="link">Партнерские сервисы</div>
+      <br>
+      <div class="link">Отделения и банкоматы</div>
+    </div>
+
+    <div #footer class="footer">
+      <label class="userName">Евгений Кожемякин</label>
+      <div class="footerButtons">
+        <span>Помощь</span>
+        <span routerLink="/">Выход</span>
+      </div>
+    </div>
+  </div>
+  <div class="mainBlock">
+    <div class="topMenu">
+      <span class="item" routerLink="/main/cards/item0">Назад</span>
+    </div>
+    <div class="logo">
+      <div class="mask">
+      </div>
+      <img class="bitmap" src="assets/img/history-card--bitmap@2x.png">
+    </div>
+    <div class="title">
+      METRO Store 1019
+    </div>
+    <div class="buttonedBlock">
+      <div class="group5">
+        <div class="group11">
+          <img class="oval20" src="assets/img/history-card--oval-20-copy@2x.png">
+          <div class="group9">
+            <img class="rectangle6" src="assets/img/history-card--rectangle-6@2x.png">
+            <img class="line2" src="assets/img/history-card--line-2@2x.png">
+            <img class="rectangle" src="assets/img/history-card--rectangle@2x.png">
+            <img class="line3" src="assets/img/history-card--line-3@2x.png">
+            <img class="line3copy2" src="assets/img/history-card--line-3@2x.png">
+            <img class="line3copy" src="assets/img/history-card--line-3@2x.png">
+          </div>
+        </div>
+        <div class="group">
+          <img class="oval20copy" src="assets/img/history-card--oval-20-copy@2x.png">
+          <div class="iconraspredelitcopy">
+            <div class="group6">
+              <img class="path2" src="assets/img/history-card--path-2@2x.png">
+              <img class="path21" src="assets/img/history-card--path-2 1@2x.png">
+            </div>
+            <img class="path3" src="assets/img/history-card--path-3@2x.png">
+            <img class="path31" src="assets/img/history-card--path-3 1@2x.png">
+            <img class="path4" src="assets/img/history-card--path-4@2x.png">
+            <img class="path41" src="assets/img/history-card--path-4@2x.png">
+          </div>
+        </div>
+        <div class="group3">
+          <img class="oval20copy2" src="assets/img/history-card--oval-20-copy@2x.png">
+          <div class="group8copy">
+            <img class="rectangle6" src="assets/img/history-card--rectangle-6 1@2x.png">
+            <img class="path3" src="assets/img/history-card--path-3 2@2x.png">
+            <img class="path5" src="assets/img/history-card--path-5@2x.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="summary">
+      <table>
+        <tr class="itemLine" *ngFor="let card of cards">
+          <td class="name">
+            {{card.name}}
+          </td>
+          <td class="value">
+            {{card.value}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="detailBlock">
+    <div class="total">
+      <div class="title">- 14 567 р</div>
+      <div class="totalBonus">+1200 бонусов</div>
+    </div>
+    <table class="items" width="100%" *ngFor="let item of details">
+      <tr>
+        <td width="300px" class="name">
+          {{item.name}}
+        </td>
+        <td>
+          {{item.count}}
+        </td>
+        <td class="value">
+          {{item.value}}
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
