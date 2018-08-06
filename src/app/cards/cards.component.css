@@ -1,8 +1,16 @@
 .cards{
-  background-color: #FFFFFF;
-
+  background-color: rgba(255,255,255,0);
 }
 
+
+.showContainer .leftPart{
+  animation: showLeftMenu 1000ms ease-in-out both;
+}
+
+@keyframes showLeftMenu {
+  from{width:100em}
+  to{width: 220px}
+}
 .title{
   margin-top: 50px;
   height: auto;

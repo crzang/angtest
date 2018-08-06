@@ -10,12 +10,16 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   @ViewChild('header') header: ElementRef;
   @ViewChild('main') main: ElementRef;
   @ViewChild('cards') cards: ElementRef;
-  baseHeight = 768;
-  baseWidth = '1024';
+  @ViewChild('accounts') accounts: ElementRef;
+  @ViewChild('credits') credits: ElementRef;
+  baseHeight = '768px';
+  baseWidth = '1024px';
   mainHeight = this.baseHeight + 'px';
   visibility = 'hidden';
   visibilityMain = 'hidden';
   visibilityCard = 'hidden';
+  visibilityAccounts = 'hidden';
+  visibilityCredits = 'hidden';
   constructor() {
 
 
@@ -28,6 +32,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
       this.baseWidth = (window.innerWidth - 230) + 'px';
     }
     this.mainHeight = (this.baseHeight - 21 ) + 'px';
+    this.baseHeight = this.baseHeight + 'px';
   }
 
   onClick = (e, targetBlock) => {
@@ -39,17 +44,27 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     if (targetBlock !== 'cards' && this.cards.nativeElement.className === 'showContainer') {
       this.cards.nativeElement.className = 'hideContainer';
     }
+    if (targetBlock !== 'accounts' && this.accounts.nativeElement.className === 'showContainer') {
+      this.accounts.nativeElement.className = 'hideContainer';
+    }
+    if (targetBlock !== 'credits' && this.credits.nativeElement.className === 'showContainer') {
+      this.credits.nativeElement.className = 'hideContainer';
+    }
     setTimeout(() => {
-      this.visibilityMain = 'hidden';
-      this.visibilityCard = 'hidden';
       if (targetBlock === 'cards') {
         this.visibilityCard = 'visible';
-        this.cards.nativeElement.className= 'showContainer'
+        this.cards.nativeElement.className = 'showContainer';
       } else if (targetBlock === 'main') {
         this.visibilityMain = 'visible';
-        this.main.nativeElement.className= 'showContainer'
+        this.main.nativeElement.className = 'showContainer';
+      } else if (targetBlock === 'accounts') {
+        this.visibilityAccounts = 'visible';
+        this.accounts.nativeElement.className = 'showContainer';
+      } else if (targetBlock === 'credits') {
+        this.visibilityCredits = 'visible';
+        this.credits.nativeElement.className = 'showContainer';
       }
-    }, 2000);
+    }, 500);
 
 
   }

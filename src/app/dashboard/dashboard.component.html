@@ -1,19 +1,34 @@
 <div class="main">
-  <app-left-menu background="#FF9F42"></app-left-menu>
-  <div #body  class="mainBody" [style.width]="baseWidth">
+
+  <div #body class="mainBody" [style.width]="baseWidth">
     <div [style.visibility]="visibility" class="header" #header>
       <span class="active" (click)="onClick($event,'main')">Состояние дел</span>
       <span class="notactive" (click)="onClick($event,'cards')">Карты</span>
-      <span class="notactive" (click)="onClick($event)">Счета</span>
-      <span class="notactive" (click)="onClick($event)">Кредиты</span>
+      <span class="notactive" (click)="onClick($event,'accounts')">Счета</span>
+      <span class="notactive" (click)="onClick($event,'credits')">Кредиты</span>
       <span class="notactive" (click)="onClick($event)">Статистика</span>
       <span class="notactive" (click)="onClick($event)">История операций</span>
     </div>
     <div #main class="showContainer" [style.visibility]="visibilityMain">
-    <app-main></app-main>
+      <app-main></app-main>
     </div>
     <div #cards [style.visibility]="visibilityCard">
-      <app-cards  width="{{baseWidth}}" height="{{mainHeight}}"></app-cards>
+      <div class="leftPart cards" [style.height]="baseHeight">
+
+      </div>
+      <app-cards width="{{baseWidth}}" height="{{mainHeight}}"></app-cards>
+    </div>
+    <div #accounts [style.visibility]="visibilityAccounts">
+      <div class="leftPart accounts" [style.height]="baseHeight">
+
+      </div>
+      <app-accounts width="{{baseWidth}}" height="{{mainHeight}}"></app-accounts>
+    </div>
+    <div #credits [style.visibility]="visibilityCredits">
+      <div class="leftPart credits" [style.height]="baseHeight">
+
+      </div>
+      <app-credits width="{{baseWidth}}" height="{{mainHeight}}"></app-credits>
     </div>
     <!--
     <p-tabView styleClass="tab1" >
@@ -41,5 +56,5 @@
 -->
 
   </div>
-
+  <app-left-menu background="#FD953B"></app-left-menu>
 </div>

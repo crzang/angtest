@@ -9,6 +9,7 @@ import {SelectItem} from 'primeng/api';
 export class AccountsComponent implements OnInit {
   @Input() width = '1024px';
   @Input() height = '768px';
+  baseHeight = '768px';
   orders: SelectItem[];
   constructor() {
     this.orders = [
@@ -18,6 +19,9 @@ export class AccountsComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (window.innerHeight > 768) {
+      this.baseHeight = window.innerHeight+'px';
+    }
   }
 
 }

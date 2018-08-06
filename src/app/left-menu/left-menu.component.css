@@ -1,5 +1,6 @@
 .leftMenu{
   animation:showMenu 1000ms ease-in-out both;
+
 }
 
 @keyframes showMenu {

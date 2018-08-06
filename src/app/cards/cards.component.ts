@@ -10,6 +10,7 @@ export class CardsComponent implements OnInit {
   @Input() width = '1024px';
   @Input() height = '768px';
   orders: SelectItem[];
+  baseHeight = '768px';
   constructor() {
     this.orders = [
       {label: 'Сортировка по состоянию счета', value: {id: 1, name: 'Сортировка по состоянию счета', code: 'byValue'}},
@@ -18,6 +19,9 @@ export class CardsComponent implements OnInit {
   }
 
   ngOnInit() {
+    if (window.innerHeight > 768) {
+      this.baseHeight = window.innerHeight+'px';
+    }
   }
 
 }
