@@ -1,0 +1,14 @@
+<div class="main">
+  <app-left-menu background="#F2681E"></app-left-menu>
+  <div #main [style.visibility]="visibility" class="mainBody" [style.width]="baseWidth">
+    <div class="header">
+      <span class="notactive" routerLink="/main">Состояние дел</span>
+      <span class="active" routerLink="cards">Карты</span>
+      <span class="notactive">Счета</span>
+      <span class="notactive">Кредиты</span>
+      <span class="notactive">Статистика</span>
+      <span class="notactive">История операций</span>
+    </div>
+    <app-cards width="{{baseWidth}}" height="{{mainHeight}}"></app-cards>
+  </div>
+</div>

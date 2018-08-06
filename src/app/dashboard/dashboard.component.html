@@ -1,18 +1,24 @@
 <div class="main">
-  <app-left-menu></app-left-menu>
-  <div #main class="mainBody" [style.width]="baseWidth">
+  <app-left-menu background="#FF9F42"></app-left-menu>
+  <div #body  class="mainBody" [style.width]="baseWidth">
+    <div [style.visibility]="visibility" class="header" #header>
+      <span class="active" (click)="onClick($event,'main')">Состояние дел</span>
+      <span class="notactive" (click)="onClick($event,'cards')">Карты</span>
+      <span class="notactive" (click)="onClick($event)">Счета</span>
+      <span class="notactive" (click)="onClick($event)">Кредиты</span>
+      <span class="notactive" (click)="onClick($event)">Статистика</span>
+      <span class="notactive" (click)="onClick($event)">История операций</span>
+    </div>
+    <div #main class="showContainer" [style.visibility]="visibilityMain">
+    <app-main></app-main>
+    </div>
+    <div #cards [style.visibility]="visibilityCard">
+      <app-cards  width="{{baseWidth}}" height="{{mainHeight}}"></app-cards>
+    </div>
+    <!--
     <p-tabView styleClass="tab1" >
       <p-tabPanel header="Состояние дел" [style]="{padding: '0px'}">
-        <p-scrollPanel [style]="{minWidth:'970px', width: baseWidth, height: mainHeight,border: 'none'}">
-          <div class="mainContainer">
-            <app-dashboard-current-block></app-dashboard-current-block>
-            <app-dashboard-banner-block></app-dashboard-banner-block>
-            <app-dashboard-future-block></app-dashboard-future-block>
-            <app-dashboard-suggession-block></app-dashboard-suggession-block>
-            <app-dashboard-footer-block></app-dashboard-footer-block>
-            <div class="mainFooter"></div>
-          </div>
-        </p-scrollPanel>
+
       </p-tabPanel>
       <p-tabPanel header="Карты">
         <ng-template pTemplate="content">
@@ -32,7 +38,7 @@
         Content 3
       </p-tabPanel>
     </p-tabView>
-
+-->
 
   </div>
 

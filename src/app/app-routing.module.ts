@@ -14,6 +14,7 @@ import {DashboardComponent} from './dashboard/dashboard.component';
 import {CardInfoComponent} from './card-info/card-info.component';
 import {CreditInfoComponent} from "./credit-info/credit-info.component";
 import {PaymentInfoComponent} from "./payment-info/payment-info.component";
+import {DashboardCardsComponent} from "./dashboard-cards/dashboard-cards.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/signIn', pathMatch: 'full' },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'error', component: ErrorPaymentComponent },
   { path: 'success', component: SigninSuccessComponent },
   { path: 'main', component: DashboardComponent},
+  { path: 'main/cards', component: DashboardCardsComponent},
   { path: 'main/cards/item0', component: CardInfoComponent},
   { path: 'main/credits/item0', component: CreditInfoComponent},
   { path: 'main/cards/item0/details', component: PaymentInfoComponent},

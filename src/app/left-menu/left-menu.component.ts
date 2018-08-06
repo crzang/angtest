@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-left-menu',
@@ -7,6 +7,8 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angula
 })
 export class LeftMenuComponent implements OnInit, AfterViewInit {
   @ViewChild('footer') footer: ElementRef;
+  @ViewChild('main') main: ElementRef;
+  @Input() background = 'url(\'../../assets/img/cards-rectangle-17-copy-4.png\') round';
   baseHeight = 768;
   mainHeight = this.baseHeight + 'px';
 
@@ -18,6 +20,7 @@ export class LeftMenuComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    this.main.nativeElement.style.background = this.background;
   }
 
   ngAfterViewInit() {

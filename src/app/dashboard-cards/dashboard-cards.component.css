@@ -36,34 +36,3 @@
   text-decoration: underline;
   cursor: pointer;
 }
-
-.content{
-  overflow: auto;
-}
-
-
-
-.tab1{
-  color:red;
-  padding:0px;
-}
-
-.showContainer{
-  position: absolute;
-  animation:showContainer 2000ms ease-in-out both;
-}
-
-@keyframes showContainer {
-  from {left: 100em;}
-  to {left: 1em; }
-}
-
-.hideContainer{
-  position: absolute;
-  animation:hideContainer 2000ms ease-in-out both;
-}
-
-@keyframes hideContainer {
-  from {left: 1em;}
-  to {left:-200em; }
-}
