@@ -1,12 +1,3 @@
-.mainContainer{
-  position: absolute;
-  animation:showMain 3000ms ease-in-out both;
-}
-
-@keyframes showMain {
-  from {left: 100em;}
-  to {left: 1em; }
-}
 
 .mainFooter{
   height: 100px;

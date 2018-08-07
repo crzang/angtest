@@ -11,7 +11,7 @@
     <input id="passwordInput" class="passInputField" type="password" pInputText (input)="onPassChange($event)">
     <label for="passwordInput" class="inputFloatingLabel">Пароль</label>
   </div>
-  <app-button label="Войти" route="/main" bgColor="#FFFFFF" color="#d84049" border=true enabled="{{btnEnterEnabled}}"></app-button>
+  <app-button label="Войти" bgColor="#FFFFFF" color="#d84049" border=true enabled="{{btnEnterEnabled}}" (click)="doLogin()"></app-button>
   <app-button label="Забыли логин и пароль ?" underlined="true"></app-button>
   <div #lostPassword class="buttonedLabel lostPassword underlined"></div>
 

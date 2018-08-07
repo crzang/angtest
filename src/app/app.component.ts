@@ -1,16 +1,18 @@
 import {Component, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
 import {InputTextModule} from 'primeng/inputtext';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
 
   baseHeight = 768;
   baseWith = 1024;
   mainHeight = this.baseHeight + 'px';
+  env=environment
   constructor() {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
@@ -20,8 +22,6 @@ export class AppComponent {
     }
     this.mainHeight = this.baseHeight + 'px';
   }
-
-
 
 
 }

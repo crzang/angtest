@@ -1,5 +1,7 @@
 import {Component, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
 import {InputTextModule} from 'primeng/inputtext';
+import { Router } from '@angular/router';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-signin',
@@ -17,8 +19,8 @@ export class SigninComponent implements AfterViewInit {
   login = '';
   pass = '';
   btnEnterEnabled = false;
-
-  constructor() {
+  env=environment
+  constructor(private router: Router) {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
     }
@@ -39,11 +41,19 @@ export class SigninComponent implements AfterViewInit {
   }
 
   checkData() {
-    this.btnEnterEnabled= this.login.length !== 0 && this.pass.length !== 0;
+    this.btnEnterEnabled = this.login.length !== 0 && this.pass.length !== 0;
   }
 
   ngAfterViewInit() {
     this.loginBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.loginBlock.nativeElement.offsetWidth / 2 + 'px';
     this.passwordBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordBlock.nativeElement.offsetWidth / 2 + 'px';
+  }
+
+  doLogin() {
+    if(this.btnEnterEnabled) {
+      this.env.isLogged = true;
+      this.router.navigateByUrl("/main")
+    }
+
   }
 }

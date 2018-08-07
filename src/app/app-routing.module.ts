@@ -12,9 +12,13 @@ import {ErrorPaymentComponent} from './error-payment/error-payment.component';
 import {SigninSuccessComponent} from './signin-success/signin-success.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {CardInfoComponent} from './card-info/card-info.component';
-import {CreditInfoComponent} from "./credit-info/credit-info.component";
-import {PaymentInfoComponent} from "./payment-info/payment-info.component";
-import {DashboardCardsComponent} from "./dashboard-cards/dashboard-cards.component";
+import {CreditInfoComponent} from './credit-info/credit-info.component';
+import {PaymentInfoComponent} from './payment-info/payment-info.component';
+import {DashboardCardsComponent} from './dashboard-cards/dashboard-cards.component';
+import {MainComponent} from './main/main.component';
+import {CardsComponent} from "./cards/cards.component";
+import {AccountsComponent} from "./accounts/accounts.component";
+import {CreditsComponent} from "./credits/credits.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/signIn', pathMatch: 'full' },
@@ -27,11 +31,13 @@ const routes: Routes = [
   { path: 'regChoice/createAccount', component: CreateAccountComponent },
   { path: 'error', component: ErrorPaymentComponent },
   { path: 'success', component: SigninSuccessComponent },
-  { path: 'main', component: DashboardComponent},
-  { path: 'main/cards', component: DashboardCardsComponent},
-  { path: 'main/cards/item0', component: CardInfoComponent},
-  { path: 'main/credits/item0', component: CreditInfoComponent},
-  { path: 'main/cards/item0/details', component: PaymentInfoComponent},
+  { path: 'main', component: MainComponent},
+  { path: 'cards', component: CardsComponent},
+  { path: 'accounts', component: AccountsComponent},
+  { path: 'credits', component: CreditsComponent},
+  { path: 'cards/item0', component: CardInfoComponent},
+  { path: 'credits/item0', component: CreditInfoComponent},
+  { path: 'cards/item0/details', component: PaymentInfoComponent},
 ];
 
 @NgModule({

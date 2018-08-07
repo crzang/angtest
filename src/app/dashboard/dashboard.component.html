@@ -2,58 +2,19 @@
 
   <div #body class="mainBody" [style.width]="baseWidth">
     <div [style.visibility]="visibility" class="header" #header>
-      <span class="active" (click)="onClick($event,'main')">Состояние дел</span>
-      <span class="notactive" (click)="onClick($event,'cards')">Карты</span>
-      <span class="notactive" (click)="onClick($event,'accounts')">Счета</span>
-      <span class="notactive" (click)="onClick($event,'credits')">Кредиты</span>
+      <span class="active" (click)="onClick($event,'main')" >Состояние дел</span>
+      <span class="notactive" (click)="onClick($event,'cards')" >Карты</span>
+      <span class="notactive" (click)="onClick($event,'accounts')" >Счета</span>
+      <span class="notactive" (click)="onClick($event,'credits')" >Кредиты</span>
       <span class="notactive" (click)="onClick($event)">Статистика</span>
       <span class="notactive" (click)="onClick($event)">История операций</span>
     </div>
-    <div #main class="showContainer" [style.visibility]="visibilityMain">
-      <app-main></app-main>
-    </div>
-    <div #cards [style.visibility]="visibilityCard">
-      <div class="leftPart cards" [style.height]="baseHeight">
+    <div #container class="showContainer">
+      <div #leftpart class="leftPart" [style.height]="baseHeight">
 
       </div>
-      <app-cards width="{{baseWidth}}" height="{{mainHeight}}"></app-cards>
+      <router-outlet ></router-outlet>
     </div>
-    <div #accounts [style.visibility]="visibilityAccounts">
-      <div class="leftPart accounts" [style.height]="baseHeight">
-
-      </div>
-      <app-accounts width="{{baseWidth}}" height="{{mainHeight}}"></app-accounts>
-    </div>
-    <div #credits [style.visibility]="visibilityCredits">
-      <div class="leftPart credits" [style.height]="baseHeight">
-
-      </div>
-      <app-credits width="{{baseWidth}}" height="{{mainHeight}}"></app-credits>
-    </div>
-    <!--
-    <p-tabView styleClass="tab1" >
-      <p-tabPanel header="Состояние дел" [style]="{padding: '0px'}">
-
-      </p-tabPanel>
-      <p-tabPanel header="Карты">
-        <ng-template pTemplate="content">
-          <app-cards width="{{baseWidth}}" height="{{mainHeight}}"></app-cards>
-        </ng-template>
-      </p-tabPanel>
-      <p-tabPanel header="Счета">
-        <app-accounts width="{{baseWidth}}" height="{{mainHeight}}"></app-accounts>
-      </p-tabPanel>
-      <p-tabPanel header="Кредиты">
-        <app-credits width="{{baseWidth}}" height="{{mainHeight}}"></app-credits>
-      </p-tabPanel>
-      <p-tabPanel header="Статистика">
-        Content 3
-      </p-tabPanel>
-      <p-tabPanel header="История операций">
-        Content 3
-      </p-tabPanel>
-    </p-tabView>
--->
 
   </div>
   <app-left-menu background="#FD953B"></app-left-menu>
