@@ -37,7 +37,7 @@ const routes: Routes = [
   { path: 'credits', component: CreditsComponent},
   { path: 'cards/item0', component: CardInfoComponent},
   { path: 'credits/item0', component: CreditInfoComponent},
-  { path: 'cards/item0/details', component: PaymentInfoComponent},
+  { path: 'cards/item0/details0', component: PaymentInfoComponent},
 ];
 
 @NgModule({

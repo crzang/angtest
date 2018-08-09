@@ -2,18 +2,24 @@
 
   <div #body class="mainBody" [style.width]="baseWidth">
     <div [style.visibility]="visibility" class="header" #header>
-      <span class="active" (click)="onClick($event,'main')" >Состояние дел</span>
+      <span  class="active" (click)="onClick($event,'main')" >Состояние дел</span>
       <span class="notactive" (click)="onClick($event,'cards')" >Карты</span>
       <span class="notactive" (click)="onClick($event,'accounts')" >Счета</span>
       <span class="notactive" (click)="onClick($event,'credits')" >Кредиты</span>
       <span class="notactive" (click)="onClick($event)">Статистика</span>
       <span class="notactive" (click)="onClick($event)">История операций</span>
     </div>
-    <div #container class="showContainer">
-      <div #leftpart class="leftPart" [style.height]="baseHeight">
 
+    <div #container class="showContainer">
+      <div #leftpartOne class="leftPart" [style.height]="baseHeight">
       </div>
+      <div #leftpartTwo [class]="leftPartTwoClass" [style.height]="baseHeight">
+      </div>
+      <div  [class]="leftPart3Class" [style.height]="baseHeight">
+      </div>
+      <div #routeContainer class="showRoute">
       <router-outlet ></router-outlet>
+      </div>
     </div>
 
   </div>

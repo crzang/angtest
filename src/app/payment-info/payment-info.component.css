@@ -6,139 +6,7 @@
   position: relative;
   overflow: hidden;
   margin: 0px;
-  background-color: rgba(255, 255, 255, 1.0);
-}
-
-.cardInfo .rectangle17 {
-  background-color: rgba(255, 255, 255, 0.0);
-  top: 0px;
-  width: 689px;
-  position: absolute;
-  margin: 0;
-  left: -36px;
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-  transform: rotate(0deg);
-}
-
-.cardInfo .group5copy5 {
-  background-color: rgba(255, 255, 255, 0.0);
-  top: 1px;
-  height: 761px;
-  width: 194px;
-  position: absolute;
-  margin: 0;
-  left: 32px;
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-  transform: rotate(0deg);
-}
-
-.cardInfo .group5copy5 .rectangle172 {
-  background-color: rgba(255, 255, 255, 0.0);
-  top: 0px;
-  width: 193px;
-  position: absolute;
-  margin: 0;
-  left: 0px;
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-  transform: rotate(0deg);
-}
-
-.cardInfo .group5copy51 {
-  background-color: rgba(255, 255, 255, 0.0);
-  top: -2px;
-  height: 761px;
-  width: 194px;
-  position: absolute;
-  margin: 0;
-  left: 17px;
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-  transform: rotate(0deg);
-}
-
-.cardInfo .group5copy51 .rectangle172 {
-  background-color: rgba(255, 255, 255, 0.0);
-  top: 0px;
-  width: 193px;
-  position: absolute;
-  margin: 0;
-  left: 0px;
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-  transform: rotate(0deg);
-}
-
-.foralogocopy2 {
-  background-color: rgba(255, 255, 255, 0.0);
-  top: 29px;
-  height: 20px;
-  width: 136px;
-  position: absolute;
-  margin: 0;
-  left: 28px;
-  -ms-transform: rotate(0deg); /* IE 9 */
-  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
-  transform: rotate(0deg);
-}
-
-.buttonsBar {
-  position: absolute;
-  top: 20em;
-  height: auto;
-  width: 125px;
-  margin-left: 30px;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  font-family: Helvetica, Arial, serif;
-  font-size: 16.0px;
-  color: rgba(255, 255, 255, 1.0);
-  text-align: left;
-  letter-spacing: -0.27px;
-  line-height: 21.0px;
-}
-
-.link {
-  cursor: pointer;
-}
-
-.userName {
-  width: 132px;
-  -ms-transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  font-family: Helvetica, Arial, serif;
-  font-size: 16.0px;
-  color: rgba(255, 255, 255, 1.0);
-  text-align: left;
-  letter-spacing: -0.27px;
-  line-height: 26.0px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.footer {
-  width: 175px;
-  left: 30px;
-  bottom: 20px;
-}
-
-.footerButtons {
-  margin-top: 20px;
-  text-decoration: underline;
-  font-family: Helvetica, Arial, serif;
-  font-size: 15.0px;
-  color: rgba(255, 255, 255, 0.7);
-  text-align: left;
-  letter-spacing: -0.25px;
-  line-height: 52.0px;
-}
-
-.footerButtons span {
-  cursor: pointer;
-  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .mainBlock {
@@ -163,6 +31,7 @@
 
 .topMenu .item {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .topMenu .separator {

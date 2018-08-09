@@ -6,7 +6,12 @@
   position: relative;
   overflow: hidden;
   margin: 0px;
-  background-color: rgba(255, 255, 255, 1.0);
+  animation: showCardInfo 2000ms ease-in-out both;;
+}
+
+@keyframes showCardInfo {
+  from {left: 100em;}
+  to {left: 1em; }
 }
 
 .cardInfo .rectangle17 {
@@ -143,8 +148,8 @@
 
 .mainBlock {
   position: absolute;
-  left: 300px;
   min-width: 400px;
+
 }
 
 .topMenu {
@@ -164,6 +169,7 @@
 
 .topMenu .item {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .topMenu .separator {
@@ -497,29 +503,28 @@
   transform: rotate(0deg);
 }
 
-.summary .itemLine{
+.summary .itemLine {
   height: 30px;
 }
 
-.summary .name{
-  color: rgba(255,255,255,0.6);
+.summary .name {
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.summary .value{
+.summary .value {
   color: white;
   text-align: right;
 }
 
-
-.detailBlock{
+.detailBlock {
   position: absolute;
   right: 10em;
   min-width: 420px;
 }
 
-.detailBlock .title{
+.detailBlock .title {
   margin-top: 3em;
-  font-family:  Helvetica, Arial, serif;
+  font-family: Helvetica, Arial, serif;
   font-size: 32.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -537,36 +542,38 @@
   transform: rotate(0deg);
   opacity: 0.7
 }
+
 .detailBlock .view1 .oval2 {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 0px;
-  height              : 22px;
-  width               : 22px;
-  position            : absolute;
-  margin              : 0;
-  left                : 0px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.detailBlock .view1 .line {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 17px;
-  height              : 10px;
-  width               : 10px;
-  position            : absolute;
-  margin              : 0;
-  left                : 18px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 0px;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
 }
 
-.detailsBody{
+.detailBlock .view1 .line {
+  background-color: rgba(255, 255, 255, 0.0);
+  top: 17px;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  margin: 0;
+  left: 18px;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+}
+
+.detailsBody {
   margin-top: 10px;
 }
 
-.detailDay{
+.detailDay {
   margin-top: 20px;
   font-family: Helvetica, Arial, serif;
   font-size: 16.0px;
@@ -575,8 +582,9 @@
   letter-spacing: -0.5px;
   line-height: 18.0px;
 }
-.detailsBody .day{
-  font-family:  Helvetica, Arial, serif;
+
+.detailsBody .day {
+  font-family: Helvetica, Arial, serif;
   font-size: 16.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -592,20 +600,20 @@
   cursor: pointer;
 }
 
-.detailsBody .item .icon{
+.detailsBody .item .icon {
   margin-left: 20px;
   position: absolute;
 }
 
-.detailsBody .item .icon img{
-  margin-top:30px
+.detailsBody .item .icon img {
+  margin-top: 30px
 }
 
-.detailsBody .item .name{
+.detailsBody .item .name {
   position: absolute;
   left: 70px;
   margin-top: 35px;
-  font-family:  Helvetica, Arial, serif;
+  font-family: Helvetica, Arial, serif;
   font-size: 15.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -613,24 +621,25 @@
   line-height: 19.0px;
 }
 
-.detailsBody .item .extraName{
+.detailsBody .item .extraName {
   position: absolute;
   left: 70px;
   margin-top: 50px;
-  font-family:  Helvetica, Arial, serif;
+  font-family: Helvetica, Arial, serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
   letter-spacing: -0.25px;
   line-height: 19.0px;
 }
-.detailsBody .item .data{
+
+.detailsBody .item .data {
   position: absolute;
   right: 20px;
   margin-top: 35px;
 }
 
-.detailsBody .item .data .value{
+.detailsBody .item .data .value {
   font-family: Helvetica, Arial, serif;
   font-size: 18.0px;
   color: rgba(0, 0, 0, 1.0);
@@ -638,8 +647,8 @@
   letter-spacing: -0.28px;
 }
 
-.detailsBody .item .data .bonus{
-  font-family:  Helvetica, Arial, serif;
+.detailsBody .item .data .bonus {
+  font-family: Helvetica, Arial, serif;
   font-size: 14.0px;
   color: rgba(128, 128, 128, 1.0);
   text-align: right;

@@ -7,18 +7,18 @@ export class AuthGuardService implements CanActivate {
 
   // you would usually put this in it's own service and not access it directly!
   // this is just for the sake of the demo.
-  env: environment;
+
 
   constructor(private router: Router) {
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-    if (this.env.isLoggedIn) {
+  /*  if (this.env.isLoggedIn) {
       return true;
     } else {
       this.router.navigate(['']);
       return false;
-    }
+    }*/
   }
 
 }

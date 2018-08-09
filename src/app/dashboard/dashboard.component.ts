@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
-import { Router } from '@angular/router';
+import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from '@angular/core';
+import {Location} from '@angular/common';
+import {Router, ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,17 +9,47 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent implements OnInit, AfterViewInit {
   @ViewChild('header') header: ElementRef;
-  @ViewChild('leftpart') leftpart: ElementRef;
+  @ViewChild('leftpartOne') leftpartOne: ElementRef;
   @ViewChild('container') container: ElementRef;
+  @ViewChild('routeContainer') routeContainer: ElementRef;
   baseHeight = '768px';
   baseWidth = '1024px';
   mainHeight = this.baseHeight + 'px';
   visibility = 'hidden';
   visibilityMain = 'hidden';
+  routeLevel = 0;
+  leftPartTwoClass = 'leftPartTwo hidden';
+  leftPart3Class="left3Two hidden"
   constructor(private router: Router) {
-
-
+    router.events.subscribe((r: any) => {
+        if (r.url) {
+          const urlParts = r.url.split('/');
+          if (r.shouldActivate) {
+            if (urlParts.length === 2) {
+              this.routeLevel = 1;
+              this.leftpartOne.nativeElement.className = 'leftPart ' + urlParts[1];
+              this.leftPartTwoClass = 'leftPartTwo hidden';
+              this.visibility = 'visible';
+              this.leftPart3Class = 'left3Two hidden';
+            } else if (urlParts.length === 3) {
+              this.routeLevel = 2;
+              this.routeContainer.nativeElement.className = 'showRoute';
+              this.visibility = 'hidden';
+              this.leftPartTwoClass = 'leftPartTwo show';
+              this.leftPart3Class = 'left3Two hidden';
+            }
+            else if (urlParts.length === 4) {
+              this.routeLevel = 3;
+              this.visibility = 'hidden';
+              this.leftPartTwoClass = 'leftPartTwo liteHide';
+              this.leftPart3Class = 'left3Two show';
+            }
+          }
+        }
+      }
+    );
   }
+
   ngOnInit() {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
@@ -26,7 +57,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     if (window.innerWidth > 1024) {
       this.baseWidth = (window.innerWidth - 230) + 'px';
     }
-    this.mainHeight = (this.baseHeight - 21 ) + 'px';
+    this.mainHeight = (this.baseHeight - 21) + 'px';
     this.baseHeight = this.baseHeight + 'px';
   }
 
@@ -36,21 +67,25 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     this.container.nativeElement.className = 'hideContainer';
     setTimeout(() => {
       this.router.navigateByUrl('/' + targetBlock);
-      this.leftpart.nativeElement.className = 'leftPart ' + targetBlock;
+      this.leftpartOne.nativeElement.className = 'leftPart ' + targetBlock;
       this.container.nativeElement.className = 'showContainer';
     }, 1000);
 
 
   }
+
   clearActive() {
     const children = this.header.nativeElement.children;
     for (let i = 0; i < children.length; ++i) {
       children.item(i).className = 'notactive';
     }
   }
+
   ngAfterViewInit() {
-    setTimeout(() => {
-      this.visibility = 'visible';
-    }, 1000);
+   /* setTimeout(() => {
+      if (this.routeLevel < 2) {
+        this.visibility = 'visible';
+      }
+    }, 1000);*/
   }
 }

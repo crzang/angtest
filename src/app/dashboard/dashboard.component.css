@@ -57,6 +57,26 @@
   to {left: 1em; }
 }
 
+.showRoute{
+  position: absolute;
+  animation:showRoute 2000ms ease-in-out both;
+}
+
+@keyframes showRoute {
+  from {left: 100em;}
+  to {left: 1em; }
+}
+
+.hideRoute{
+  position: absolute;
+  animation:hideRoute 2000ms ease-in-out both;
+}
+
+@keyframes hideRoute {
+  from {left: 1em;opacity: 1}
+  to {left:-200em; opacity: 0}
+}
+
 .hideContainer{
   position: absolute;
   animation:hideContainer 2000ms ease-in-out both;
@@ -91,6 +111,54 @@
   from {width: 220px;}
   to {width: 0px; }
 }
+
+.leftPartTwo {
+  position: absolute;
+  height: 972px;
+  width: 50em;
+  left: -225px;
+  top: -61px;
+  background: rgba(242,135,41,0.7);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+  animation:showLeftPartTwo 2000ms ease-in-out both;
+}
+
+@keyframes showLeftPartTwo {
+  from {width: 100em;}
+  to {width: 50em; }
+}
+
+.liteHide {
+  visibility: visible;
+  animation:liteHideLeftPartTwo 2000ms ease-in-out both;
+}
+
+@keyframes liteHideLeftPartTwo {
+  from {width: 50em;}
+  to {width: 10em; }
+}
+
+.left3Two {
+  position: absolute;
+  height: 972px;
+  width: 50em;
+  left: -225px;
+  top: -61px;
+  background: rgba(64,48,109,0.7);
+}
+
+
+.main{
+  background: rgba(255,255,255,0)
+}
+
 
 .cards{
  background: rgba(255,159,65,0.7)
