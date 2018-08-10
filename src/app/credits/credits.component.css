@@ -1,6 +1,8 @@
 .credits{
-  background-color: #FFFFFF;
-
+  background-color: rgba(255,255,255,0);
+  min-width: 960px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .title{

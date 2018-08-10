@@ -35,14 +35,16 @@ export class DashboardComponent implements OnInit, AfterViewInit {
               this.routeLevel = 2;
               this.routeContainer.nativeElement.className = 'showRoute';
               this.visibility = 'hidden';
-              this.leftPartTwoClass = 'leftPartTwo show';
+              var leftPartTwoClass=urlParts[1]
+              this.leftPartTwoClass = 'leftPartTwo show '+leftPartTwoClass;
               this.leftPart3Class = 'left3Two hidden';
             }
             else if (urlParts.length === 4) {
               this.routeLevel = 3;
               this.visibility = 'hidden';
-              this.leftPartTwoClass = 'leftPartTwo liteHide';
-              this.leftPart3Class = 'left3Two show';
+              var leftPartTwoClass=urlParts[1]
+              this.leftPartTwoClass = 'leftPartTwo liteHide'+leftPartTwoClass;
+              this.leftPart3Class = 'left3Two show '+leftPartTwoClass+"_3";
             }
           }
         }

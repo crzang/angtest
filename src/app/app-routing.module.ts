@@ -21,7 +21,7 @@ import {AccountsComponent} from "./accounts/accounts.component";
 import {CreditsComponent} from "./credits/credits.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/signIn', pathMatch: 'full' },
+  { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: 'signIn', component: SigninComponent },
   { path: 'signIn/verifySms', component: VerifySmsComponent },
   { path: 'regChoice', component: RegChoiceComponent },

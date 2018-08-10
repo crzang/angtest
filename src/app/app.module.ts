@@ -26,15 +26,15 @@ import { ErrorPaymentComponent } from './error-payment/error-payment.component';
 import { SigninSuccessComponent } from './signin-success/signin-success.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
-import { DashboardCurrentItemComponent } from './dashboard-current-item/dashboard-current-item.component';
-import { DashboardFirstBannerItemComponent } from './dashboard-first-banner-item/dashboard-first-banner-item.component';
-import { DashboardCurrentBlockComponent } from './dashboard-current-block/dashboard-current-block.component';
-import { DashboardFutureBlockComponent } from './dashboard-future-block/dashboard-future-block.component';
-import { DashboardFutureBlockItemComponent } from './dashboard-future-block-item/dashboard-future-block-item.component';
-import { DashboardSuggessionBlockComponent } from './dashboard-suggession-block/dashboard-suggession-block.component';
-import { DashboardSuggessionBlockItemComponent } from './dashboard-suggession-block-item/dashboard-suggession-block-item.component';
+import { DashboardCurrentItemComponent } from './main/dashboard-current-item/dashboard-current-item.component';
+import { DashboardFirstBannerItemComponent } from './main/dashboard-first-banner-item/dashboard-first-banner-item.component';
+import { DashboardCurrentBlockComponent } from './main/dashboard-current-block/dashboard-current-block.component';
+import { DashboardFutureBlockComponent } from './main/dashboard-future-block/dashboard-future-block.component';
+import { DashboardFutureBlockItemComponent } from './main/dashboard-future-block-item/dashboard-future-block-item.component';
+import { DashboardSuggessionBlockComponent } from './main/dashboard-suggession-block/dashboard-suggession-block.component';
+import { DashboardSuggessionBlockItemComponent } from './main/dashboard-suggession-block-item/dashboard-suggession-block-item.component';
 import { DashboardBannerBlockComponent } from './dashboard-banner-block/dashboard-banner-block.component';
-import { DashboardFooterBlockComponent } from './dashboard-footer-block/dashboard-footer-block.component';
+import { DashboardFooterBlockComponent } from './main/dashboard-footer-block/dashboard-footer-block.component';
 import { CardsComponent } from './cards/cards.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { CreditsComponent } from './credits/credits.component';
@@ -43,7 +43,6 @@ import { CardInfoComponent } from './card-info/card-info.component';
 import { CreditInfoComponent } from './credit-info/credit-info.component';
 import { PaymentInfoComponent } from './payment-info/payment-info.component';
 import { MainComponent } from './main/main.component';
-import { DashboardCardsComponent } from './dashboard-cards/dashboard-cards.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +81,7 @@ import { DashboardCardsComponent } from './dashboard-cards/dashboard-cards.compo
     CreditInfoComponent,
     PaymentInfoComponent,
     MainComponent,
-    DashboardCardsComponent,
+
   ],
   imports: [
     BrowserModule,

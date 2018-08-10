@@ -17,7 +17,7 @@ export class MainComponent implements OnInit {
       this.baseHeight = window.innerHeight;
     }
     if (window.innerWidth > 1024) {
-      this.baseWidth = (window.innerWidth - 230) + 'px';
+      this.baseWidth = (window.innerWidth - 210) + 'px';
     }
     this.mainHeight = (this.baseHeight - 21 ) + 'px';
 

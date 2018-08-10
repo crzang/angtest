@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard-suggession-block',
+  selector: 'app-main-suggession-block',
   templateUrl: './dashboard-suggession-block.component.html',
   styleUrls: ['./dashboard-suggession-block.component.css']
 })

@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit, Input,ViewChild,ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-credits',
@@ -6,15 +6,14 @@ import { Component, OnInit,Input } from '@angular/core';
   styleUrls: ['./credits.component.css']
 })
 export class CreditsComponent implements OnInit {
-  @Input() width = '1024px';
-  @Input() height = '768px';
+  @ViewChild('main') main: ElementRef;
   baseHeight = '768px';
   constructor() { }
 
   ngOnInit() {
-    if (window.innerHeight > 768) {
-      this.baseHeight = window.innerHeight+'px';
-    }
+    const clientWidth = window.innerWidth;
+    const clientHeight = window.innerHeight;
+    this.main.nativeElement.style.height = clientHeight - 50 + 'px';
+    this.main.nativeElement.style.width = clientWidth - 210 - clientWidth * 0.2 + 'px';
   }
-
 }

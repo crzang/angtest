@@ -1,4 +1,4 @@
-import {Component, OnInit,ViewChild,ElementRef} from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-card-info',
@@ -6,10 +6,8 @@ import {Component, OnInit,ViewChild,ElementRef} from '@angular/core';
   styleUrls: ['./card-info.component.css']
 })
 export class CardInfoComponent implements OnInit {
+  @ViewChild('main') main: ElementRef;
 
-  baseHeight = "768px";
-  baseWidth = '1024';
-  mainHeight = this.baseHeight + 'px';
   cards = [];
   details = [];
 
@@ -44,13 +42,10 @@ export class CardInfoComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (window.innerHeight > 768) {
-      this.baseHeight = window.innerHeight;
-    }
-    if (window.innerWidth > 1024) {
-      this.baseWidth = (window.innerWidth - 230) + 'px';
-    }
-    this.mainHeight = (this.baseHeight - 21) + 'px';
+    const clientWidth = window.innerWidth;
+    const clientHeight = window.innerHeight;
+    this.main.nativeElement.style.height = clientHeight + 'px';
+    this.main.nativeElement.style.width = clientWidth - 210 + 'px';
   }
 
 }

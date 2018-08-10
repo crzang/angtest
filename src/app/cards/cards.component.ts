@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef} from '@angular/core';
 import {SelectItem} from 'primeng/api';
 
 @Component({
@@ -7,8 +7,8 @@ import {SelectItem} from 'primeng/api';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
-  @Input() width = '1024px';
-  @Input() height = '768px';
+
+  @ViewChild('main') main: ElementRef;
   orders: SelectItem[];
   baseHeight = '768px';
   constructor() {
@@ -19,9 +19,10 @@ export class CardsComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (window.innerHeight > 768) {
-      this.baseHeight = window.innerHeight+'px';
-    }
+    const clientWidth = window.innerWidth;
+    const clientHeight = window.innerHeight;
+    this.main.nativeElement.style.height = clientHeight - 50 + 'px';
+    this.main.nativeElement.style.width = clientWidth - 210 - clientWidth * 0.2 + 'px';
   }
 
 }

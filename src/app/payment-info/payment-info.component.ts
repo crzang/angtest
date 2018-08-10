@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-payment-info',
@@ -6,19 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./payment-info.component.css']
 })
 export class PaymentInfoComponent implements OnInit {
-  baseHeight = 768;
-  baseWidth = '1024';
-  mainHeight = this.baseHeight + 'px';
+  @ViewChild('main') main: ElementRef;
   cards = [];
   details = [];
   constructor() {
-    if (window.innerHeight > 768) {
-      this.baseHeight = window.innerHeight;
-    }
-    if (window.innerWidth > 1024) {
-      this.baseWidth = (window.innerWidth - 230) + 'px';
-    }
-    this.mainHeight = (this.baseHeight - 21) + 'px';
+
     this.cards = [
       {name: 'Дата платежа', value: '5 сентября, 16:57'},
       {name: 'Счет списания', value: 'Visa Classic *1110'},
@@ -35,6 +27,9 @@ export class PaymentInfoComponent implements OnInit {
   }
 
   ngOnInit() {
+    const clientWidth = window.innerWidth;
+    const clientHeight = window.innerHeight;
+    this.main.nativeElement.style.height = clientHeight + 'px';
+    this.main.nativeElement.style.width = clientWidth - 210 + 'px';
   }
-
 }

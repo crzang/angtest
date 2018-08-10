@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'app-credit-info',
@@ -6,19 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./credit-info.component.css']
 })
 export class CreditInfoComponent implements OnInit {
-  baseHeight = 768;
-  baseWidth = '1024';
-  mainHeight = this.baseHeight + 'px';
+  @ViewChild('main') main: ElementRef;
+
   credits = [];
   details = [];
   constructor() {
-    if (window.innerHeight > 768) {
-      this.baseHeight = window.innerHeight;
-    }
-    if (window.innerWidth > 1024) {
-      this.baseWidth = (window.innerWidth - 230) + 'px';
-    }
-    this.mainHeight = (this.baseHeight - 21) + 'px';
+
     this.credits = [
       {name: 'Начальная сумма кредита', value: '1000000 руб'},
       {name: 'Финальная сумма кредита', value: '1058259 руб'},
@@ -42,6 +35,10 @@ export class CreditInfoComponent implements OnInit {
   }
 
   ngOnInit() {
+    const clientWidth = window.innerWidth;
+    const clientHeight = window.innerHeight;
+    this.main.nativeElement.style.height = clientHeight + 'px';
+    this.main.nativeElement.style.width = clientWidth - 210 + 'px';
   }
 
 

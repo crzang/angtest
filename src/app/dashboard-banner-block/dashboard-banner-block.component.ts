@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard-banner-block',
+  selector: 'app-main-banner-block',
   templateUrl: './dashboard-banner-block.component.html',
   styleUrls: ['./dashboard-banner-block.component.css']
 })

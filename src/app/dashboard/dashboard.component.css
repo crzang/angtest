@@ -54,7 +54,7 @@
 
 @keyframes showContainer {
   from {left: 100em;}
-  to {left: 1em; }
+  to {left: 0em; }
 }
 
 .showRoute{
@@ -64,7 +64,7 @@
 
 @keyframes showRoute {
   from {left: 100em;}
-  to {left: 1em; }
+  to {left: 0em; }
 }
 
 .hideRoute{
@@ -88,7 +88,6 @@
 }
 
 .leftPart {
-  width:220px;
   position: absolute;
   left:-225px;
   top:-60px
@@ -100,7 +99,7 @@
 
 @keyframes showLeftPart {
   from {width: 100em;}
-  to {width: 220px; }
+  to {width: 230px; }
 }
 
 .hideContainer .leftPart{
@@ -118,8 +117,8 @@
   width: 50em;
   left: -225px;
   top: -61px;
-  background: rgba(242,135,41,0.7);
 }
+
 
 .hidden {
   visibility: hidden;
@@ -151,7 +150,6 @@
   width: 50em;
   left: -225px;
   top: -61px;
-  background: rgba(64,48,109,0.7);
 }
 
 
@@ -164,10 +162,18 @@
  background: rgba(255,159,65,0.7)
 }
 
+.cards_3{
+  background: rgba(64,48,109,0.7);
+}
+
 .accounts {
   background: rgba(188,55,52,0.7);
 }
 
 .credits {
-  background: rgba(155,66,41,0.7);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(259.27deg,rgba(0, 123, 227, 0.7) -43.12%, rgba(0, 187, 105, 0.7) 115.23%);
+}
+
+.credits_3{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(259.27deg, #007BE3 -43.12%, #00BB69 115.23%);
 }

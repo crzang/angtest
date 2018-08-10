@@ -5,8 +5,14 @@
   min-height: 760px;
   position: relative;
   overflow: hidden;
-  margin: 0px;
-  background-color: rgba(255, 255, 255, 1.0);
+  top: -80px;
+  margin-left: 30px;
+  animation: showCardInfo 2000ms ease-in-out both;;
+}
+
+@keyframes showCardInfo {
+  from {left: 100em;}
+  to {left: 1em; }
 }
 
 .creditInfo .rectangle17 {
@@ -143,8 +149,8 @@
 
 .mainBlock {
   position: absolute;
-  left: 300px;
   min-width: 400px;
+  width: 30%;
 }
 
 .mainBlock .title{
@@ -174,6 +180,7 @@
 
 .topMenu .item {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .topMenu .separator {
@@ -521,12 +528,12 @@
 }
 
 
-.detailBlock{
+.detailBlock {
   position: absolute;
-  right: 10em;
-  min-width: 480px;
-  margin-top: 20px;
-  width: 40%;
+  right: 15%;
+  left: 50%;
+  min-width: 420px;
+  top: 10%;
 }
 
 .detailBlock .alreadyPaid label{

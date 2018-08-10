@@ -1,6 +1,8 @@
 .future {
   margin-top: 50px;
-
+  margin-right: 10%;
+  margin-left: 10%;
+  min-width: 960px;
 }
 
 .label {
@@ -16,7 +18,7 @@
 
 .tabs {
   position: absolute;
-  right: 100px;
+  right: 10%;
   margin-top: 10px;
 }
 

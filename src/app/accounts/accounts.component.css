@@ -1,12 +1,11 @@
 .accounts{
-  background-color: #FFFFFF;
-
+  background-color: rgba(255,255,255,0);
+  min-width: 960px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-.container{
-  margin-right: 100px;
-  margin-left: 100px;
-}
+
 
 .title{
   margin-top: 50px;
@@ -20,9 +19,8 @@
   line-height: 29.0px;
 }
 .tabs {
-  position: absolute;
-  right: 80px;
   margin-top: -27px;
+  float: right;
 }
 
 .tabs div {

@@ -1,6 +1,8 @@
 .current {
   margin-top: 50px;
-
+  min-width: 960px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .label {
@@ -11,7 +13,7 @@
 
 .tabs {
   position: absolute;
-  right: 100px;
+  right: 10%;
 }
 
 .tabs div {

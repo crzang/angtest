@@ -5,14 +5,19 @@
   min-height: 760px;
   position: relative;
   overflow: hidden;
-  margin: 0px;
-  background-color: rgba(255, 255, 255, 0);
+  top: -80px;
+  margin-left: 30px;
+  animation: showCardInfo 2000ms ease-in-out both;;
 }
 
+@keyframes showCardInfo {
+  from {left: 100em;}
+  to {left: 1em; }
+}
 .mainBlock {
   position: absolute;
-  left: 300px;
   min-width: 400px;
+  width: 30%;
 }
 
 .topMenu {
@@ -70,9 +75,10 @@
 }
 
 
-.detailBlock{
+.detailBlock {
   position: absolute;
-  right: 10em;
+  right: 15%;
+  left: 50%;
   min-width: 420px;
 }
 

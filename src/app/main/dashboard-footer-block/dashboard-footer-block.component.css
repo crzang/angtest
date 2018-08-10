@@ -1,11 +1,13 @@
 .footer {
   margin-top: 50px;
-
+  min-width: 960px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .gr1{
   position: absolute;
-  left: 21%;
+  left: 10%;
 }
 .label {
   font-family:  Helvetica, Arial, serif;
@@ -21,6 +23,7 @@
 .info {
   margin-top: 50px;
   height: 276px;
+  width: 960px;
   margin-left: -50px;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -30,10 +33,9 @@
   background-color: rgba(255, 255, 255, 0.0);
   top: 0px;
   height: 236px;
-  width: 800px;
+  width: 960px;
   position: absolute;
   margin: 0;
-  left: 53px;
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
@@ -449,8 +451,7 @@
   background-color: rgba(255, 255, 255, 0.0);
   top: 300px;
   height: 300px;
-  width: 1104px;
-  position: absolute;
+  width: 960px;
   margin: 0;
   left: -300px;
   -webkit-transform: rotate(0deg);
@@ -464,7 +465,6 @@
   width: 802px;
   position: absolute;
   margin: 0;
-  left: 302px;
   border-radius: 4px;
   overflow: hidden;
   -ms-transform: rotate(0deg); /* IE 9 */
@@ -542,11 +542,10 @@
   top: 35px;
   width: 1050px;
   position: absolute;
-  margin: 0;
-  left: 20%;
   -ms-transform: rotate(0deg); /* IE 9 */
   -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
   transform: rotate(0deg);
+  margin-left: -10%;
 }
 
 .info2 .group8copy .u0412u043eu0442u0434u0435u043bu0435u043du0438u0438u043du0430u043fu0430u0440u043au0435 {
