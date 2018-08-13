@@ -1,0 +1,118 @@
+.history{
+  background-color: rgba(255,255,255,0);
+  margin-left: 10%;
+  margin-right: 10%;
+  min-width: 900px;
+}
+
+.title{
+  margin-top: 50px;
+  height: auto;
+  width: 100%;
+  margin-left: 0px;
+  font-size: 32.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 29.0px;
+}
+
+.headerInput{
+  margin-top: 10px;
+}
+
+.headerInput span{
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.date{
+  width: 100px;
+}
+
+.headerInput input{
+  width: 100px;
+}
+
+.search{
+  position: absolute;
+  margin-top: -38px;
+  margin-left: 900px;
+}
+
+.body{
+  width: 100%;
+  height: 100%;
+}
+
+.body .day{
+  margin-top: 20px;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 15.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  line-height: 17.0px;
+}
+.item {
+  cursor: pointer;
+  font-family: Helvetica, Arial, serif;
+  font-size: 15.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  line-height: 17.6px;
+  height: 44px;
+  padding: 15px;
+}
+
+.item .status{
+  font-family: Helvetica, Arial, serif;
+  font-size: 14.0px;
+  text-align: left;
+  line-height: 16.0px;
+}
+.pending {
+  background: #fef6e9;
+}
+
+.canceled{
+  background: #fce4e4;
+}
+
+.done{
+  background: #fafafa;
+}
+
+.done:hover{
+  background: #efefef;
+}
+.canceled .status{
+  color: rgba(234, 68, 66, 1.0);
+}
+.pending .status{
+  color: rgba(245, 166, 35, 1.0);
+}
+
+.done .status{
+  color: rgba(0, 161, 15, 1.0);
+}
+.item img{
+  width: 18px;
+  height: 18px;
+}
+
+.item .value{
+  text-align: right;
+  font-family: Helvetica, Arial, serif;
+  font-size: 18.0px;
+  color: rgba(0, 0, 0, 1.0);
+  letter-spacing: -0.38px;
+  line-height: 25.08px;
+}
+
+.item .name{
+  margin-left: 20px;
+
+}
+.item .num{
+  margin-left: 20px;
+  color: rgba(161, 161, 161, 1.0);
+}

@@ -1,0 +1,46 @@
+<div #main class="history" >
+  <div class="title">
+    История операций
+  </div>
+  <div class="headerInput">
+    <p-dropdown [options]="typeOperations"></p-dropdown>
+    <span>с</span>
+    <p-calendar class="date" [showIcon]="true" ></p-calendar>
+    <span>по</span>
+    <p-calendar inputStyleClass="date" [showIcon]="true" ></p-calendar>
+
+    <div class="ui-inputgroup search">
+      <input type="text" pInputText placeholder="Поиск ... ">
+      <button pButton type="button" icon="fa fa-search" class="ui-button-warn"></button>
+    </div>
+  </div>
+  <div class="body">
+    <div class="detailDay" *ngFor="let daily of operations">
+      <div class="day">{{daily.dateDesc}} , {{daily.date}}</div>
+      <div class="items" *ngFor="let operation of daily.operations" routerLink="details0">
+        <div class='item {{operation.status}}'>
+          <table width="100%">
+            <tr>
+              <td width="25%">
+                <div class="name">{{operation.name}}</div>
+                <div class="status"><img [src]="getStatus(operation.status)"> {{operation.statusString}}</div>
+              </td>
+              <td width="25%" class="from">
+                <div><img src="{{operation.fromIco}}"> {{operation.from}}</div>
+                <div class="num">{{operation.fromNum}}</div>
+              </td>
+              <td width="25%">
+                <div><img src="{{operation.toIco}}"> {{operation.to}}</div>
+                <div class="num">{{operation.toNum}}</div>
+              </td>
+              <td width="25%" class="value">
+                <div>{{operation.value}}</div>
+                <div class="num">{{operation.bonus}}</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -170,6 +170,9 @@
   background: rgba(188,55,52,0.7);
 }
 
+.history{
+  background: rgba(158,41,75,0.7);
+}
 .credits {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(259.27deg,rgba(0, 123, 227, 0.7) -43.12%, rgba(0, 187, 105, 0.7) 115.23%);
 }

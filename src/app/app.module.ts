@@ -43,6 +43,11 @@ import { CardInfoComponent } from './card-info/card-info.component';
 import { CreditInfoComponent } from './credit-info/credit-info.component';
 import { PaymentInfoComponent } from './payment-info/payment-info.component';
 import { MainComponent } from './main/main.component';
+import { HistoryComponent } from './history/history.component';
+import { HistoryItemComponent } from './history-item/history-item.component';
+import { HistoryDetailComponent } from './history-detail/history-detail.component';
+import {DropdownModule} from 'primeng/dropdown';
+import {CalendarModule} from 'primeng/calendar';
 
 @NgModule({
   declarations: [
@@ -81,6 +86,9 @@ import { MainComponent } from './main/main.component';
     CreditInfoComponent,
     PaymentInfoComponent,
     MainComponent,
+    HistoryComponent,
+    HistoryItemComponent,
+    HistoryDetailComponent,
 
   ],
   imports: [
@@ -92,7 +100,9 @@ import { MainComponent } from './main/main.component';
     ScrollPanelModule,
     TabViewModule,
     DropdownModule,
-    ProgressBarModule
+    ProgressBarModule,
+    DropdownModule,
+    CalendarModule
 
   ],
   providers: [],

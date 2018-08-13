@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   visibilityMain = 'hidden';
   routeLevel = 0;
   leftPartTwoClass = 'leftPartTwo hidden';
-  leftPart3Class="left3Two hidden"
+  leftPart3Class = 'left3Two hidden';
   constructor(private router: Router) {
     router.events.subscribe((r: any) => {
         if (r.url) {
@@ -35,16 +35,15 @@ export class DashboardComponent implements OnInit, AfterViewInit {
               this.routeLevel = 2;
               this.routeContainer.nativeElement.className = 'showRoute';
               this.visibility = 'hidden';
-              var leftPartTwoClass=urlParts[1]
-              this.leftPartTwoClass = 'leftPartTwo show '+leftPartTwoClass;
+              let leftPartTwoClass = urlParts[1];
+              this.leftPartTwoClass = 'leftPartTwo show ' + leftPartTwoClass;
               this.leftPart3Class = 'left3Two hidden';
-            }
-            else if (urlParts.length === 4) {
+            } else if (urlParts.length === 4) {
               this.routeLevel = 3;
               this.visibility = 'hidden';
-              var leftPartTwoClass=urlParts[1]
-              this.leftPartTwoClass = 'leftPartTwo liteHide'+leftPartTwoClass;
-              this.leftPart3Class = 'left3Two show '+leftPartTwoClass+"_3";
+              let leftPartTwoClass = urlParts[1];
+              this.leftPartTwoClass = 'leftPartTwo liteHide' + leftPartTwoClass;
+              this.leftPart3Class = 'left3Two show ' + leftPartTwoClass + '_3';
             }
           }
         }
@@ -53,14 +52,16 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    let bHeight = 768;
     if (window.innerHeight > 768) {
-      this.baseHeight = window.innerHeight;
+      bHeight = window.innerHeight;
     }
     if (window.innerWidth > 1024) {
       this.baseWidth = (window.innerWidth - 230) + 'px';
     }
-    this.mainHeight = (this.baseHeight - 21) + 'px';
-    this.baseHeight = this.baseHeight + 'px';
+    this.baseHeight = bHeight + 'px';
+    this.mainHeight = (bHeight - 21) + 'px';
+    this.baseHeight = bHeight + 'px';
   }
 
   onClick = (e, targetBlock) => {

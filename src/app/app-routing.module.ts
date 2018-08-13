@@ -10,15 +10,14 @@ import {VerifySmsComponent} from './verify-sms/verify-sms.component';
 import {CreateAccountComponent} from './create-account/create-account.component';
 import {ErrorPaymentComponent} from './error-payment/error-payment.component';
 import {SigninSuccessComponent} from './signin-success/signin-success.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
 import {CardInfoComponent} from './card-info/card-info.component';
 import {CreditInfoComponent} from './credit-info/credit-info.component';
 import {PaymentInfoComponent} from './payment-info/payment-info.component';
-import {DashboardCardsComponent} from './dashboard-cards/dashboard-cards.component';
 import {MainComponent} from './main/main.component';
-import {CardsComponent} from "./cards/cards.component";
-import {AccountsComponent} from "./accounts/accounts.component";
-import {CreditsComponent} from "./credits/credits.component";
+import {CardsComponent} from './cards/cards.component';
+import {AccountsComponent} from './accounts/accounts.component';
+import {CreditsComponent} from './credits/credits.component';
+import {HistoryComponent} from "./history/history.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
@@ -38,6 +37,7 @@ const routes: Routes = [
   { path: 'cards/item0', component: CardInfoComponent},
   { path: 'credits/item0', component: CreditInfoComponent},
   { path: 'cards/item0/details0', component: PaymentInfoComponent},
+  { path: 'history', component: HistoryComponent},
 ];
 
 @NgModule({

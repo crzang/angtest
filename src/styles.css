@@ -108,3 +108,9 @@ input{
   line-height: 12px;
   margin-left: -4px;
 }
+
+
+.ui-widget-header .ui-button, .ui-widget-content .ui-button, .ui-widget.ui-button, .ui-button {
+  background: rgba(255,255,255,0);
+  color: gray;
+}
