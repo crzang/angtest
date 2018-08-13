@@ -1,0 +1,46 @@
+.statistic{
+  background-color: rgba(255,255,255,0);
+  margin-left: 10%;
+  margin-right: 10%;
+  min-width: 900px;
+}
+
+
+.title{
+  height: auto;
+  width: 262px;
+  margin-left: 0px;
+  font-size: 32.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 29.0px;
+}
+
+.topButtons{
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(118, 118, 118, 1.0);
+  text-align: left;
+  letter-spacing: -0.36px;
+  line-height: 45.0px;
+  border-radius: 5px;
+  border: 1px solid #898989;
+  height: 45px;
+  display: flex;
+  width: 210px;
+}
+
+.topButtons .item{
+  width: 105px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.topButtons .active{
+  background: #EF8D35;
+}
+
+.bubbles{
+  width: 50%;
+}

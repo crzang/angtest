@@ -47,6 +47,11 @@ import { HistoryComponent } from './history/history.component';
 import { HistoryItemComponent } from './history-item/history-item.component';
 import { HistoryDetailComponent } from './history-detail/history-detail.component';
 import {CalendarModule} from 'primeng/calendar';
+import { StatisticComponent } from './statistic/statistic.component';
+import { D3Service, D3_DIRECTIVES } from './d3';
+
+import { GraphComponent } from './visuals/graph/graph.component';
+import { SHARED_VISUALS } from './visuals/shared';
 
 @NgModule({
   declarations: [
@@ -88,7 +93,10 @@ import {CalendarModule} from 'primeng/calendar';
     HistoryComponent,
     HistoryItemComponent,
     HistoryDetailComponent,
-
+    StatisticComponent,
+    GraphComponent,
+    ...SHARED_VISUALS,
+    ...D3_DIRECTIVES
   ],
   imports: [
     BrowserModule,
@@ -103,7 +111,7 @@ import {CalendarModule} from 'primeng/calendar';
     CalendarModule
 
   ],
-  providers: [],
+  providers: [D3Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

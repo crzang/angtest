@@ -1,0 +1,25 @@
+<div #main class="statistic" >
+
+  <table width="50%">
+    <tr>
+      <td>
+        <div class="title">
+          Статистика
+        </div>
+      </td>
+      <td>
+        <div class="topButtons">
+          <div class="item"> Доходы </div>
+          <div class="item active">Расходы</div>
+        </div>
+      </td>
+      <td>
+        <p-dropdown [options]="orders"
+                    dropdownIcon="dropDownIcon"></p-dropdown>
+      </td>
+    </tr>
+  </table>
+  <div class="bubbles">
+    <graph [nodes]="nodes" [links]="links" ></graph>
+  </div>
+</div>

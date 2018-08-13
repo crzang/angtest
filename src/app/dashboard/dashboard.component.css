@@ -173,6 +173,19 @@
 .history{
   background: rgba(158,41,75,0.7);
 }
+
+.statistic{
+  background: rgba(149,47,94,0.7);
+}
+.leftPartTwo.history{
+  width: 70em;
+  animation:showLeftPartTwoHist 2000ms ease-in-out both;
+}
+
+@keyframes showLeftPartTwoHist {
+  from {width: 100em;}
+  to {width: 75em; }
+}
 .credits {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(259.27deg,rgba(0, 123, 227, 0.7) -43.12%, rgba(0, 187, 105, 0.7) 115.23%);
 }
