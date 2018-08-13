@@ -1,3 +1,69 @@
-<p>
-  history-item works!
-</p>
+<div #main class="historyItem">
+  <div class="mainBlock">
+    <div class="topMenu">
+      <span class="item" routerLink="/main">Мои финансы</span> <span class="separator">/</span> <span
+      routerLink="/history" class="item">История расходов</span>
+    </div>
+    <img class="topImage" src="assets/img/historyItem.png">
+    <div class="title">
+      Перевод клиенту банка
+      <br>
+      -5500 руб
+    </div>
+    <div class="buttonedBlock">
+      <div>
+        <img class="oval14" src="assets/img/harges-check-oval-14 2@2x.png">
+        <img class="rectangle6" src="assets/img/harges-check-rectangle-6@2x.png">
+        <img class="path8" src="assets/img/harges-check-path-8@2x.png">
+        <img class="path3" src="assets/img/harges-check-path-3@2x.png">
+        <img class="line4" src="assets/img/harges-check-line-4@2x.png">
+      </div>
+      <div class="group12">
+        <img src="assets/img/harges-check-oval-14 2@2x.png" class="oval14" />
+      </div>
+      <div class="group26">
+        <div class="rectangle5">
+        </div>
+        <img src="assets/img/harges-check-line-2@2x.png" class="line2" />
+        <div class="group23copy2">
+          <img src="assets/img/harges-check-oval-14 2@2x.png" class="oval14" />
+        </div>
+      </div>
+      <div class="group261">
+        <div class="group23copy2">
+          <img src="assets/img/harges-check-oval-14 2@2x.png" class="oval14" />
+        </div>
+        <img src="assets/img/harges-check-oval-3@2x.png" class="oval3" />
+        <img src="assets/img/harges-check-oval-3@2x.png" class="oval31" />
+        <img src="assets/img/harges-check-oval-3@2x.png" class="oval32" />
+      </div>
+      <div class="repeatpere">
+        <img src="assets/img/harges-check-group-9@2x.png" class="group9" >
+        <div class="group8">
+          <img src="assets/img/harges-check-shape@2x.png" class="shape" >
+          <img src="assets/img/harges-check-shape 1@2x.png" class="shape1" >
+          <img src="assets/img/harges-check-shape 1@2x.png" class="shape2" >
+          <img src="assets/img/harges-check-shape 1@2x.png" class="shape3" >
+          <img src="assets/img/harges-check-shape 4@2x.png" class="shape4" >
+        </div>
+        <img src="assets/img/harges-check-group-9 1@2x.png" class="group91" >
+      </div>
+    </div>
+    <div class="summary">
+      <table width="30%">
+        <tr class="itemLine" *ngFor="let detail of details">
+          <td width="50%" class="name">
+            {{detail.name}}
+          </td>
+          <td class="value">
+            {{detail.value}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="buttonedLabel withBorder labeledButtonEnabled" routerLink="/history">
+    <img class="group14" src="assets/img/harges-check-group-14@2x.png">
+    К расходам
+  </div>
+</div>

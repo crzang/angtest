@@ -46,7 +46,6 @@ import { MainComponent } from './main/main.component';
 import { HistoryComponent } from './history/history.component';
 import { HistoryItemComponent } from './history-item/history-item.component';
 import { HistoryDetailComponent } from './history-detail/history-detail.component';
-import {DropdownModule} from 'primeng/dropdown';
 import {CalendarModule} from 'primeng/calendar';
 
 @NgModule({
@@ -101,7 +100,6 @@ import {CalendarModule} from 'primeng/calendar';
     TabViewModule,
     DropdownModule,
     ProgressBarModule,
-    DropdownModule,
     CalendarModule
 
   ],

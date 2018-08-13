@@ -17,7 +17,7 @@
   <div class="body">
     <div class="detailDay" *ngFor="let daily of operations">
       <div class="day">{{daily.dateDesc}} , {{daily.date}}</div>
-      <div class="items" *ngFor="let operation of daily.operations" routerLink="details0">
+      <div class="items" *ngFor="let operation of daily.operations" routerLink="item0">
         <div class='item {{operation.status}}'>
           <table width="100%">
             <tr>

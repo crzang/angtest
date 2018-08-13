@@ -18,6 +18,7 @@ import {CardsComponent} from './cards/cards.component';
 import {AccountsComponent} from './accounts/accounts.component';
 import {CreditsComponent} from './credits/credits.component';
 import {HistoryComponent} from "./history/history.component";
+import {HistoryItemComponent} from "./history-item/history-item.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'credits/item0', component: CreditInfoComponent},
   { path: 'cards/item0/details0', component: PaymentInfoComponent},
   { path: 'history', component: HistoryComponent},
+  { path: 'history/item0', component: HistoryItemComponent},
 ];
 
 @NgModule({
