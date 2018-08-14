@@ -47,12 +47,20 @@ import { HistoryComponent } from './history/history.component';
 import { HistoryItemComponent } from './history-item/history-item.component';
 import { HistoryDetailComponent } from './history-detail/history-detail.component';
 import {CalendarModule} from 'primeng/calendar';
+import {DataGridModule} from 'primeng/datagrid';
+import {PanelModule} from "primeng/panel";
 import { StatisticComponent } from './statistic/statistic.component';
 import { D3Service, D3_DIRECTIVES } from './d3';
+import {SplitButtonModule} from 'primeng/splitbutton';
 
 import { GraphComponent } from './visuals/graph/graph.component';
 import { SHARED_VISUALS } from './visuals/shared';
 import { StatisticDetailComponent } from './statistic-detail/statistic-detail.component';
+import { ActionsAndPayComponent } from './actions-and-pay/actions-and-pay.component';
+import { ActionsTemplatesComponent } from './actions-and-pay/actions-templates/actions-templates.component';
+import { ActionsPayComponent } from './actions-and-pay/actions-pay/actions-pay.component';
+import { NewTemplateComponent } from './actions-and-pay/new-template/new-template.component';
+import { NewTemplateItemComponent } from './actions-and-pay/new-template-item/new-template-item.component';
 
 @NgModule({
   declarations: [
@@ -98,7 +106,12 @@ import { StatisticDetailComponent } from './statistic-detail/statistic-detail.co
     GraphComponent,
     ...SHARED_VISUALS,
     ...D3_DIRECTIVES,
-    StatisticDetailComponent
+    StatisticDetailComponent,
+    ActionsAndPayComponent,
+    ActionsTemplatesComponent,
+    ActionsPayComponent,
+    NewTemplateComponent,
+    NewTemplateItemComponent
   ],
   imports: [
     BrowserModule,
@@ -110,8 +123,10 @@ import { StatisticDetailComponent } from './statistic-detail/statistic-detail.co
     TabViewModule,
     DropdownModule,
     ProgressBarModule,
-    CalendarModule
-
+    CalendarModule,
+    DataGridModule,
+    PanelModule,
+    SplitButtonModule
   ],
   providers: [D3Service],
   bootstrap: [AppComponent]

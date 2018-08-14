@@ -13,31 +13,29 @@ export class StatisticComponent implements OnInit {
   orders: SelectItem[];
   nodes: Node[] = [];
   links: Link[] = [];
-  fullData: [];
+  fullData=[];
   constructor(private router: Router) {
     this.orders = [
       {label: 'За месяц', value: 1},
       {label: 'За неделю', value: 2},
     ];
     this.fullData = [
-      {name: 'Декабрь', value: '73 028 руб'},
-      {name: 'Ноябрь', value: '84 028 руб'},
+      {name: 'Декабрь', value: '73 028 руб',selected: false},
+      {name: 'Ноябрь', value: '84 028 руб',selected: false},
       {name: 'Октябрь', value: '55 628 руб', selected: true},
-      {name: 'Сентябрь', value: '74 028 руб'},
-      {name: 'Август', value: '70 0635 руб'},
-      {name: 'Июль', value: '55 628 руб'},
-      {name: 'Июнь', value: '54 028 руб'},
+      {name: 'Сентябрь', value: '74 028 руб',selected: false},
+      {name: 'Август', value: '70 0635 руб',selected: false},
+      {name: 'Июль', value: '55 628 руб',selected: false},
+      {name: 'Июнь', value: '54 028 руб',selected: false},
     ];
     const N = 100,
       getIndex = number => number - 1;
     const total = 31800 + 24567 + 14500;
-    let routeHandler = () => {
-      router.navigateByUrl('item0');
-    };
+
     /** constructing the nodes array */
-    this.nodes.push(new Node({id: 1, name: 'Снято наличными', value: '31 800,00 руб', color: '#2C3E50', weight: 31800 / total}, routeHandler));
-    this.nodes.push(new Node({id: 2, name: 'Еда, продукты питания', value: '24 567,07 руб', color: '#16A085', weight: 24567 / total}, routeHandler));
-    this.nodes.push(new Node({id: 3, name: 'Развленчение', value: '14 500,00 руб', color: '#FFAA00', weight: 14500 / total}, routeHandler));
+    this.nodes.push(new Node({id: 1, name: 'Снято наличными', value: '31 800,00 руб', color: '#2C3E50', weight: 31800 / total}));
+    this.nodes.push(new Node({id: 2, name: 'Еда, продукты питания', value: '24 567,07 руб', color: '#16A085', weight: 24567 / total}));
+    this.nodes.push(new Node({id: 3, name: 'Развленчение', value: '14 500,00 руб', color: '#FFAA00', weight: 14500 / total}));
 
     for (let i = 1; i <= this.nodes.length; i++) {
       for (let m = 2; i * m <= this.nodes.length; m++) {

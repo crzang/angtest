@@ -21,6 +21,9 @@ import {HistoryComponent} from "./history/history.component";
 import {HistoryItemComponent} from "./history-item/history-item.component";
 import {StatisticComponent} from "./statistic/statistic.component";
 import {StatisticDetailComponent} from "./statistic-detail/statistic-detail.component";
+import {ActionsAndPayComponent} from "./actions-and-pay/actions-and-pay.component";
+import {NewTemplateComponent} from "./actions-and-pay/new-template/new-template.component";
+import {NewTemplateItemComponent} from "./actions-and-pay/new-template-item/new-template-item.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
@@ -44,6 +47,9 @@ const routes: Routes = [
   { path: 'history/item0', component: HistoryItemComponent},
   { path: 'statistic', component: StatisticComponent},
   { path: 'statistic/item0', component: StatisticDetailComponent},
+  { path: 'actionsAndPay', component: ActionsAndPayComponent},
+  { path: 'actionsAndPay/newTemplate', component: NewTemplateComponent},
+  { path: 'actionsAndPay/newTemplate/item0', component: NewTemplateItemComponent},
 ];
 
 @NgModule({

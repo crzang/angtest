@@ -1,0 +1,90 @@
+<div #main class="newTemplateItem">
+
+  <div class="topMenu">
+      <span class="item" routerLink="/main">Платежи и переводы</span> <span class="separator">/</span> <span routerLink="/cards" class="item">Создание шаблона</span>
+  </div>
+  <div class="title">
+    Оплата мобильного телефона
+  </div>
+  <div class="mainBlock">
+    <table >
+      <tr>
+        <td>Название шаблона</td>
+        <td><div #name class="ui-float-label valueBlock">
+          <input id="loginInput" class="loginInputField" type="text" pInputText (input)="onNameChange($event)">
+          <label for="loginInput" class="inputFloatingLabel"></label>
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Счет списания</td>
+        <td>
+          <p-dropdown [options]="accounts" [style]="{'width':'350px'}">
+            <ng-template let-account pTemplate="selectedItem">
+              <span class="selectedItemLabel" >{{account.label}}</span>
+              <span class="selectedItemValue" >{{account.value}}</span>
+            </ng-template>
+            <ng-template let-account pTemplate="item">
+              <div class="ui-helper-clearfix" style="position: relative;height: 25px;">
+                <span class="itemLabel">{{account.label}}</span>
+                <span class="itemValue">{{account.value}}</span>
+              </div>
+            </ng-template>
+          </p-dropdown>
+        </td>
+      </tr>
+      <tr>
+        <td>Оператор</td>
+        <td>
+          <p-dropdown [options]="operators" [style]="{'width':'350px'}" placeholder="Выберите оператора" (onChange)="onOperatorChange($event)"></p-dropdown>
+        </td>
+      </tr>
+      <tr>
+        <td>Телефон</td>
+        <td><div #phone class="ui-float-label valueBlock">
+          <input id="phoneInput" class="loginInputField" type="text" pInputText (input)="onPhoneChange($event)" value="+7">
+          <label for="phoneInput" class="inputFloatingLabel"></label>
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Сумма</td>
+        <td><div #amount class="ui-float-label valueBlock">
+          <input id="amountInput" class="loginInputField" type="number" pInputText (input)="onAmountChange($event)">
+          <label for="amountInput" class="inputFloatingLabel">Сумма</label>
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <p-checkbox name="groupRegular" value="val1" label="Сделать платеж регулярным" (onChange)="onRegularChange($event)"></p-checkbox>
+        </td>
+      </tr>
+      <tr [class]="regularClass">
+        <td>
+          Периодичность
+        </td>
+        <td>
+          <p-dropdown [options]="periods" [style]="{'width':'350px'}" (onChange)="onPeriodsChange($event)"></p-dropdown>
+        </td>
+      </tr>
+      <tr [class]="regularClass">
+        <td>
+          Начало платежей
+        </td>
+        <td>
+          <p-calendar [inputStyle]="{'width':'300px','height':'45px'}" [showIcon]="true"></p-calendar>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <p-splitButton label="Сохранить" [disabled]="buttonDisabled" [model]="items"></p-splitButton>
+          <span class="cancel">Отменить</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

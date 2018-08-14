@@ -25,6 +25,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
         if (r.url) {
           const urlParts = r.url.split('/');
           if (r.shouldActivate) {
+
             if (urlParts.length === 2) {
               this.routeLevel = 1;
               this.leftpartOne.nativeElement.className = 'leftPart ' + urlParts[1];
@@ -35,15 +36,20 @@ export class DashboardComponent implements OnInit, AfterViewInit {
               this.routeLevel = 2;
               this.routeContainer.nativeElement.className = 'showRoute';
               this.visibility = 'hidden';
-              let leftPartTwoClass = urlParts[1];
+              const leftPartTwoClass = urlParts[1];
               this.leftPartTwoClass = 'leftPartTwo show ' + leftPartTwoClass;
               this.leftPart3Class = 'left3Two hidden';
             } else if (urlParts.length === 4) {
               this.routeLevel = 3;
               this.visibility = 'hidden';
-              let leftPartTwoClass = urlParts[1];
+              const leftPartTwoClass = urlParts[1];
               this.leftPartTwoClass = 'leftPartTwo liteHide' + leftPartTwoClass;
               this.leftPart3Class = 'left3Two show ' + leftPartTwoClass + '_3';
+            }
+            if (urlParts.length > 1 ) {
+              if (urlParts[1] === 'actionsAndPay') {
+                this.visibility = 'hidden';
+              }
             }
           }
         }

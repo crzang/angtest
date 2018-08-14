@@ -17,13 +17,12 @@ export class Node implements d3.SimulationNodeDatum {
   _color: string;
   weight: number;
 
-  constructor(data, clickHandler) {
+  constructor(data) {
     this.id = data.id;
     this.name = data.name;
     this.value = data.value;
     this._color = data.color;
     this.weight = data.weight;
-    this._clickHandler = clickHandler;
   }
 
   normal = () => {
@@ -43,7 +42,5 @@ export class Node implements d3.SimulationNodeDatum {
     return this._color;
   }
 
-  get clickHandler() {
-    return this._clickHandler;
-  }
+
 }

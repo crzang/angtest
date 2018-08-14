@@ -1,0 +1,119 @@
+.newTemplateItem{
+  width: 100%;
+  min-width: 1280px;
+  height: 100%;
+  min-height: 760px;
+  position: relative;
+  overflow: hidden;
+  top: -80px;
+  margin-left: 30px;
+  animation: showCardInfo 2000ms ease-in-out both;;
+}
+
+@keyframes showCardInfo {
+  from {left: 100em;}
+  to {left: 1em; }
+}
+
+
+.topMenu {
+  margin-top: 27px;
+  height: auto;
+  width: 358px;
+  margin-left: 10%;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color:black;
+  letter-spacing: 0.73px;
+  line-height: 21.0px;
+}
+
+.topMenu .item {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.topMenu .separator {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.title{
+  margin-top: 114px;
+  margin-left: 10%;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: black;
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 36.0px;
+}
+
+.mainBlock{
+  margin-left: 10%;
+}
+
+.mainBlock input {
+  border-radius: 7px;
+  height: 40px;
+  font-size: 24.0px;
+  text-indent: 10px;
+  font-family: 'Roboto', sans-serif;
+  width: 350px;
+}
+
+.selectedItemLabel{
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  line-height: 18.0px;
+  vertical-align:middle;
+  margin-left: 10px;
+}
+
+.selectedItemValue{
+  vertical-align:middle;
+  float:right;
+  font-family:Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(161, 161, 161, 1.0);
+  text-align: left;
+}
+
+.itemValue{
+  vertical-align:middle;
+  float:right;
+  font-family:Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(161, 161, 161, 1.0);
+  text-align: left;
+}
+
+.itemLabel{
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  line-height: 18.0px;
+  vertical-align:middle;
+  margin-left: 10px;
+  margin-top:4px;
+}
+
+.hiddenTr{
+  display: none;
+}
+
+.visibleTr{
+  display: table-row;
+}
+
+.cancel{
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 50px;
+}

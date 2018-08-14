@@ -1,0 +1,16 @@
+<div class="title">
+  Шаблоны
+</div>
+<div class="newTemplate" routerLink="newTemplate">Создать шаблон</div>
+<div class="itemsBlock">
+  <div *ngFor="let template of templates">
+    <table width="100%" class="item">
+      <tr>
+        <td width="10%"><img class="image" src="{{template.image}}"></td>
+        <td width="25%" class="name">{{template.name}}</td>
+        <td width="40%" class="lastUse">{{template.lastUse}}</td>
+        <td align="right" class="value">{{template.value}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

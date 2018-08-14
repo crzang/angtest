@@ -1,0 +1,37 @@
+.title{
+  height: auto;
+  margin-left: 0px;
+  font-size: 32.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 29.0px;
+}
+
+.image{
+  width: 34px;
+  margin: 10px;
+}
+
+.name{
+  margin-left: 10px;
+
+}
+.item{
+  width: 150px;
+  height: 150px;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(46, 46, 46, 1.0);
+  text-align: left;
+  letter-spacing: -0.5px;
+  line-height: 18.0px;
+  border: #898989 1px solid;
+  margin: 5px;
+}
+
+.item:hover{
+  background: red;
+  color: white;
+  cursor: pointer;
+}

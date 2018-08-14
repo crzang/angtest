@@ -1,0 +1,64 @@
+.title{
+  height: auto;
+  width: 262px;
+  margin-left: 0px;
+  font-size: 32.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.22px;
+  line-height: 29.0px;
+}
+
+.newTemplate{
+  float: right;
+  border: 1px solid rgba(175, 175, 175, 0.5);
+  border-radius: 25px;
+  text-align: center;
+  height: 45px;
+  width: 150px;
+  font-size: 16.0px;
+  line-height: 45.0px;
+  margin-top: -40px;
+  cursor: pointer;
+}
+
+.image{
+  width: 45px;
+  margin-left: 20px;
+}
+
+.item{
+  background: #FAFAFA;
+  border-bottom: #898989 1px solid;
+  height: 60px;
+}
+.item:hover{
+  background: #F1F1F1;
+}
+
+.item .name{
+  font-family:  Helvetica, Arial, serif;
+  font-size: 17.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  line-height: 20.0px;
+}
+
+.item .lastUse{
+  font-family:  Helvetica, Arial, serif;
+  font-size: 15.0px;
+  color: rgba(121, 121, 121, 1.0);
+  text-align: left;
+  line-height: 17.0px;
+}
+.itemsBlock {
+  margin-top: 20px;
+}
+.item .value{
+  font-family:  Helvetica, Arial, serif;
+  font-size: 18.0px;
+  color: rgba(0, 0, 0, 1.0);
+  letter-spacing: -0.38px;
+  line-height: 25.08px;
+  padding-right: 20px;
+}

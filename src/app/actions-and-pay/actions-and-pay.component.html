@@ -1,0 +1,9 @@
+<p-scrollPanel
+  [style]="{minWidth:'970px', width: baseWidth, height: mainHeight,border: 'none',background:'rgba(255,255,255,0)'}">
+  <div class="actions">
+    <app-actions-templates>
+    </app-actions-templates>
+    <app-actions-pay name="Оплата услуг" [items]="payments"></app-actions-pay>
+    <app-actions-pay name="Переводы" [items]="transfers"></app-actions-pay>
+  </div>
+</p-scrollPanel>
