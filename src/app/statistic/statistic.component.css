@@ -43,4 +43,30 @@
 
 .bubbles{
   width: 50%;
+  position:absolute;
+}
+
+.monthDetail{
+  margin-left: 70%;
+}
+
+.item.selected{
+  color: black;
+}
+
+.item {
+  color: rgba(127,127,127,0.5);
+  font-family: Helvetica, Arial, serif;
+  font-size: 18.0px;
+  letter-spacing: -0.12px;
+  line-height: 36.0px;
+  cursor: pointer;
+}
+
+.monthDetail .value{
+  text-align: right;
+}
+
+.monthDetail .name{
+  margin-left: 20px;
 }

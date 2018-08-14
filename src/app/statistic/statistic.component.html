@@ -1,4 +1,4 @@
-<div #main class="statistic" >
+<div #main class="statistic">
 
   <table width="50%">
     <tr>
@@ -9,7 +9,7 @@
       </td>
       <td>
         <div class="topButtons">
-          <div class="item"> Доходы </div>
+          <div class="item"> Доходы</div>
           <div class="item active">Расходы</div>
         </div>
       </td>
@@ -20,6 +20,23 @@
     </tr>
   </table>
   <div class="bubbles">
-    <graph [nodes]="nodes" [links]="links" ></graph>
+    <graph [nodes]="nodes" [links]="links"></graph>
+  </div>
+  <div class="monthDetail">
+    <div *ngFor="let data of fullData">
+      <div [class]="getStyleForeItem(data)" >
+        <table width="100%">
+          <tr>
+            <td width="50%">
+              <div class="value">{{data.value}}</div>
+            </td>
+            <td width="50%">
+              <div class="name">{{data.name}}</div>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
   </div>
 </div>

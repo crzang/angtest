@@ -1,0 +1,99 @@
+<div #main class="statisticDetail">
+  <div class="mainBlock">
+    <div class="topMenu">
+      <span class="item" routerLink="/main">Мои финансы</span> <span class="separator">/</span> <span routerLink="/cards" class="item">Карты</span>
+    </div>
+    <img class="card4" src="assets/img/food.png">
+    <div class="title">Еда и продукты</div>
+    <div class="buttonedBlock">
+      <div class="group7">
+        <img src="assets/img/statistic-history-oval-20-copy-2@2x.png" class="oval20copy" />
+        <div class="group13">
+          <img src="assets/img/statistic-history-line@2x.png" class="line" />
+          <img src="assets/img/statistic-history-line 1@2x.png" class="line1" />
+        </div>
+      </div>
+      <div class="group11">
+        <img src="assets/img/statistic-history-oval-20-copy-2@2x.png" class="oval20" />
+        <div class="group9">
+          <img src="assets/img/statistic-history-rectangle-6@2x.png" class="rectangle6" />
+          <img src="assets/img/statistic-history-line-2@2x.png" class="line2" />
+          <img src="assets/img/statistic-history-rectangle@2x.png" class="rectangle" />
+          <img src="assets/img/statistic-history-line-3-copy-2@2x.png" class="line3" />
+          <img src="assets/img/statistic-history-line-3-copy-2@2x.png" class="line3copy2" />
+          <img src="assets/img/statistic-history-line-3-copy-2@2x.png" class="line3copy" />
+        </div>
+      </div>
+      <div class="group8">
+        <img src="assets/img/statistic-history-oval-20-copy-2@2x.png" class="oval20copy2" />
+        <div class="iconlimit">
+          <img src="assets/img/statistic-history-line-3 1@2x.png" class="line3" />
+          <img src="assets/img/statistic-history-line-3 2@2x.png" class="line31" />
+          <img src="assets/img/statistic-history-line-3 3@2x.png" class="line32" />
+          <img src="assets/img/statistic-history-line-3 4@2x.png" class="line33" />
+          <img src="assets/img/statistic-history-line-3-copy 1@2x.png" class="line3copy" />
+          <img src="assets/img/statistic-history-line-3-copy 2@2x.png" class="line3copy1" />
+          <img src="assets/img/statistic-history-oval-copy@2x.png" class="oval" />
+          <img src="assets/img/statistic-history-oval-copy@2x.png" class="ovalcopy" />
+          <img src="assets/img/statistic-history-oval-copy@2x.png" class="ovalcopy2" />
+        </div>
+      </div>
+      <div class="group10">
+        <img src="assets/img/statistic-history-oval-20-copy-2@2x.png" class="oval20copy3" />
+        <div class="group2">
+          <div class="group1">
+            <img src="assets/img/statistic-history-rectangle-42@2x.png" class="rectangle42" />
+            <img src="assets/img/statistic-history-line-4@2x.png" class="line4" />
+          </div>
+          <img src="assets/img/statistic-history-line-5@2x.png" class="line5" />
+        </div>
+      </div>
+    </div>
+    <div class="summary">
+      <table width="80%">
+        <tr class="itemLine" *ngFor="let card of cards">
+          <td width="75%" class="name">
+            {{card.name}}
+          </td>
+          <td class="value">
+            {{card.value}}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="detailBlock">
+    <div class="title">
+      <span>с</span>
+      <p-calendar [inputStyle]='{width:"100px"}' class="date" [showIcon]="true" ></p-calendar>
+      <span class="to">по</span>
+      <p-calendar [inputStyle]='{width:"100px"}'  [showIcon]="true" ></p-calendar>
+      <div class="ui-inputgroup search">
+        <input type="text" pInputText placeholder="Поиск ... ">
+        <button pButton type="button" icon="fa fa-search" class="ui-button-warn"></button>
+      </div>
+    </div>
+    <div class="total">
+      -24 567 руб
+    </div>
+    <div class="detailsBody">
+      <div class="detailDay" *ngFor="let detail of details">
+        <div class="day">{{detail.date}}</div>
+        <div class="items" *ngFor="let data of detail.data" routerLink="details0">
+          <div class="item">
+            <div class="icon">
+              <img width="30px" src="{{data.icon}}">
+            </div>
+            <div class="name">{{data.name}}</div>
+            <div class="extraName">{{data.extraName}}</div>
+            <div class="data">
+              <div class="value">- {{data.value}}</div>
+              <div class="bonus">+ {{data.bonus}} бонусов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

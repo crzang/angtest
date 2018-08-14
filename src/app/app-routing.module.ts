@@ -20,6 +20,7 @@ import {CreditsComponent} from './credits/credits.component';
 import {HistoryComponent} from "./history/history.component";
 import {HistoryItemComponent} from "./history-item/history-item.component";
 import {StatisticComponent} from "./statistic/statistic.component";
+import {StatisticDetailComponent} from "./statistic-detail/statistic-detail.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
@@ -42,6 +43,7 @@ const routes: Routes = [
   { path: 'history', component: HistoryComponent},
   { path: 'history/item0', component: HistoryItemComponent},
   { path: 'statistic', component: StatisticComponent},
+  { path: 'statistic/item0', component: StatisticDetailComponent},
 ];
 
 @NgModule({

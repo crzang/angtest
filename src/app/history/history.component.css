@@ -25,9 +25,10 @@
   margin-left: 40px;
   margin-right: 10px;
 }
-.date{
+.date input{
   width: 100px;
 }
+
 
 .headerInput input{
   width: 100px;

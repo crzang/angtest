@@ -52,6 +52,7 @@ import { D3Service, D3_DIRECTIVES } from './d3';
 
 import { GraphComponent } from './visuals/graph/graph.component';
 import { SHARED_VISUALS } from './visuals/shared';
+import { StatisticDetailComponent } from './statistic-detail/statistic-detail.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +97,8 @@ import { SHARED_VISUALS } from './visuals/shared';
     StatisticComponent,
     GraphComponent,
     ...SHARED_VISUALS,
-    ...D3_DIRECTIVES
+    ...D3_DIRECTIVES,
+    StatisticDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -177,6 +177,12 @@
 .statistic{
   background: rgba(149,47,94,0.7);
 }
+
+.leftPartTwo.statistic{
+  background: rgba(19,143,119,0.7);
+
+}
+
 .leftPartTwo.history{
   width: 70em;
   animation:showLeftPartTwoHist 2000ms ease-in-out both;
