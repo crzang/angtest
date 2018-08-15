@@ -530,13 +530,14 @@
 
 .detailBlock {
   position: absolute;
-  right: 15%;
-  left: 50%;
+  left: 40%;
+  margin-right: 10%;
   min-width: 420px;
-  top: 10%;
+  width: 45%;
+  top:10%;
 }
 
-.detailBlock .alreadyPaid label{
+.detailBlock .alreadyPaid{
   font-family: Helvetica, Arial, serif;
   font-size: 32.0px;
   color: rgba(0, 0, 0, 1.0);
@@ -556,10 +557,13 @@
 .detailBlock .leftPay{
   right: 20px;
   text-align: right;
+  margin-top: -55px;
 }
 
-.detailBlock .leftPay label{
-  margin-top: 10px;
+.detailBlock .leftPay .name{
+  margin-bottom: 10px;
+}
+.detailBlock .leftPay {
   opacity: 0.5;
   font-family:  Helvetica, Arial, serif;
   font-size: 32.0px;
@@ -569,13 +573,12 @@
 }
 
 .detailBlock .leftPay div{
-  margin-top: -15px;
+
   font-family: Helvetica, Arial, serif;
   font-size: 14.0px;
   color: rgba(118, 118, 118, 1.0);
   text-align: right;
   line-height: 17.0px;
-  margin-bottom: 15px;
 }
 
 progress {
@@ -616,10 +619,22 @@ progress::-webkit-progress-value {
 
 .detail{
   text-align: center;
+  margin-top: 30px;
+  border-collapse: collapse;
 }
 
+.detail tbody:before {
+  content: "-";
+  display: block;
+  line-height: 1em;
+  color: transparent;
+}
+
+.detailBlock .thead{
+  margin-bottom: 8px;
+}
 .detail .item{
-  border-bottom: 1px solid;
+  border-bottom: 0px solid;
   border-color: #000000;
   height: 50px;
   font-family:  Helvetica, Arial, serif;
@@ -629,6 +644,9 @@ progress::-webkit-progress-value {
   line-height: 36.0px;
 }
 
+.detail .item td{
+  border-bottom: 1px solid #e4e4e4;
+}
 .detail .done{
   background: #F7F7F7;
 }
@@ -638,7 +656,7 @@ progress::-webkit-progress-value {
 }
 
 .detail .doned{
-  visibility: hidden;
+  display: none;
   margin-top: -19px;
   background: none;
   font-family: Helvetica, Arial, serif;
@@ -650,11 +668,11 @@ progress::-webkit-progress-value {
 }
 
 .detail .item .done{
-  visibility: visible;
+  display: block;
 }
 
 .detail .autopayment{
-  visibility: hidden;
+  display: none;
   margin-top: -19px;
   background: none;
   font-family: Helvetica, Arial, serif;
@@ -664,22 +682,22 @@ progress::-webkit-progress-value {
 }
 
 .detail .item .auto{
-  visibility: visible;
+  display: block;
 }
 
 .detail .changePayment{
-  visibility: hidden;
+  display: none;
 
   background: none;
   font-family:  Helvetica, Arial, serif;
   font-size: 14.0px;
   color: rgba(0, 0, 0, 1.0);
-  text-align: left;
+  text-align: center;
   line-height: 16.0px;
   text-decoration: underline;
   cursor: pointer;
 }
 
 .detail .item .changePaymentY{
-  visibility: visible;
+  display: block;
 }

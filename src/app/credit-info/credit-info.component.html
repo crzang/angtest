@@ -57,12 +57,14 @@
   </div>
   <div class="detailBlock">
     <div class="alreadyPaid">
-      <label>525 842 руб</label>
       <div>Уже выплачено</div>
+      <label>525 842 </label>
+      <app-rub></app-rub>
     </div>
     <div class="leftPay">
-      <div>Остаток долга</div>
-      <label>474 423 руб</label>
+      <div class="name">Остаток долга</div>
+      <label>474 423 </label>
+      <app-rub></app-rub>
     </div>
     <progress max="100" value="72" ></progress>
     <table class="detail" width="100%">
@@ -81,18 +83,18 @@
           <div class="doned" [ngClass]='{"done":item.done}'>&#10003;  Исполнен</div>
           <div class="autopayment" [ngClass]='{"auto":item.next}'>Автоплатеж</div>
         </td>
-        <td width="25%">{{item.credit}}</td>
-        <td width="25%">{{item.percent}}</td>
-        <td width="25%">{{item.payment}}
+        <td width="25%">{{item.credit}} <app-rub></app-rub></td>
+        <td width="25%">{{item.percent}} <app-rub></app-rub></td>
+        <td width="25%">{{item.payment}} <app-rub></app-rub>
           <div class="changePayment" [ngClass]='{"changePaymentY":item.next}'>Изменить сумму</div></td>
       </tr>
       </tbody>
       <tfoot>
       <tr>
         <td width="25%">Итого</td>
-        <td width="25%">1 000 000 р</td>
-        <td width="25%">58 259 р</td>
-        <td width="25%">1 058 259 р</td>
+        <td width="25%">1 000 000 <app-rub></app-rub></td>
+        <td width="25%">58 259 <app-rub></app-rub></td>
+        <td width="25%">1 058 259 <app-rub></app-rub></td>
       </tr>
       </tfoot>
     </table>
