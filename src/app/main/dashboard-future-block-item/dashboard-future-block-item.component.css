@@ -17,7 +17,7 @@
 
 .itemTable{
   margin-top: 20px;
-  left: 100px;
+  left: 80px;
   position: absolute;
 }
 
@@ -30,6 +30,11 @@
   font-size: 18px;
   text-align: right;
 }
+.date {
+  font-size: 16px;
+  text-align: right;
+}
+
 .name{
   font-family:  Helvetica, Arial, serif;
   font-size: 15px;
@@ -42,9 +47,9 @@
   cursor: pointer;
   font-size: 16px;
   text-align: right;
-  margin-right: 5px;
+
 }
 
 .link div{
-  margin-right: 20px;
+  margin-right: 30px;
 }

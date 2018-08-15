@@ -1,5 +1,5 @@
 .future {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-right: 10%;
   margin-left: 10%;
   min-width: 960px;
@@ -13,13 +13,14 @@
   letter-spacing: -0.22px;
   line-height: 29.0px;
   float: left;
-
+  margin-bottom: 10px;
 }
 
 .tabs {
   position: absolute;
   right: 10%;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .tabs div {
@@ -54,7 +55,7 @@
 }
 
 .body {
-  top: 60px;
+  top: 50px;
   position: relative;
 
 }

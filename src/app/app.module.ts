@@ -33,7 +33,7 @@ import { DashboardFutureBlockComponent } from './main/dashboard-future-block/das
 import { DashboardFutureBlockItemComponent } from './main/dashboard-future-block-item/dashboard-future-block-item.component';
 import { DashboardSuggessionBlockComponent } from './main/dashboard-suggession-block/dashboard-suggession-block.component';
 import { DashboardSuggessionBlockItemComponent } from './main/dashboard-suggession-block-item/dashboard-suggession-block-item.component';
-import { DashboardBannerBlockComponent } from './dashboard-banner-block/dashboard-banner-block.component';
+import { DashboardBannerBlockComponent } from './main/dashboard-banner-block/dashboard-banner-block.component';
 import { DashboardFooterBlockComponent } from './main/dashboard-footer-block/dashboard-footer-block.component';
 import { CardsComponent } from './cards/cards.component';
 import { AccountsComponent } from './accounts/accounts.component';
@@ -61,6 +61,7 @@ import { ActionsTemplatesComponent } from './actions-and-pay/actions-templates/a
 import { ActionsPayComponent } from './actions-and-pay/actions-pay/actions-pay.component';
 import { NewTemplateComponent } from './actions-and-pay/new-template/new-template.component';
 import { NewTemplateItemComponent } from './actions-and-pay/new-template-item/new-template-item.component';
+import { RubComponent } from './rub/rub.component';
 
 @NgModule({
   declarations: [
@@ -111,7 +112,8 @@ import { NewTemplateItemComponent } from './actions-and-pay/new-template-item/ne
     ActionsTemplatesComponent,
     ActionsPayComponent,
     NewTemplateComponent,
-    NewTemplateItemComponent
+    NewTemplateItemComponent,
+    RubComponent
   ],
   imports: [
     BrowserModule,

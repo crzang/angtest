@@ -182,9 +182,6 @@
   margin-top: 2em;
   height: 247px;
   width: 412px;
-  margin-left: -40px;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
 }
 
 .buttonedBlock {
@@ -519,9 +516,10 @@
 
 .detailBlock {
   position: absolute;
-  right: 15%;
-  left: 50%;
+  left: 40%;
+  margin-right: 10%;
   min-width: 420px;
+  width: 45%;
 }
 
 .detailBlock .title {
@@ -596,7 +594,7 @@
 
 .detailsBody .item {
   background: #F7F7F7;
-  height: 90px;
+  height: 80px;
   border-bottom: 1px solid;
   border-color: #E0E0E0;
   cursor: pointer;
@@ -608,13 +606,13 @@
 }
 
 .detailsBody .item .icon img {
-  margin-top: 30px
+  margin-top: 20px
 }
 
 .detailsBody .item .name {
   position: absolute;
   left: 70px;
-  margin-top: 35px;
+  margin-top: 20px;
   font-family: Helvetica, Arial, serif;
   font-size: 15.0px;
   color: rgba(0, 0, 0, 1.0);
@@ -626,7 +624,7 @@
 .detailsBody .item .extraName {
   position: absolute;
   left: 70px;
-  margin-top: 50px;
+  margin-top: 35px;
   font-family: Helvetica, Arial, serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 1.0);
@@ -638,7 +636,7 @@
 .detailsBody .item .data {
   position: absolute;
   right: 20px;
-  margin-top: 35px;
+  margin-top: 20px;
 }
 
 .detailsBody .item .data .value {
@@ -655,4 +653,5 @@
   color: rgba(128, 128, 128, 1.0);
   text-align: right;
   line-height: 17.6px;
+  margin-top: 5px;
 }

@@ -16,10 +16,15 @@ export class DashboardFirstBannerItemComponent implements OnInit {
   @ViewChild('secondButton') secondButton: ElementRef;
   @ViewChild('value') value: ElementRef;
 
+  hideExtra = true;
   constructor() {
+
   }
 
   ngOnInit() {
+    if (this.extraIcon !== '' ){
+      this.hideExtra = false;
+    }
       this.secondButton.nativeElement.hidden = this.button1 === '';
       this.value.nativeElement.hidden = this.amount === 0;
   }

@@ -10,37 +10,41 @@
   background: #F1F1F1;
 }
 .icon{
-  margin-left: 20px;
+  margin-left: 32px;
   margin-top: 25px;
 
 }
 
 .icon img{
-  width: 53px;
+  width: 42px;
+  height: 42px;
 }
 
 .itemlabel{
   margin-left: 85px;
-  margin-top: -55px;
+  margin-top: -47px;
 }
 
+.itemlabel img{
+  margin: 2px;
+}
 .itemLabelText{
   font-size: 19px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Helvetica, Arial, serif;
 }
 
 .itemNumber {
   font-size: 17px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Helvetica, Arial, serif;
   color: rgb(121, 121, 121);
-  margin-top: -55px;
+  margin-top: -47px;
   margin-left: 40%;
 }
 
 .value{
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  margin-top: -24px;
+  font-family: Helvetica, Arial, serif;
+  margin-top: -19px;
   margin-right: 5%;
   float: right;
 }

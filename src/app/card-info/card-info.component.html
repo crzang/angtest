@@ -42,11 +42,11 @@
     <div class="summary">
       <table width="80%">
         <tr class="itemLine" *ngFor="let card of cards">
-          <td width="75%" class="name">
+          <td width="70%" class="name">
             {{card.name}}
           </td>
           <td class="value">
-            {{card.value}}
+            {{card.value}}<app-rub></app-rub>
           </td>
         </tr>
       </table>
@@ -70,7 +70,7 @@
             <div class="name">{{data.name}}</div>
             <div class="extraName">{{data.extraName}}</div>
             <div class="data">
-              <div class="value">- {{data.value}}</div>
+              <div class="value">- {{data.value}} <app-rub></app-rub></div>
               <div class="bonus">+ {{data.bonus}} бонусов</div>
             </div>
           </div>

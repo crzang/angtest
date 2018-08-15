@@ -1,5 +1,5 @@
 <div #main class="futureItem" [style.color]="color" [style.background]="background" >
-  <img width="60px" src="{{icon}}" class="icon"/>
+  <img width="42px" height="42px" src="{{icon}}" class="icon"/>
   <table #table class="itemTable">
     <thead>
     <tr>
@@ -17,7 +17,7 @@
         Сумма
       </td>
       <td width="33%" class="value">
-        {{value}}
+        {{value}} <app-rub></app-rub>
       </td>
       <td width="33%">
 
@@ -27,7 +27,7 @@
       <td width="33%" class="{{nameStyle}}">
         Дата платежа
       </td>
-      <td width="33%" class="value">
+      <td width="33%" class="date">
         {{date}}
       </td>
       <td width="33%" class="link">

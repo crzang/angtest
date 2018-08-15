@@ -17,7 +17,7 @@
 .mainBlock {
   position: absolute;
   min-width: 400px;
-  width: 30%;
+  width: 40%;
 }
 
 .topMenu {
@@ -62,7 +62,7 @@
 
 
 .summary .itemLine{
-  height: 30px;
+  height: 40px;
 }
 
 .summary .name{
@@ -77,13 +77,15 @@
 
 .detailBlock {
   position: absolute;
-  right: 15%;
-  left: 50%;
+  left: 40%;
+  margin-right: 10%;
   min-width: 420px;
+  width: 45%;
 }
 
 .detailBlock .total{
-  margin-top: 10em;
+  margin-top: 20%;
+  margin-bottom: 10%;
 }
 .detailBlock .title{
   margin-top: 3em;
@@ -101,6 +103,7 @@
   color: rgba(128, 128, 128, 1.0);
   text-align: right;
   line-height: 18.0px;
+  margin-top: 20px;
 }
 .detailBlock .view1 {
   margin-top: -30px;
@@ -579,18 +582,21 @@
 }
 
 .detailBlock table{
-  border-spacing: 0px;
-  border-color: rgba(120,120,120,0.3);
-  border-top: 1px solid;
-  padding: 5px;
+
+  padding-top: 20px;
 }
+
 .detailBlock .items {
   margin-top: 20px;
+
 }
 
 .detailBlock .items td{
+  margin-top: 50px;
   text-align: left;
-
+  border-spacing: 0px;
+  border-top: 1px solid #e4e4e4;
+  padding: 20px 16px;
 }
 
 .detailBlock .items .name{

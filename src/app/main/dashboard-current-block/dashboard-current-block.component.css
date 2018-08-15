@@ -9,11 +9,13 @@
   font-size: 32px;
   float: left;
   font-family: Helvetica, Arial, serif;
+  margin-bottom: 10px;
 }
 
 .tabs {
   position: absolute;
   right: 10%;
+  margin-bottom: 10px;
 }
 
 .tabs div {

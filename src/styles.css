@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@font-face {
+  font-family: Helvetica;
+  src: url("assets/fonts/9202.otf") format("opentype");
+}
+
 body{
   margin: 0px;
 }
@@ -8,7 +13,7 @@ body{
 input{
   font-size: 24.0px;
   text-indent: 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: Helvetica, Arial, serif;
   width: 250px;
 }
 
@@ -42,7 +47,7 @@ input{
   height: 40px;
   margin-top: 10px;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: Helvetica, Arial, serif;
   font-size: 15.0px;
   text-align: center;
   letter-spacing: -0.29px;
@@ -98,16 +103,6 @@ input{
 
 }
 
-.dropDownIcon{
-  /*background: url('assets/img/cards-dropdown-input@2x.png');*/
-}
-
-.dropDownIcon:before {
-  content: "\2195";
-  font-size: 48px;
-  line-height: 12px;
-  margin-left: -4px;
-}
 
 
 .ui-widget-header .ui-button, .ui-widget-content .ui-button, .ui-widget.ui-button, .ui-button {
@@ -117,4 +112,8 @@ input{
 
 .buttonStyle{
   background: #1acd91;
+}
+
+.ui-widget {
+  font-family:   Helvetica, Arial, sans-serif;
 }

@@ -49,9 +49,9 @@
       </div>
     </div>
     <div class="summary">
-      <table>
-        <tr class="itemLine" *ngFor="let card of cards">
-          <td class="name">
+      <table width="400px">
+        <tr class="itemLine"  *ngFor="let card of cards">
+          <td width="70%" class="name">
             {{card.name}}
           </td>
           <td class="value">
@@ -63,11 +63,11 @@
   </div>
   <div class="detailBlock">
     <div class="total">
-      <div class="title">- 14 567 р</div>
+      <div class="title">- 14 567  <app-rub></app-rub></div>
       <div class="totalBonus">+1200 бонусов</div>
     </div>
-    <table class="items" width="100%" *ngFor="let item of details">
-      <tr>
+    <table width="100%" >
+      <tr  class="items" *ngFor="let item of details">
         <td width="300px" class="name">
           {{item.name}}
         </td>
