@@ -114,3 +114,7 @@ input{
   background: rgba(255,255,255,0);
   color: gray;
 }
+
+.buttonStyle{
+  background: #1acd91;
+}

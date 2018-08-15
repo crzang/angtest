@@ -12,13 +12,15 @@ export class NewTemplateItemComponent implements OnInit {
   items = [];
   operators: SelectItem[];
   regularClass = 'hiddenTr';
-  buttonDisabled = true;
+  buttonDisabled = false;
   name = '';
 
   operator = null;
   phone = '';
   amount = 0;
   periods = [];
+
+  buttonStyle={background:'green'}
   constructor() {
     this.accounts = [{label: 'Зарплатный Счет', value: '55 000 руб'},
       {label: 'VISA Classic', value: '55 000 руб'},
