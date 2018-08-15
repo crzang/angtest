@@ -18,6 +18,7 @@ export class NewTemplateItemComponent implements OnInit {
   operator = null;
   phone = '';
   amount = 0;
+  periods = [];
   constructor() {
     this.accounts = [{label: 'Зарплатный Счет', value: '55 000 руб'},
       {label: 'VISA Classic', value: '55 000 руб'},
@@ -28,7 +29,7 @@ export class NewTemplateItemComponent implements OnInit {
       {label: 'Сохранить шаблон'},
       {label: 'Оплатить' }
     ];
-
+    this.periods = [{label: 'Каждый месяц'}];
 
   }
 

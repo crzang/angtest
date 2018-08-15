@@ -19,7 +19,7 @@ export class SigninComponent implements AfterViewInit {
   login = '';
   pass = '';
   btnEnterEnabled = false;
-  env=environment
+
   constructor(private router: Router) {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
@@ -51,7 +51,7 @@ export class SigninComponent implements AfterViewInit {
 
   doLogin() {
     if(this.btnEnterEnabled) {
-      this.env.isLogged = true;
+      //this.env.isLogged = true;
       this.router.navigateByUrl("/main")
     }
 
