@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 192.168.0.54 --watch",
+    "start": "ng serve --host 192.168.1.37 --watch",
     "build": "ng build",
-    "prod":"ng build --prod",
+    "prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

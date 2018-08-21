@@ -10,51 +10,30 @@ export class ActionsAndPayComponent implements OnInit {
   baseHeight = 768;
   baseWidth = '1024';
   mainHeight = this.baseHeight + 'px';
-  payments = []
-  transfers = []
+  payments = [];
+  transfers = [];
 
   constructor() {
-    this.payments = [{name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'}
+    this.payments = [{name: 'Мобильная связь', image: 'assets/img/actions/mobile.png'},
+      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/actions/tax.png', route: 'checkTax'},
+      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/actions/comm.png'},
+      {name: 'Интернет, телевидение, телефон', image: 'assets/img/actions/internet.png'},
+      {name: 'Социальные сети, онлайн игры', image: 'assets/img/actions/social.png'},
+      {name: 'Охранные системы', image: 'assets/img/actions/security.png'},
+      {name: 'Сетевой маркетинг', image: 'assets/img/actions/netMarket.png'},
+      {name: 'Платеж организации по реквизитам', image: 'assets/img/actions/pay2org.png', route: 'pay2org'},
+      {name: 'Прочее', image: 'assets/img/actions/other.png'},
     ];
-    this.transfers = [{name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Мобильная связь', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Штрафы, налоги и государственные услуги', image: 'assets/img/paymentsPhone1.png'},
-      {name: 'Коммунальные услуги ЖКХ', image: 'assets/img/paymentsPhone1.png'}
+    this.transfers = [
+      {name: 'Между своими счетами', image: 'assets/img/actions/selfAccounts.png.png'},
+      {name: 'Клиенту банка', image: 'assets/img/actions/client.png'},
+      {name: 'С карты на карту', image: 'assets/img/actions/card2card.png', route: 'card2card'},
+      {name: 'В другой банк на счет или карту', image: 'assets/img/actions/toOtherBank.png'},
+      {name: 'В другой банк по реквизитам', image: 'assets/img/actions/toOtherBank.png', route: 'pay2bank'},
+      {name: 'Организации по реквизитам', image: 'assets/img/actions/toOtherBank.png', route: 'pay2org'},
+      {name: 'Запросить деньги на счет', image: 'assets/img/actions/tellMoney.png'},
+      {name: 'На электронный кошелек', image: 'assets/img/actions/toDigitalWallet.png'},
+      {name: 'Благотворительная помощь', image: 'assets/img/actions/help.png'},
     ];
   }
 

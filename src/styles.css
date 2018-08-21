@@ -111,7 +111,18 @@ input{
 }
 
 .buttonStyle{
-  background: #1acd91;
+  background: #D93533;
+
+  width: 300px;
+  height: 45px;
+  border-radius: 20px;
+}
+
+.buttonStyle span{
+  color: white;
+  line-height: 45px;
+  width: 300px;
+  margin-top: 5px;
 }
 
 .ui-widget {

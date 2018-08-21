@@ -183,6 +183,10 @@
 
 }
 
+
+.card2card{
+  background: #d84049;
+}
 .leftPartTwo.history{
   width: 70em;
   animation:showLeftPartTwoHist 2000ms ease-in-out both;

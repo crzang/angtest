@@ -1,0 +1,102 @@
+.templateConfirm{
+  min-width: 1280px;
+  min-height: 760px;
+  position: absolute;
+  overflow: hidden;
+  top: -60px;
+  margin-left: -226px;
+  -webkit-animation: showCardInfo 2000ms ease-in-out both;
+  animation: showCardInfo 2000ms ease-in-out both;
+  background: linear-gradient(to bottom, #233EA0 0%, #59256C 100%);
+  color: white;
+}
+
+@keyframes showCardInfo {
+  from {left: 100em;}
+  to {left: 1em; }
+}
+
+.navigateBack{
+  color: white;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+.foralogocopy2{
+  top: 50px;
+  position: absolute;
+  height: 20px;
+  width: 136px;
+  left: 45%;
+}
+
+.title{
+  width: 100%;
+  margin-top: 150px;
+  font-family: Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  line-height: 39.0px;
+}
+
+.dataTable{
+  margin-top: 30px;
+  border-spacing: 20px 20px;
+}
+
+.itemLine{
+  font-family: Helvetica, Arial, serif;
+  font-size: 15.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: left;
+  letter-spacing: -0.29px;
+  line-height: 22.0px;
+}
+
+.amount{
+  font-family: Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: rgba(255, 255, 255, 1.0);
+  letter-spacing: -0.46px;
+  line-height: 16.72px;
+}
+
+.divider{
+  width: 30%;
+  color: rgba(127,127,127,0.8);
+}
+
+.confirmText{
+  width: 100%;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 15.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: -0.29px;
+  line-height: 23.0px;
+}
+
+.confirmInput{
+  margin-top: 10px;
+  width: 75px;
+  height: 55px;
+  border: 2px #E74443 solid;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 25.0px;
+  line-height: 25.0px;
+}
+
+.sendAgainText{
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-family:Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(255, 255, 255, 1.0);
+  line-height: 18.0px;
+  text-decoration: underline;
+  cursor: pointer;
+}

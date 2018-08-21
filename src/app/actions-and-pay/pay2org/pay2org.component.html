@@ -1,0 +1,44 @@
+<div #main class="pay2org">
+  <div class="topMenu">
+    <span class="item" routerLink="/actionsAndPay">Платежи и переводы</span>
+  </div>
+  <div class="title">Перевод организации по реквезитам</div>
+  <table>
+    <tr *ngFor="let item of items" class="itemBlock">
+      <td width="200px" [class]="item.labelClass">
+        {{item.label}}
+      </td>
+      <td [class]="item.valueClass">
+
+        <div class="ui-float-label value" *ngIf="item.valueType==='text' || item.valueType==='number'">
+          <input [id]="item.id"  [type]="item.valueType" pInputText (input)="onValueChange($event,item.id)" >
+          <label [for]="item.id" class="inputFloatingLabel">{{item.label}}</label>
+        </div>
+        <div class="itemTotal" *ngIf="item.valueType==='label'">
+          {{item.value}} <app-rub></app-rub>
+        </div>
+        <p-dropdown *ngIf="item.valueType==='accounts'" [options]="accounts" [style]="{'width':'350px'}">
+          <ng-template let-account pTemplate="selectedItem">
+            <span class="selectedItemLabel" >{{account.label}}</span>
+            <span class="selectedItemValue" >{{account.value}}</span>
+          </ng-template>
+          <ng-template let-account pTemplate="item">
+            <div class="ui-helper-clearfix" style="position: relative;height: 25px;">
+              <span class="itemLabel">{{account.label}}</span>
+              <span class="itemValue">{{account.value}}</span>
+            </div>
+          </ng-template>
+        </p-dropdown>
+      </td>
+    </tr>
+    <tr>
+      <td width="200px"></td>
+      <td>
+        <div class="btnSend">
+          <app-button route="confirm" useWindowWidth="false" [enabled]="btnNextEnabled" border="true" bgColor="red" color="#ffffff" label="Отправить"></app-button>
+        </div>
+        <div class="valueTerms">Нажимая кнопку "Отправить" вы соглашаетесь с условием перевода</div>
+      </td>
+    </tr>
+  </table>
+</div>

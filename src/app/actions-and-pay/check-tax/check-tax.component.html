@@ -1,0 +1,16 @@
+<div #main class="checkTax">
+  <div class="topMenu">
+    <span class="item" routerLink="/actionsAndPay">Платежи и переводы</span>
+  </div>
+  <div class="title">Проверка налогов и штрафов</div>
+  <div class="ui-float-label value" >
+    <input id="item_id"  type="text" pInputText (input)="onValueChange($event)" >
+    <label for="item_id" class="inputFloatingLabel">Введите ИНН, название, категорию услуги или рассчетный счет</label>
+  </div>
+  <div class="btnSearch">
+    <app-button route="confirm" useWindowWidth="false" border="true" bgColor="red" color="#ffffff" label="Поиск"></app-button>
+  </div>
+  <div class="btnExtraSearch">
+    <app-button route="confirm" useWindowWidth="false" border="true" borderColor="#f0f0f0" color="#000000" label="Расширенный поиск"></app-button>
+  </div>
+</div>

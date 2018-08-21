@@ -1,0 +1,62 @@
+.successPayment{
+  background: #1ABC9C;
+  color: white;
+  min-width: 1280px;
+  min-height: 760px;
+  position: absolute;
+  overflow: hidden;
+  top: -60px;
+  margin-left: -226px;
+  -webkit-animation: showCardInfo 2000ms ease-in-out both;
+  animation: showCardInfo 2000ms ease-in-out both;
+}
+
+@keyframes showCardInfo {
+  from {left: 100em;}
+  to {left: 1em; }
+}
+
+.logo{
+  margin-top: 135px;
+  height: 93px;
+  width: 96px;
+}
+
+.content{
+  width: 50%;
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: -0.35px;
+  line-height: 21.0px;
+}
+
+.content hr{
+  width: 30%;
+  color: rgba(127,127,127,0.8);
+}
+.footer{
+ bottom: 150px;
+}
+
+.value{
+  font-family:  Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: -0.46px;
+  line-height: 16.72px;
+  margin-top: 30px;
+}
+
+.content div{
+  margin: 20px;
+}
+.account{
+  margin-left: 30px;
+}
+
+.btnSave{
+  margin-top: 30px;
+}

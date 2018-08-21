@@ -1,0 +1,273 @@
+.successPayment2{
+  background: #1ABC9C;
+  color: white;
+  min-width: 1280px;
+  min-height: 760px;
+  position: absolute;
+  overflow: hidden;
+  top: -60px;
+  margin-left: -226px;
+  -webkit-animation: showCardInfo 2000ms ease-in-out both;
+  animation: showCardInfo 2000ms ease-in-out both;
+}
+
+@keyframes showCardInfo {
+  from {left: 100em;}
+  to {left: 1em; }
+}
+
+.textBlock{
+  margin-top: 480px;
+}
+
+.textBlock .text{
+  margin-top: 20px;
+  font-family: Helvetica, Arial, serif;
+  font-size: 16.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: -0.35px;
+  line-height: 21.0px;
+}
+.value{
+  font-family:  Helvetica, Arial, serif;
+  font-size: 32.0px;
+  color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+  letter-spacing: -0.46px;
+  line-height: 16.72px;
+}
+ .group2 {
+  background-color    : rgba(255,255,255,0.0);
+  margin-top                 : 204px;
+
+  width               : 340px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+ .group2 .screenshot20170905at155055 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 105px;
+  height              : 135px;
+  width               : 139px;
+  position            : absolute;
+  margin              : 0;
+  left                : 121px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+ .group2 .effects {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 560px;
+  width               : 339px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+ .group2 .effects .star {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 7px;
+  height              : 20px;
+  width               : 21px;
+  position            : absolute;
+  margin              : 0;
+  left                : 205px;
+  -ms-transform       : rotate(16deg); /* IE 9 */
+  -webkit-transform   : rotate(16deg); /* Chrome, Safari, Opera */
+  transform           : rotate(16deg);
+  opacity             : 0.75;
+}
+ .group2 .effects .starcopy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 45px;
+  height              : 13px;
+  width               : 13px;
+  position            : absolute;
+  margin              : 0;
+  left                : 44px;
+  -ms-transform       : rotate(-54deg); /* IE 9 */
+  -webkit-transform   : rotate(-54deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-54deg);
+  opacity             : 0.75;
+}
+ .group2 .effects .path18 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 132px;
+  height              : 8px;
+  width               : 28px;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+ .group2 .effects .path19 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 106px;
+  height              : 7px;
+  width               : 14px;
+  position            : absolute;
+  margin              : 0;
+  left                : 302px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+ .group2 .effects .path191 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 102px;
+  height              : 4px;
+  width               : 7px;
+  position            : absolute;
+  margin              : 0;
+  left                : 321px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+ .group2 .effects .oval7 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 10px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 114px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.64;
+}
+ .group2 .effects .oval7copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 159px;
+  height              : 10px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 323px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.81;
+}
+ .group2 .effects .oval7copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 176px;
+  height              : 11px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 35px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.83;
+}
+ .group2 .effects .path17copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 45px;
+  height              : 18px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 128px;
+  -ms-transform       : rotate(-75deg); /* IE 9 */
+  -webkit-transform   : rotate(-75deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-75deg);
+}
+ .group2 .effects .path17copy21 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 254px;
+  height              : 18px;
+  width               : 24px;
+  position            : absolute;
+  margin              : 0;
+  left                : 61px;
+  -ms-transform       : rotate(-183deg); /* IE 9 */
+  -webkit-transform   : rotate(-183deg); /* Chrome, Safari, Opera */
+  transform           : rotate(-183deg);
+}
+ .group2 .effects .path21 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 212px;
+  height              : 12px;
+  width               : 26px;
+  position            : absolute;
+  margin              : 0;
+  left                : 48px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+ .group2 .effects .path17 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 46px;
+  height              : 33px;
+  width               : 33px;
+  position            : absolute;
+  margin              : 0;
+  left                : 258px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+ .group2 .effects .path22 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 255px;
+  height              : 9px;
+  width               : 11px;
+  position            : absolute;
+  margin              : 0;
+  left                : 299px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.83;
+}
+ .group2 .effects .path221 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 265px;
+  height              : 4px;
+  width               : 5px;
+  position            : absolute;
+  margin              : 0;
+  left                : 312px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.83;
+}
+ .group2 .effects .path23 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 76px;
+  height              : 10px;
+  width               : 10px;
+  position            : absolute;
+  margin              : 0;
+  left                : 76px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.65;
+}
+ .group2 .effects .path24 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 212px;
+  height              : 8px;
+  width               : 17px;
+  position            : absolute;
+  margin              : 0;
+  left                : 315px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.65;
+}

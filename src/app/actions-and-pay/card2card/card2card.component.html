@@ -1,0 +1,54 @@
+<div #main class="card2card">
+  <div class="topMenu">
+    <span class="item" routerLink="/actionsAndPay">Платежи и переводы</span>
+  </div>
+  <div class="title">Перевод с карты на карту</div>
+  <div #card class="card">
+    <img #cardImg  class="cardImg" [src]="bankLogo"/>
+    <div class="ui-float-label cardNumber">
+      <input id="cardNumber"  type="text" pInputText (input)="onCardNumberChange($event)" >
+      <label for="cardNumber" class="inputFloatingLabel">Номер карты отправителя</label>
+    </div>
+    <div class="ui-float-label cardMonth">
+      <input id="cardMonth" type="text" pInputText (input)="onCardMonthChange($event)">
+      <label for="cardMonth" class="inputFloatingLabel">ММ</label>
+    </div>
+    <div class="cardMYSeparator">/</div>
+    <div  class="ui-float-label cardYear">
+      <input id="cardYear"  type="text" pInputText (input)="onCardYearChange($event)">
+      <label for="cardYear" class="inputFloatingLabel">ГГ</label>
+    </div>
+    <img class="brandLogo" src="{{brandLogo}}">
+    <div class="ui-float-label cardCVV">
+      <input id="cardCVV"  type="password" pInputText (input)="onCardCVVChange($event)">
+      <label for="cardCVV" class="inputFloatingLabel">{{codeName}}</label>
+    </div>
+  </div>
+  <div class="paymentNameLabel">Назначние платежа</div>
+  <div class="ui-float-label paymentName">
+    <input id="paymentName"  type="text" pInputText (input)="onPaymentNameChange($event)" >
+    <label for="paymentName" class="inputFloatingLabel">Выбрать или добавить</label>
+  </div>
+  <img class="line5" src="assets/img/sendingmoney-3-line-5@2x.png">
+  <div #card2 class="card2">
+    <img #card2Img  class="cardImg" [src]="bank2Logo"/>
+    <div class="ui-float-label cardNumber">
+      <input id="card2Number"  type="text" pInputText (input)="onCard2NumberChange($event)" >
+      <label for="card2Number" class="inputFloatingLabel">Номер карты получателя</label>
+    </div>
+    <img class="brand2Logo" src="{{brand2Logo}}">
+  </div>
+  <div class="valueBlock">
+    <div class="valueTitle">Сумма</div>
+    <div class="ui-float-label value">
+      <input id="amount"  type="number" pInputText (input)="onAmountChange($event)" >
+      <label for="amount" class="inputFloatingLabel">Сумма</label>
+    </div>
+    <div class="valueSubLabel">Итого с коммисией (3%)</div>
+    <div class="valueLabel">{{amountWithTax}} <app-rub></app-rub></div>
+    <div class="btnSend">
+      <app-button route="confirm" useWindowWidth="false" [enabled]="btnNextEnabled" border="true" bgColor="red" color="#ffffff" label="Отправить"></app-button>
+    </div>
+    <div class="valueTerms">Нажимая кнопку "Отправить" вы соглашаетесь с условием перевода</div>
+  </div>
+</div>

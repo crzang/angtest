@@ -12,7 +12,7 @@ export class NewTemplateItemComponent implements OnInit {
   items = [];
   operators: SelectItem[];
   regularClass = 'hiddenTr';
-  buttonDisabled = false;
+  buttonDisabled = true;
   name = '';
 
   operator = null;
@@ -20,7 +20,9 @@ export class NewTemplateItemComponent implements OnInit {
   amount = 0;
   periods = [];
 
-  buttonStyle={background:'green'}
+  buttonStyle = {background: 'green'};
+  leftFillClass = 'leftFill_visible';
+  leftFill = '';
   constructor() {
     this.accounts = [{label: 'Зарплатный Счет', value: '55 000 руб'},
       {label: 'VISA Classic', value: '55 000 руб'},
@@ -32,7 +34,7 @@ export class NewTemplateItemComponent implements OnInit {
       {label: 'Оплатить' }
     ];
     this.periods = [{label: 'Каждый месяц'}];
-
+    this.leftFill = '"Название","Оператор","Телефон","Сумма"';
   }
 
   ngOnInit() {
@@ -67,10 +69,22 @@ export class NewTemplateItemComponent implements OnInit {
   }
 
   checkFormData() {
-    if (this.name.length > 0 && this.operator !== null && this.amount > 0 && this.phone.length > 2) {
-      this.buttonDisabled = false;
-    } else {
-      this.buttonDisabled = true;
+    this.leftFill = '';
+    if (this.name.length === 0) {
+      this.leftFill = '"Название"';
     }
+    if (this.operator === null) {
+      this.leftFill = this.leftFill + ',"Оператор"';
+    }
+    if (this.phone.length === 2) {
+      this.leftFill = this.leftFill + ',"Телефон"';
+    }
+    if (this.amount <= 0) {
+      this.leftFill = this.leftFill + ',"Сумма"';
+    }
+
+    this.leftFillClass = this.leftFill.length !== 0 ? 'leftFill_visible' : 'leftFill_hidden';
+    this.buttonDisabled = this.leftFill.length !== 0;
+
   }
 }

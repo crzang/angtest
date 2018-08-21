@@ -19,6 +19,9 @@ export class LeftMenuComponent implements OnInit, AfterViewInit {
     this.mainHeight = this.baseHeight + 'px';
   }
 
+  visible(vis){
+    this.main.nativeElement.hidden=vis
+  }
   ngOnInit() {
     this.main.nativeElement.style.background = this.background;
   }

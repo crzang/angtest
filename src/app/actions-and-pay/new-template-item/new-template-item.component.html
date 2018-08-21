@@ -81,8 +81,16 @@
         <td>
         </td>
         <td>
-          <p-splitButton styleClass="buttonStyle" menuStyleClass="menuButtonStyle" label="Сохранить" [disabled]="buttonDisabled" [model]="items"></p-splitButton>
+          <p-splitButton styleClass="buttonStyle" menuStyleClass="menuButtonStyle" label="Сохранить" [disabled]="buttonDisabled" routerLink="confirm" [model]="items"></p-splitButton>
           <span class="cancel">Отменить</span>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <div [class]="leftFillClass">
+            Осталось заполнить {{leftFill}}
+          </div>
         </td>
       </tr>
     </table>

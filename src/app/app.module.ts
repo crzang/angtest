@@ -48,10 +48,11 @@ import { HistoryItemComponent } from './history-item/history-item.component';
 import { HistoryDetailComponent } from './history-detail/history-detail.component';
 import {CalendarModule} from 'primeng/calendar';
 import {DataGridModule} from 'primeng/datagrid';
-import {PanelModule} from "primeng/panel";
+import {PanelModule} from 'primeng/panel';
 import { StatisticComponent } from './statistic/statistic.component';
 import { D3Service, D3_DIRECTIVES } from './d3';
 import {SplitButtonModule} from 'primeng/splitbutton';
+import {AutoCompleteModule} from 'primeng/autocomplete';
 
 import { GraphComponent } from './visuals/graph/graph.component';
 import { SHARED_VISUALS } from './visuals/shared';
@@ -62,6 +63,16 @@ import { ActionsPayComponent } from './actions-and-pay/actions-pay/actions-pay.c
 import { NewTemplateComponent } from './actions-and-pay/new-template/new-template.component';
 import { NewTemplateItemComponent } from './actions-and-pay/new-template-item/new-template-item.component';
 import { RubComponent } from './rub/rub.component';
+import { TemplateConfirmComponent } from './actions-and-pay/template-confirm/template-confirm.component';
+import { SuccessPaymentComponent } from './actions-and-pay/success-payment/success-payment.component';
+import { SuccessPayment2Component } from './actions-and-pay/success-payment2/success-payment2.component';
+import { Card2cardComponent } from './actions-and-pay/card2card/card2card.component';
+import { Card2cardConfirmComponent } from './actions-and-pay/card2card/card2card-confirm/card2card-confirm.component';
+import { Pay2bankComponent } from './actions-and-pay/pay2bank/pay2bank.component';
+import { Pay2bankConfirmComponent } from './actions-and-pay/pay2bank/pay2bank-confirm/pay2bank-confirm.component';
+import { Pay2orgComponent } from './actions-and-pay/pay2org/pay2org.component';
+import { Pay2orgConfirmComponent } from './actions-and-pay/pay2org/pay2org-confirm/pay2org-confirm.component';
+import { CheckTaxComponent } from './actions-and-pay/check-tax/check-tax.component';
 
 @NgModule({
   declarations: [
@@ -113,7 +124,17 @@ import { RubComponent } from './rub/rub.component';
     ActionsPayComponent,
     NewTemplateComponent,
     NewTemplateItemComponent,
-    RubComponent
+    RubComponent,
+    TemplateConfirmComponent,
+    SuccessPaymentComponent,
+    SuccessPayment2Component,
+    Card2cardComponent,
+    Card2cardConfirmComponent,
+    Pay2bankComponent,
+    Pay2bankConfirmComponent,
+    Pay2orgComponent,
+    Pay2orgConfirmComponent,
+    CheckTaxComponent
   ],
   imports: [
     BrowserModule,
@@ -128,7 +149,8 @@ import { RubComponent } from './rub/rub.component';
     CalendarModule,
     DataGridModule,
     PanelModule,
-    SplitButtonModule
+    SplitButtonModule,
+    AutoCompleteModule
   ],
   providers: [D3Service],
   bootstrap: [AppComponent]

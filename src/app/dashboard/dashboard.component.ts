@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   @ViewChild('leftpartOne') leftpartOne: ElementRef;
   @ViewChild('container') container: ElementRef;
   @ViewChild('routeContainer') routeContainer: ElementRef;
+  @ViewChild('leftMenu') leftMenu: ElementRef;
   baseHeight = '768px';
   baseWidth = '1024px';
   mainHeight = this.baseHeight + 'px';
@@ -25,7 +26,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
         if (r.url) {
           const urlParts = r.url.split('/');
           if (r.shouldActivate) {
-
+            this.leftMenu.visible(false);
             if (urlParts.length === 2) {
               this.routeLevel = 1;
               this.leftpartOne.nativeElement.className = 'leftPart ' + urlParts[1];
@@ -45,6 +46,11 @@ export class DashboardComponent implements OnInit, AfterViewInit {
               const leftPartTwoClass = urlParts[1];
               this.leftPartTwoClass = 'leftPartTwo liteHide' + leftPartTwoClass;
               this.leftPart3Class = 'left3Two show ' + leftPartTwoClass + '_3';
+              if ((urlParts[2] === 'card2card' || urlParts[2] === 'pay2bank' || urlParts[2] === 'pay2org') && urlParts[3] === 'confirm') {
+                this.leftMenu.visible(true);
+              }
+            } else if (urlParts.length === 5) {
+              this.leftMenu.visible(true);
             }
             if (urlParts.length > 1 ) {
               if (urlParts[1] === 'actionsAndPay') {

@@ -125,3 +125,18 @@
 .menuButtonStyle{
   background: green;
 }
+
+.leftFill_visible{
+  visibility: visible;
+  opacity: 0.43;
+  font-family:  Helvetica, Arial, serif;
+  font-size: 15.0px;
+  color: rgba(0, 0, 0, 1.0);
+  text-align: left;
+  letter-spacing: -0.36px;
+  line-height: 20.0px;
+}
+
+.leftFill_hidden{
+  visibility: hidden;
+}

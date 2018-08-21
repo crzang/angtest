@@ -1,0 +1,20 @@
+<div #main class="successPayment">
+  <img #logo class="logo" src="assets/img/template-success-2-screen-shot-2017-09-05-at-155055@2x.png">
+  <div #content class="content">
+    <div class="value">-206 <app-rub></app-rub></div>
+    <div>Оплата успешно совершена</div>
+    <hr/>
+    <div> Зарплатный счет <span class="account">54 394 <app-rub></app-rub></span></div>
+    <hr/>
+    <div>Мегафон - все регионы</div>
+    <hr>
+
+  </div>
+  <div class="btnSave">
+  <app-button  route="../successPayment2" label="Сохранить как шаблон" border="true" bgColor="white" color="#1ABC9C" ></app-button>
+  </div>
+  <div class="footer">
+    <app-button  route="/actionsAndPay" label="Вернуться к платежам" border="true"></app-button>
+    <app-button underlined="true" route="/" label="На главную" ></app-button>
+  </div>
+</div>

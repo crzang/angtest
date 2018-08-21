@@ -1,0 +1,20 @@
+<div #main class="pay2orgConfirm">
+  <div routerLink="../" class="navigateBack"> < Назад</div>
+  <img class="foralogocopy2" src="assets/img/template-code-fora-logo-copy-2.png">
+  <div class="title">Проверьте, все ли верно</div>
+  <table #table class="dataTable" >
+    <tr class="itemLine" *ngFor="let item of data">
+      <td width="40%" class="name">
+        {{item.label}}
+      </td>
+      <td [class]="item.className">
+        {{item.value}}<app-rub *ngIf="item.className==='amount'"></app-rub>
+      </td>
+    </tr>
+  </table>
+  <hr class="divider"/>
+  <div class="confirmText">Введите код, который мы прислали на номер +7 921 *****48</div>
+  <input #inputBox class="confirmInput" type="password" pInputText (input)="inputCode($event)" />
+  <app-button route="../successPayment" label="Далее" border="true" bgColor="white" color="black" [enabled]="enabledNext"></app-button>
+  <div class="sendAgainText">Прислать код еще раз</div>
+</div>
