@@ -25,6 +25,7 @@ export class Card2cardComponent implements AfterViewInit {
   bankLogo = '';
   bank2Logo = '';
   amountWithTax = 0;
+  amount=0;
   constructor() {
     CardInfo.setDefaultOptions({
       banksLogosPath: '/assets/banks-logos/',

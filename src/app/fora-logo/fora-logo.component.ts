@@ -23,7 +23,7 @@ export class ForaLogoComponent implements OnInit {
     if (this.width !== '0') {
       baseWidth = parseFloat(this.width);
     }
-    this.logoOffset = baseWidth / 2 - 188 / 2 + 'px';
+    //this.logoOffset = baseWidth / 2 - 188 / 2 + 'px';
     this.mainImg.nativeElement.style.transform = 'scale(' + this.scale + ')';
   }
 

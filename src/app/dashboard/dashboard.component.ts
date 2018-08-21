@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from '@angular/core';
 import {Location} from '@angular/common';
 import {Router, ActivatedRoute} from '@angular/router';
+import {LeftMenuComponent} from '../left-menu/left-menu.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +13,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   @ViewChild('leftpartOne') leftpartOne: ElementRef;
   @ViewChild('container') container: ElementRef;
   @ViewChild('routeContainer') routeContainer: ElementRef;
-  @ViewChild('leftMenu') leftMenu: ElementRef;
+  @ViewChild('leftMenu') leftMenu: LeftMenuComponent;
   baseHeight = '768px';
   baseWidth = '1024px';
   mainHeight = this.baseHeight + 'px';
@@ -23,7 +24,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   leftPart3Class = 'left3Two hidden';
   constructor(private router: Router) {
     router.events.subscribe((r: any) => {
-        if (r.url) {
+     if (r.url) {
           const urlParts = r.url.split('/');
           if (r.shouldActivate) {
             this.leftMenu.visible(false);

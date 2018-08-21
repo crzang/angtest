@@ -154,7 +154,7 @@
 }
 
 .topMenu {
-  margin-top: 27px;
+  margin-top: 40px;
   height: auto;
   width: 358px;
   margin-left: 30px;
@@ -514,6 +514,7 @@
   text-align: right;
 }
 
+
 .detailBlock {
   position: absolute;
   left: 40%;
@@ -590,6 +591,7 @@
   text-align: left;
   letter-spacing: -0.5px;
   line-height: 18.0px;
+  margin-bottom: 8px;
 }
 
 .detailsBody .item {

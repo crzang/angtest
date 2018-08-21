@@ -12,4 +12,7 @@ export class CheckTaxComponent implements OnInit {
   ngOnInit() {
   }
 
+  onValueChange(e){
+
+  }
 }

@@ -49,56 +49,12 @@
 
 .cardBlock{
   width: 366px;
-  left: -20px;
-  top: -45px;
-  position: absolute;
+  margin-left: -13px;
+  margin-top: 185px;
 }
 
-.cards .card2 {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 235px;
-  height              : 234px;
-  width               : 387px;
-  position            : absolute;
-  margin              : 0;
-  left                : 100px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.cards .card3 {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 315px;
-  height              : 234px;
-  width               : 387px;
-  position            : absolute;
-  margin              : 0;
-  left                : 100px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.cards .card44 {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 395px;
-  height              : 234px;
-  width               : 388px;
-  position            : absolute;
-  margin              : 0;
-  left                : 100px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
-}
-.cards .card1 {
-  background-color    : rgba(255,255,255,0.0);
-  top                 : 474px;
-  height              : 234px;
-  width               : 388px;
-  position            : absolute;
-  margin              : 0;
-  left                : 100px;
-  -ms-transform       : rotate(0deg); /* IE 9 */
-  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
-  transform           : rotate(0deg);
+.cardBlock img{
+  height: 234px;
+  width: 387px;
+  margin-top: -170px;
 }

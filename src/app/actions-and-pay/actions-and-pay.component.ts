@@ -25,7 +25,7 @@ export class ActionsAndPayComponent implements OnInit {
       {name: 'Прочее', image: 'assets/img/actions/other.png'},
     ];
     this.transfers = [
-      {name: 'Между своими счетами', image: 'assets/img/actions/selfAccounts.png.png'},
+      {name: 'Между своими счетами', image: 'assets/img/actions/selfAccounts.png'},
       {name: 'Клиенту банка', image: 'assets/img/actions/client.png'},
       {name: 'С карты на карту', image: 'assets/img/actions/card2card.png', route: 'card2card'},
       {name: 'В другой банк на счет или карту', image: 'assets/img/actions/toOtherBank.png'},
