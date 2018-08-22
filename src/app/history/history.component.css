@@ -1,12 +1,13 @@
 .history{
   background-color: rgba(255,255,255,0);
-  margin-left: 10%;
+  margin-left: 110px;
   margin-right: 10%;
   min-width: 900px;
 }
 
 .title{
   margin-top: 50px;
+  margin-bottom: 40px;
   height: auto;
   width: 100%;
   margin-left: 0px;
@@ -29,15 +30,21 @@
   width: 100px;
 }
 
-
+.drDown2{
+  height: 40px;
+}
 .headerInput input{
   width: 100px;
 }
 
 .search{
-  position: absolute;
-  margin-top: -38px;
-  margin-left: 900px;
+  float: right;
+
+}
+
+.search input{
+  width: 150px;
+  height: 30px;
 }
 
 .body{
@@ -52,6 +59,7 @@
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
   line-height: 17.0px;
+  margin-bottom: 8px;
 }
 .item {
   cursor: pointer;
@@ -60,7 +68,7 @@
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
   line-height: 17.6px;
-  height: 44px;
+  height: 45px;
   padding: 15px;
 }
 
@@ -96,8 +104,9 @@
   color: rgba(0, 161, 15, 1.0);
 }
 .item img{
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
+  margin-bottom: -2px;
 }
 
 .item .value{

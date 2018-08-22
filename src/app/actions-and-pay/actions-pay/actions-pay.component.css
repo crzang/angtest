@@ -9,17 +9,16 @@
 }
 
 .image{
-  width: 34px;
   margin: 10px;
 }
 
 .name{
   margin-left: 10px;
-
+  font-size: 1.5em;
+  line-height: 1em;
 }
 .item{
-  width: 150px;
-  height: 150px;
+  width: 19%;
   font-family:  Helvetica, Arial, serif;
   font-size: 16.0px;
   color: rgba(46, 46, 46, 1.0);
@@ -27,7 +26,7 @@
   letter-spacing: -0.5px;
   line-height: 18.0px;
   border: #898989 1px solid;
-  margin: 5px;
+  margin: 6px;
 }
 
 .item:hover{

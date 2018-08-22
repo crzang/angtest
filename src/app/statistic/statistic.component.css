@@ -1,11 +1,13 @@
 .statistic{
   background-color: rgba(255,255,255,0);
-  margin-left: 10%;
+  margin-left: 110px;
   margin-right: 10%;
   min-width: 900px;
 }
 
-
+.statistic table{
+  margin-top: 40px;
+}
 .title{
   height: auto;
   width: 262px;
@@ -17,18 +19,22 @@
   line-height: 29.0px;
 }
 
+.drDown input{
+  width: 210px;
+}
 .topButtons{
   font-family: Helvetica, Arial, serif;
   font-size: 16.0px;
   color: rgba(118, 118, 118, 1.0);
   text-align: left;
   letter-spacing: -0.36px;
-  line-height: 45.0px;
+  line-height: 30.0px;
   border-radius: 5px;
   border: 1px solid #898989;
-  height: 45px;
+  height: 30px;
   display: flex;
   width: 210px;
+  margin-left: -120px;
 }
 
 .topButtons .item{
@@ -47,7 +53,8 @@
 }
 
 .monthDetail{
-  margin-left: 70%;
+  float: right;
+  margin-right: 60px;
 }
 
 .item.selected{
@@ -59,7 +66,7 @@
   font-family: Helvetica, Arial, serif;
   font-size: 18.0px;
   letter-spacing: -0.12px;
-  line-height: 36.0px;
+  line-height: 26px;
   cursor: pointer;
 }
 

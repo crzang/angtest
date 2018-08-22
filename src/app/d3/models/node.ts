@@ -30,7 +30,7 @@ export class Node implements d3.SimulationNodeDatum {
   }
 
   get r() {
-    return 300 * this.normal() + 10;
+    return 500 * this.normal() + 10;
   }
 
   get fontSize() {

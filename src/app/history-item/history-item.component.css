@@ -7,7 +7,6 @@
   overflow: hidden;
   top: -50px;
   margin-left: 30px;
-  animation: showCardInfo 2000ms ease-in-out both;;
 }
 
 @keyframes showCardInfo {
@@ -392,9 +391,14 @@
   opacity             : 0.61;
 }
 .summary{
-  margin-top: 20px;
-}
 
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 37px;
+}
+.back{
+  margin-left: 37px;
+}
 .summary .itemLine {
   height: 30px;
 }

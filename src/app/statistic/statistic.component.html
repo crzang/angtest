@@ -1,6 +1,6 @@
 <div #main class="statistic">
 
-  <table width="50%">
+  <table width="700px">
     <tr>
       <td>
         <div class="title">
@@ -14,8 +14,13 @@
         </div>
       </td>
       <td>
-        <p-dropdown [options]="orders"
-                    dropdownIcon="dropDownIcon"></p-dropdown>
+        <p-dropdown  [options]="orders" [style]="{'width':'210px','height':'30px','text-align':'center'}"
+                    >
+          <ng-template let-item pTemplate="selectedItem">
+
+            <div style="vertical-align:middle;line-height: 10px;">{{item.label}}</div>
+          </ng-template>
+        </p-dropdown>
       </td>
     </tr>
   </table>

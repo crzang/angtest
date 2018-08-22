@@ -30,7 +30,7 @@ export class HistoryComponent implements OnInit {
             toIco: 'assets/img/sber.png',
             to: 'Сбербанк России',
             toNum: '5644',
-            value: '-200 000 руб',
+            value: '-200 000 ',
             bonus: ''
           }
         ]
@@ -47,7 +47,7 @@ export class HistoryComponent implements OnInit {
             toIco: 'assets/img/gibdd.png',
             to: 'Управление ГИБДД ГУВД',
             toNum: '401 01 810 8 00000012197659',
-            value: '-400 руб',
+            value: '-400 ',
             bonus: ''
           },
           {
@@ -60,8 +60,8 @@ export class HistoryComponent implements OnInit {
             toIco: 'assets/img/yandex.png',
             to: 'ООО "Яндекс"',
             toNum: '302 01 540 5 000023468653',
-            value: '-5000 руб',
-            bonus: '+ 25 юонусов'
+            value: '-5000 ',
+            bonus: '+ 25 бонусов'
           }
           ,
           {
@@ -74,7 +74,7 @@ export class HistoryComponent implements OnInit {
             toIco: 'assets/img/alfa.png',
             to: 'Анастасия Сергеевна К.',
             toNum: '3365',
-            value: '-10 200 руб',
+            value: '-10 200 ',
             bonus: ''
           }
         ]

@@ -36,6 +36,12 @@
   background: #F1F1F1;
 }
 
+.itemsBlock hr{
+
+  color: rgba(216,216,216,0.5);
+  margin: 0px 16px;
+}
+
 .item .name{
   font-family:  Helvetica, Arial, serif;
   font-size: 17.0px;

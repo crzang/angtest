@@ -28,10 +28,12 @@ export class D3Service {
   /** A method to bind a draggable behaviour to an svg element */
   applyDraggableBehaviour(element, node: Node, graph: ForceDirectedGraph) {
     const d3element = d3.select(element);
-
+    element.onClick=function () {
+      console.log('CLICK !!!!')
+    }
     function started() {
       /** Preventing propagation of dragstart to parent elements */
-      d3.event.sourceEvent.stopPropagation();
+      //d3.event.sourceEvent.stopPropagation();
 
       if (!d3.event.active) {
         graph.simulation.alphaTarget(0.3).restart();

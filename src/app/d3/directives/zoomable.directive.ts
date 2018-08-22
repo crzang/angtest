@@ -10,6 +10,6 @@ export class ZoomableDirective implements OnInit {
     constructor(private d3Service: D3Service, private _element: ElementRef) {}
 
     ngOnInit() {
-        this.d3Service.applyZoomableBehaviour(this.zoomableOf, this._element.nativeElement);
+       // this.d3Service.applyZoomableBehaviour(this.zoomableOf, this._element.nativeElement);
     }
 }
