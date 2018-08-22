@@ -5,8 +5,8 @@
   min-height: 760px;
   position: relative;
   overflow: hidden;
-  top: -80px;
-  margin-left: 30px;
+  top: -65px;
+  margin-left: 80px;
   animation: showCardInfo 2000ms ease-in-out both;;
 }
 
@@ -17,7 +17,8 @@
 
 
 .topMenu {
-  margin: 30px;
+  margin-top:30px;
+  margin-bottom: 40px;
   height: auto;
   width: 358px;
   font-family: Helvetica, Arial, serif;
@@ -39,7 +40,7 @@
 }
 
 .content{
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .title{
@@ -121,7 +122,7 @@
   background: #F8F8F8;
   border-radius: 2px;
   left: 445px;
-  top: 120px;
+  top: 131px;
 }
 
 .line5{
@@ -147,7 +148,7 @@
 .valueBlock{
   position: absolute;
   left: 445px;
-  top: 330px;
+  top: 346px;
 }
 
 .valueTitle{
