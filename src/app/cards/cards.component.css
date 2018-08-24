@@ -44,3 +44,21 @@
   width: 387px;
   margin-top: -170px;
 }
+
+.card:hover{
+  animation:showCard 500ms ease-in-out both;
+}
+
+@keyframes showCard {
+  from {margin-left: 0%}
+  to {margin-left: 30%}
+}
+
+.card{
+  animation:hideCard 500ms ease-in-out both;
+}
+
+@keyframes hideCard {
+  from {margin-left: 30%}
+  to {margin-left: 0%}
+}

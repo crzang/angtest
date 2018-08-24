@@ -1,4 +1,4 @@
-<div #main (resized)="onResize()" class="leftMenu" [style.height]='mainHeight'>
+<div #main (resized)="onResize($event)" class="leftMenu" [style.height]='mainHeight'>
   <app-fora-logo width="210" scale="0.7"></app-fora-logo>
   <div class="buttonsBar">
     <div [class]="mainClass" routerLink="/main">Мои финансы</div>

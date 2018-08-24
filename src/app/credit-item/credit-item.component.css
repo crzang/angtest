@@ -1,7 +1,7 @@
 .item{
   height: 90px;
   background: #F8F8F8;
-
+  border-bottom: 1px solid #E9E9E9;
   cursor: pointer;
 }
 
@@ -21,12 +21,11 @@
 .date{
   text-align: center;
   color: #898989;
-  border-bottom: 1px solid #E9E9E9;
+
 }
 
 .percent{
   text-align: center;
-  border-bottom: 1px solid #E9E9E9;
   color: #898989;
 }
 

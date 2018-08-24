@@ -579,6 +579,9 @@
   text-align: right;
   letter-spacing: -0.28px;
   line-height: 25.08px;
+  float: right;
+  width: 200px;
+  margin-top: 20px;
 }
 
 .detailBlock table{
@@ -586,17 +589,26 @@
   padding-top: 20px;
 }
 
-.detailBlock .items {
-  margin-top: 20px;
-
+.detailBlock .item {
+  display: flex;
+  height: 80px;
 }
 
-.detailBlock .items td{
-  margin-top: 50px;
-  text-align: left;
-  border-spacing: 0px;
-  border-top: 1px solid #e4e4e4;
+.detailBlock .items hr{
+  width: 100%;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  color: #E0E0E0;
+}
+
+.detailBlock .items {
   padding: 20px 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+.detailBlock .items .count{
+  width: 50px;
+  margin-top: 20px;
 }
 
 .detailBlock .items .name{
@@ -605,4 +617,74 @@
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
   line-height: 19.0px;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.extra{
+  background: #00BB69;
+  height: 80px;
+  position: absolute;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.extraVal{
+  font-family: Helvetica, Arial, serif;
+  font-size: 18.0px;
+  color: rgba(255, 255, 255, 1.0);
+
+  letter-spacing: -0.28px;
+  line-height: 25.08px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.hiddenDetail{
+  display: none;
+  animation:hideDetail 1000ms ease-in-out both;
+}
+
+@keyframes hideDetail {
+  from {margin-left: 30%;width:100%}
+  to {margin-left: 100%;width: 0%}
+}
+
+.showDetail{
+  display: block;
+  animation:showDetail 1000ms ease-in-out both;
+}
+
+@keyframes showDetail {
+  from {margin-left: 100%;width:0%}
+  to {margin-left: 30%;width: 100%}
+}
+
+.detailRightPart{
+  float: right;
+  margin-top: -40px;
+  margin-right: 30%;
+}
+
+.showDetail .detailRightPart{
+  animation:showDetail2 700ms ease-in-out both;
+}
+
+@keyframes showDetail2 {
+  0% {opacity: 0}
+  90% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.showDetail .extraVal{
+  animation:showDetail3 500ms ease-in-out both;
+}
+
+@keyframes showDetail3 {
+  0% {opacity: 0}
+  90% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.detailRightPart img{
+  border-radius: 23px;
 }

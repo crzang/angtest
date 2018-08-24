@@ -9,6 +9,7 @@ export class PaymentInfoComponent implements OnInit {
   @ViewChild('main') main: ElementRef;
   cards = [];
   details = [];
+  detailClass="extra hiddenDetail";
   constructor() {
 
     this.cards = [
@@ -19,10 +20,9 @@ export class PaymentInfoComponent implements OnInit {
 
     ];
     this.details = [
-      {name: 'Тоrк Полотенца бумажные однослойные ZZ-сложение листа 5 х 250 л ', count: 'x5', value: '14 567 руб'},
-      {name: 'Кроненбург Бланк, упаковка, 20 бутылок ', count: 'x45', value: '14 567 руб'},
-      {name: 'Tork Диспенсер мини для полотенец c ZZ-сложением листа', count: 'x20', value: '14 567 руб'},
-      {name: '', count: '', value: ''}
+      {id:1,name: 'Тоrк Полотенца бумажные однослойные ZZ-сложение листа 5 х 250 л ', count: 'x5', value: '14 567 руб',className:'extra hiddenDetail'},
+      {id:2,name: 'Кроненбург Бланк, упаковка, 20 бутылок ', count: 'x45', value: '14 567 руб',className:'extra hiddenDetail'},
+      {id:3,name: 'Tork Диспенсер мини для полотенец c ZZ-сложением листа', count: 'x20', value: '14 567 руб',className:'extra hiddenDetail'},
     ];
   }
 
@@ -31,5 +31,22 @@ export class PaymentInfoComponent implements OnInit {
     const clientHeight = window.innerHeight;
     this.main.nativeElement.style.height = clientHeight + 'px';
     this.main.nativeElement.style.width = clientWidth - 210 + 'px';
+  }
+
+  showDetail(id){
+    this.details.forEach((d)=>{
+      d.className="extra hiddenDetail"
+      if(d.id===id){
+        d.className="extra showDetail"
+      }
+    })
+  }
+
+  hideDetail(id){
+    this.details.forEach((d)=>{
+      if(d.id===id){
+        d.className="extra hiddenDetail"
+      }
+    })
   }
 }

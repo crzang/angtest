@@ -595,10 +595,28 @@
 }
 
 .detailsBody .item {
-  background: #F7F7F7;
+
+  background: #1122FF;
   height: 80px;
   cursor: pointer;
   border-radius: 10px;
+}
+
+.detailsBody .item .bg{
+  background: #F7F7F7;
+  height: 80px;
+  width: 100%;
+  -webkit-transition: margin-left 1s; /* For Safari 3.1 to 6.0 */
+  transition: margin-left 1s;
+}
+
+.detailsBody .item .bg:hover {
+  margin-left:100%
+}
+
+@keyframes itemHover {
+  from{margin-left:0%}
+  to{margin-left:100%}
 }
 
 .items hr{

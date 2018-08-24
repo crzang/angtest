@@ -66,19 +66,31 @@
       <div class="title">- 14 567  <app-rub></app-rub></div>
       <div class="totalBonus">+1200 бонусов</div>
     </div>
-    <table width="100%" >
-      <tr  class="items" *ngFor="let item of details">
-        <td width="300px" class="name">
+    <div class="items" >
+      <div *ngFor="let item of details" (mouseover)="showDetail(item.id)" (mouseout)="hideDetail(item.id)">
+        <div class="item" >
+        <div  class="name">
           {{item.name}}
-        </td>
-        <td>
+        </div>
+        <div class="count">
           {{item.count}}
-        </td>
-        <td class="value">
-          {{item.value}}
-        </td>
-      </tr>
-    </table>
+        </div>
+        <div class="value">
+            {{item.value}}
+        </div>
+        <div #detail [class]="item.className">
+          <div class="extraVal">{{item.value}}</div>
+          <div class="detailRightPart">
+            <img width="46px" height="46px" src="assets/img/details/1.png">
+            <img width="46px" height="46px" src="assets/img/details/2.png">
+            <img width="46px" height="46px" src="assets/img/details/3.png">
+            <img width="46px" height="46px" src="assets/img/details/4.png">
+          </div>
+        </div>
+        </div>
+        <hr/>
+      </div>
+    </div>
   </div>
 
 </div>

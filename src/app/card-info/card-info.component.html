@@ -63,7 +63,7 @@
       <div class="detailDay" *ngFor="let detail of details">
         <div class="day">{{detail.date}}</div>
         <div class="items" *ngFor="let data of detail.data" routerLink="details0">
-          <div class="item">
+          <div class="item" [style.background]="data.background">
             <div class="icon">
               <img width="30px" src="{{data.icon}}">
             </div>
@@ -73,7 +73,9 @@
               <div class="value">- {{data.value}} <app-rub></app-rub></div>
               <div class="bonus">+ {{data.bonus}} бонусов</div>
             </div>
+            <div class="bg" ></div>
           </div>
+
           <hr/>
         </div>
 
