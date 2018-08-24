@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host 192.168.199.108 --watch",
+    "start2": "ng serve --host 192.168.1.37 --watch",
     "build": "ng build",
     "prod": "ng build --prod",
     "test": "ng test",
@@ -25,6 +26,7 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "@vaadin/vaadin-text-field": "^2.1.0-alpha3",
+    "angular-resize-event": "^0.4.4",
     "card-info": "^1.2.4",
     "core-js": "^2.5.4",
     "d3": "^5.5.0",

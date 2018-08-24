@@ -12,8 +12,11 @@ export class AppComponent {
   baseHeight = 768;
   baseWith = 1024;
   mainHeight = this.baseHeight + 'px';
-  env=environment
+  env = environment;
   constructor() {
+  }
+
+  onResize(event) {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
     }
@@ -22,6 +25,4 @@ export class AppComponent {
     }
     this.mainHeight = this.baseHeight + 'px';
   }
-
-
 }

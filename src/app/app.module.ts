@@ -53,6 +53,7 @@ import { StatisticComponent } from './statistic/statistic.component';
 import { D3Service, D3_DIRECTIVES } from './d3';
 import {SplitButtonModule} from 'primeng/splitbutton';
 import {AutoCompleteModule} from 'primeng/autocomplete';
+import { AngularResizedEventModule } from 'angular-resize-event';
 
 import { GraphComponent } from './visuals/graph/graph.component';
 import { SHARED_VISUALS } from './visuals/shared';
@@ -73,6 +74,7 @@ import { Pay2bankConfirmComponent } from './actions-and-pay/pay2bank/pay2bank-co
 import { Pay2orgComponent } from './actions-and-pay/pay2org/pay2org.component';
 import { Pay2orgConfirmComponent } from './actions-and-pay/pay2org/pay2org-confirm/pay2org-confirm.component';
 import { CheckTaxComponent } from './actions-and-pay/check-tax/check-tax.component';
+import { SimpleButtonComponent } from './simple-button/simple-button.component';
 
 @NgModule({
   declarations: [
@@ -134,7 +136,8 @@ import { CheckTaxComponent } from './actions-and-pay/check-tax/check-tax.compone
     Pay2bankConfirmComponent,
     Pay2orgComponent,
     Pay2orgConfirmComponent,
-    CheckTaxComponent
+    CheckTaxComponent,
+    SimpleButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -150,7 +153,8 @@ import { CheckTaxComponent } from './actions-and-pay/check-tax/check-tax.compone
     DataGridModule,
     PanelModule,
     SplitButtonModule,
-    AutoCompleteModule
+    AutoCompleteModule,
+    AngularResizedEventModule
   ],
   providers: [D3Service],
   bootstrap: [AppComponent]

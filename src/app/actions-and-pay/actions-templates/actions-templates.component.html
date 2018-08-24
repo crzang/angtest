@@ -1,7 +1,8 @@
 <div class="title">
   Шаблоны
 </div>
-<div class="newTemplate" routerLink="newTemplate">Создать шаблон</div>
+
+<div class="newTemplate" > <app-simple-button  routerLink="newTemplate" label="Создать шаблон"></app-simple-button></div>
 <div class="itemsBlock">
   <div *ngFor="let template of templates">
     <app-dashboard-current-item name="{{template.name}}" icon="{{template.image}}" number="{{template.lastUse}}"

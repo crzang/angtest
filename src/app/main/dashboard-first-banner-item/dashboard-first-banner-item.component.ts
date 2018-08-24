@@ -13,6 +13,8 @@ export class DashboardFirstBannerItemComponent implements OnInit {
   @Input() text = '';
   @Input() button0 = '';
   @Input() button1 = '';
+  @Input() color = 'black';
+  @Input() background = 'white';
   @ViewChild('secondButton') secondButton: ElementRef;
   @ViewChild('value') value: ElementRef;
 

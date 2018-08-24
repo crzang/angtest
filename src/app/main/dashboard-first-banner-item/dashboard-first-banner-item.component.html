@@ -1,4 +1,4 @@
-<div class="item">
+<div class="item" [style.color]="color" [style.background]="background">
   <img width="46px" height="46px" src="{{icon}}" class="itemImage">
   <img [hidden]="hideExtra" width="60px" src="{{extraIcon}}" class="extraIcon">
   <div class="block">
@@ -11,7 +11,7 @@
   </div>
   </div>
   <div #footer class="footer">
-    <div class="detail" >{{button0}}</div>
+    <div class="detail" [style.color]="color"  >{{button0}}</div>
     <div #secondButton class="detail">{{button1}}</div>
   </div>
 </div>

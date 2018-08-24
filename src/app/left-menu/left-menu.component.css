@@ -28,6 +28,17 @@
   cursor: pointer;
 }
 
+.link.inactive{
+  text-decoration: underline;
+}
+
+.link.inactive:hover{
+  text-decoration: none;
+}
+
+.link.active{
+  font-weight: bold;
+}
 .userName{
   width: 132px;
   -ms-transform: rotate(0deg);

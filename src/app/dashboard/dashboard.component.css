@@ -30,6 +30,11 @@
 }
 .header .active{
   text-decoration: none;
+  font-weight: bold;
+}
+
+.header .notactive:hover{
+  text-decoration: none;
 }
 
 .header .notactive{

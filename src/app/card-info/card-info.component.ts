@@ -24,14 +24,14 @@ export class CardInfoComponent implements OnInit {
     this.details = [
       {
         date: '1 октября',
-        data: [{icon: 'assets/img/cardDetailItem0.png', name: 'METRO Store 1019', value: '14567 руб', bonus: '1200'},
-          {icon: 'assets/img/cardDetailItem1.png', name: 'PEREKRESTOK 24 ', extraName: 'Гипермаркет', value: '2964 ', bonus: '65'},
-          {icon: 'assets/img/cardDetailItem2.png', name: 'Азбука вкуса', extraName: 'Супермаркет', value: '2100 ', bonus: '1200'}
+        data: [{icon: 'assets/img/cardDetailItem0.png', name: 'METRO Store 1019', value: '14 567 руб', bonus: '1200'},
+          {icon: 'assets/img/cardDetailItem1.png', name: 'PEREKRESTOK 24 ', extraName: 'Гипермаркет', value: '2 964 ', bonus: '65'},
+          {icon: 'assets/img/cardDetailItem2.png', name: 'Азбука вкуса', extraName: 'Супермаркет', value: '2 100 ', bonus: '1200'}
         ]
       },
       {
         date: '5 октября',
-        data: [{icon: 'assets/img/cardDetailItem3.png', name: 'Пятерочка', extraName: 'Продуктовый магазин', value: '2964 ', bonus: '65'},
+        data: [{icon: 'assets/img/cardDetailItem3.png', name: 'Пятерочка', extraName: 'Продуктовый магазин', value: '2 964 ', bonus: '65'},
           {icon: 'assets/img/cardDetailItem4.png', name: 'Dyadushka FHO', extraName: 'Гипермаркет', value: '550 ', bonus: '0'},
           {icon: 'assets/img/cardDetailItem2.png', name: 'Азбука вкуса', extraName: 'Супермаркет',
             value: '2100 ',

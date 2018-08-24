@@ -12,15 +12,7 @@
 
 .newTemplate{
   float: right;
-  border: 1px solid rgba(175, 175, 175, 0.5);
-  border-radius: 25px;
-  text-align: center;
-  height: 45px;
-  width: 150px;
-  font-size: 16.0px;
-  line-height: 45.0px;
   margin-top: -40px;
-  cursor: pointer;
 }
 
 .image{

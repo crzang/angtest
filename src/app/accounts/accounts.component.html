@@ -6,7 +6,7 @@
       <div class="inactive"> Облегации</div>
       <div class="inactive last"> Ячейки</div>
     </div>
-    <p-dropdown [options]="orders" [style]="{'width':'360px','height':'44px','marginTop':'20px'}"
+    <p-dropdown [options]="orders" [style]="{'width':'360px','height':'30px','marginTop':'20px'}"
                 ></p-dropdown>
     <div class="body">
       <app-dashboard-current-item name="Зарплатный счет" icon="assets/img/item0.png" number="2344 4567 8907 9706"
@@ -35,5 +35,5 @@
         </tr>
       </table>
     </div>
-    <div class="addAccountButton">+Открыть счет</div>
+    <div class="addAccountButton"><app-simple-button label="+Открыть счет"></app-simple-button></div>
 </div>

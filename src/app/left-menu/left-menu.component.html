@@ -1,13 +1,13 @@
-<div #main class="leftMenu" [style.height]='mainHeight'>
+<div #main (resized)="onResize()" class="leftMenu" [style.height]='mainHeight'>
   <app-fora-logo width="210" scale="0.7"></app-fora-logo>
   <div class="buttonsBar">
-    <div class="link" routerLink="/main">Мои финансы</div>
+    <div [class]="mainClass" routerLink="/main">Мои финансы</div>
     <br>
-    <div class="link" routerLink="/actionsAndPay">Платежи и переводы</div>
+    <div [class]="actionsClass" routerLink="/actionsAndPay">Платежи и переводы</div>
     <br>
-    <div class="link">Партнерские сервисы</div>
+    <div [class]="partnerClass" >Партнерские сервисы</div>
     <br>
-    <div class="link">Отделения и банкоматы</div>
+    <div [class]="banksClass" >Отделения и банкоматы</div>
   </div>
 
   <div #footer class="footer">
