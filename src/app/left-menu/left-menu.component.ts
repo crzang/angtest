@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, Input } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-left-menu',
@@ -16,6 +17,7 @@ export class LeftMenuComponent implements OnInit, AfterViewInit {
   actionsClass = 'link';
   partnerClass = 'link';
   banksClass = 'link';
+  env = environment;
 
   constructor(private router: Router) {
     router.events.subscribe((r: any) => {
@@ -59,5 +61,9 @@ export class LeftMenuComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     const lostPasswordPos = this.baseHeight - this.footer.nativeElement.offsetHeight - 50;
     this.footer.nativeElement.style.top = lostPasswordPos + 'px';
+  }
+
+  logout() {
+    this.env.isLogged=false
   }
 }

@@ -36,7 +36,7 @@ import {Pay2orgConfirmComponent} from "./actions-and-pay/pay2org/pay2org-confirm
 import {CheckTaxComponent} from "./actions-and-pay/check-tax/check-tax.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/main', pathMatch: 'full' },
+  { path: '', redirectTo: '/signIn', pathMatch: 'full' },
   { path: 'signIn', component: SigninComponent },
   { path: 'signIn/verifySms', component: VerifySmsComponent },
   { path: 'regChoice', component: RegChoiceComponent },

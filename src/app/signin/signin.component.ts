@@ -13,6 +13,7 @@ export class SigninComponent implements AfterViewInit {
   @ViewChild('loginBlock') loginBlock: ElementRef;
   @ViewChild('passwordBlock') passwordBlock: ElementRef;
 
+  env = environment;
   baseHeight = 768;
   baseWith = 1024;
   mainHeight = this.baseHeight + 'px';
@@ -50,9 +51,9 @@ export class SigninComponent implements AfterViewInit {
   }
 
   doLogin() {
-    if(this.btnEnterEnabled) {
-      //this.env.isLogged = true;
-      this.router.navigateByUrl("/main")
+    if (this.btnEnterEnabled) {
+      this.env.isLogged = true;
+      this.router.navigateByUrl('/main');
     }
 
   }

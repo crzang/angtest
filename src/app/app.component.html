@@ -1,7 +1,3 @@
 <div (resized)="onResize($event)" class="mainContainer" [style.height]="mainHeight">
-  <app-dashboard *ngIf="env.isLogged; else loggedOut"></app-dashboard>
-
-  <ng-template #loggedOut>
-    <router-outlet ></router-outlet>
-  </ng-template>
+  <app-dashboard ></app-dashboard>
 </div>
