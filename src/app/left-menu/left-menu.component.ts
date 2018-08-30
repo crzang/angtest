@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, Input } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
 import { environment } from '../../environments/environment';
+import {AuthGuardService} from '../auth-guard.service';
 
 @Component({
   selector: 'app-left-menu',
@@ -19,7 +20,7 @@ export class LeftMenuComponent implements OnInit, AfterViewInit {
   banksClass = 'link';
   env = environment;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private authGuard: AuthGuardService) {
     router.events.subscribe((r: any) => {
         if (r.url) {
           const urlParts = r.url.split('/');
@@ -64,6 +65,7 @@ export class LeftMenuComponent implements OnInit, AfterViewInit {
   }
 
   logout() {
-    this.env.isLogged=false
+    this.authGuard.setUserId('');
+    this.router.navigateByUrl('/signIn');
   }
 }

@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  isLogged: false
-};
+}
 
 /*
  * In development mode, to ignore zone related error stack frames such as

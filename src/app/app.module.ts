@@ -75,6 +75,7 @@ import { Pay2orgComponent } from './actions-and-pay/pay2org/pay2org.component';
 import { Pay2orgConfirmComponent } from './actions-and-pay/pay2org/pay2org-confirm/pay2org-confirm.component';
 import { CheckTaxComponent } from './actions-and-pay/check-tax/check-tax.component';
 import { SimpleButtonComponent } from './simple-button/simple-button.component';
+import { WebStorageModule } from 'ngx-store';
 
 @NgModule({
   declarations: [
@@ -154,7 +155,8 @@ import { SimpleButtonComponent } from './simple-button/simple-button.component';
     PanelModule,
     SplitButtonModule,
     AutoCompleteModule,
-    AngularResizedEventModule
+    AngularResizedEventModule,
+    WebStorageModule
   ],
   providers: [D3Service],
   bootstrap: [AppComponent]

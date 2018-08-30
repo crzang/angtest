@@ -2,6 +2,7 @@ import {Component, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
 import {InputTextModule} from 'primeng/inputtext';
 import { Router } from '@angular/router';
 import { environment } from '../../environments/environment';
+import {AuthGuardService} from '../auth-guard.service';
 
 @Component({
   selector: 'app-signin',
@@ -21,7 +22,7 @@ export class SigninComponent implements AfterViewInit {
   pass = '';
   btnEnterEnabled = false;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private authGuard: AuthGuardService) {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
     }
@@ -52,7 +53,7 @@ export class SigninComponent implements AfterViewInit {
 
   doLogin() {
     if (this.btnEnterEnabled) {
-      this.env.isLogged = true;
+      this.authGuard.setUserId(this.login)
       this.router.navigateByUrl('/main');
     }
 

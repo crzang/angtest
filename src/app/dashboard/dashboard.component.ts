@@ -3,6 +3,7 @@ import {Location} from '@angular/common';
 import {Router, ActivatedRoute, NavigationEnd, NavigationStart} from '@angular/router';
 import {LeftMenuComponent} from '../left-menu/left-menu.component';
 import { environment } from '../../environments/environment';
+import {AuthGuardService} from '../auth-guard.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -19,7 +20,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   baseHeight = '768px';
   baseWidth = '1024px';
   mainHeight = this.baseHeight + 'px';
-  visibility = 'hidden';
+  visibility = 'visible';
   visibilityMain = 'hidden';
   routeLevel = 0;
   leftPartTwoClass = 'leftPartTwo hidden';
@@ -27,34 +28,28 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   ANIMATION_DELAY = 10;
   env = environment;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private authGuard: AuthGuardService) {
     router.events.subscribe((r: any) => {
         if (r instanceof NavigationStart && r.url && this.body) {
-          /*this.container.nativeElement.className = 'hideContainer';
-setTimeout(() => {
-  this.router.navigateByUrl('/' + targetBlock);
-  this.leftpartOne.nativeElement.className = 'leftPart ' + targetBlock;
-  this.container.nativeElement.className = 'showContainer';
-}, 1000);*/
           this.container.nativeElement.className = 'hideContainer';
           this.routeContainer.nativeElement.className = 'hideRoute';
           setTimeout(() => {
-            if(!this.body){
-              return
+            if (!this.body) {
+              return;
             }
+            this.visibility = 'visible';
             this.container.nativeElement.className = 'showContainer';
             this.routeContainer.nativeElement.className = 'showRoute';
             const urlParts = r.url.split('/');
               this.leftMenu.visible(false);
+
               if (urlParts.length === 2) {
                 this.routeLevel = 1;
                 this.leftpartOne.nativeElement.className = 'leftPart ' + urlParts[1];
                 this.leftPartTwoClass = 'leftPartTwo hidden';
-                this.visibility = 'visible';
                 this.leftPart3Class = 'left3Two hidden';
               } else if (urlParts.length === 3) {
                 this.routeLevel = 2;
-
                 this.visibility = 'hidden';
                 const leftPartTwoClass = urlParts[1];
                 this.leftPartTwoClass = 'leftPartTwo show ' + leftPartTwoClass;
@@ -72,6 +67,7 @@ setTimeout(() => {
                 this.leftMenu.visible(true);
               }
               if (urlParts.length > 1) {
+                this.clearActive(urlParts[1]);
                 if (urlParts[1] === 'actionsAndPay') {
                   this.visibility = 'hidden';
                 }
@@ -105,10 +101,14 @@ setTimeout(() => {
 
   }
 
-  clearActive() {
+  clearActive(id) {
     const children = this.header.nativeElement.children;
     for (let i = 0; i < children.length; ++i) {
-      children.item(i).className = 'notactive';
+      if (id && children.item(i).id === id) {
+        children.item(i).className = 'active';
+      } else {
+        children.item(i).className = 'notactive';
+      }
     }
   }
 
@@ -118,5 +118,9 @@ setTimeout(() => {
          this.visibility = 'visible';
        }
      }, 1000);*/
+  }
+
+  isLogged() {
+    return this.authGuard.islogged();
   }
 }
