@@ -14,7 +14,7 @@
   height: 40px;
   font-size: 16px;
   text-indent: 10px;
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   width: 250px;
 }
 
@@ -28,7 +28,7 @@
 .inputFloatingLabel {
   font-size: 16px;
   margin-left: 10px;
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
 }
 
 .loginBlock {

@@ -23,7 +23,7 @@
   width: 210px;
 }
 .topButtons{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(118, 118, 118, 1.0);
   text-align: left;
@@ -63,7 +63,7 @@
 
 .item {
   color: rgba(127,127,127,0.5);
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 18.0px;
   letter-spacing: -0.12px;
   line-height: 26px;

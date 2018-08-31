@@ -24,7 +24,7 @@
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 16.0px;
   color:black;
   letter-spacing: 0.73px;
@@ -61,12 +61,12 @@
   height: 40px;
   font-size: 24.0px;
   text-indent: 10px;
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   width: 350px;
 }
 
 .selectedItemLabel{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -94,7 +94,7 @@
 }
 
 .itemLabel{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;

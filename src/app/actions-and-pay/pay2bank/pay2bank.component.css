@@ -21,7 +21,7 @@
   margin-bottom: 40px;
   height: auto;
   width: 358px;
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -54,7 +54,7 @@
 }
 
 .itemLabel{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 15.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;

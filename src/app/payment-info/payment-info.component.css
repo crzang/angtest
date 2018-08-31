@@ -27,7 +27,7 @@
   -ms-transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(255, 255, 255, 1.0);
   letter-spacing: 0.73px;
@@ -146,7 +146,7 @@
 
 .detailDay{
   margin-top: 20px;
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -208,7 +208,7 @@
 }
 
 .detailsBody .item .data .value{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 18.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: right;
@@ -573,7 +573,7 @@
 }
 
 .detailBlock .items .value{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 18.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: right;
@@ -630,7 +630,7 @@
 }
 
 .extraVal{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 18.0px;
   color: rgba(255, 255, 255, 1.0);
 

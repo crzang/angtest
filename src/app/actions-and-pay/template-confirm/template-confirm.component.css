@@ -35,7 +35,7 @@
 .title{
   width: 100%;
   margin-top: 150px;
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 32.0px;
   color: rgba(255, 255, 255, 1.0);
   text-align: center;
@@ -48,7 +48,7 @@
 }
 
 .itemLine{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 15.0px;
   color: rgba(255, 255, 255, 1.0);
   text-align: left;
@@ -57,7 +57,7 @@
 }
 
 .amount{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 32.0px;
   color: rgba(255, 255, 255, 1.0);
   letter-spacing: -0.46px;

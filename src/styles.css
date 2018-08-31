@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 @font-face {
-  font-family: Helvetica;
+  font-family: Roboto;
   src: url("assets/fonts/9202.otf") format("opentype");
 }
 
@@ -13,7 +13,7 @@ body{
 input{
   font-size: 24.0px;
   text-indent: 5px;
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   width: 250px;
 }
 
@@ -52,7 +52,7 @@ input{
   height: 40px;
   margin-top: 10px;
   color: white;
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 15.0px;
   text-align: center;
   letter-spacing: -0.29px;
@@ -103,7 +103,7 @@ input{
 }
 
 .ui-dropdown label.ui-dropdown-label{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 18px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;

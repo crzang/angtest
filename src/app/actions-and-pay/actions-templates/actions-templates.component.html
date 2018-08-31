@@ -8,6 +8,6 @@
     <app-templ-item name="{{template.name}}" icon="{{template.image}}" number="{{template.lastUse}}"
                                 value="{{template.value}}" isFirst="{{i===0}}" isLast="{{i===(templates.length-1)}}"
     ></app-templ-item>
-    <hr/>
+    <hr *ngIf="i!==(templates.length-1)"/>
   </div>
 </div>

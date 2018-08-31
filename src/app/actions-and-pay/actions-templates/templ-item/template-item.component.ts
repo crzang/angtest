@@ -12,11 +12,20 @@ export class TemplateItemComponent implements OnInit {
   @Input() nameIcon = 'assets/img/mock.png';
   @Input() number = '';
   @Input() value = '';
-  @Input() isFirst = false;
-  @Input() isLast = false;
-  constructor() { }
+  @Input() isFirst = 'false';
+  @Input() isLast = 'false';
+  itemClass; '';
+  constructor() {
+    this.itemClass = 'item';
+  }
 
   ngOnInit() {
+    if (this.isFirst === 'true') {
+      this.itemClass = 'item isFirst';
+    }
+    if (this.isLast === 'true') {
+      this.itemClass = 'item isLast';
+    }
   }
 
 }

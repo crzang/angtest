@@ -63,7 +63,7 @@
 }
 .item {
   cursor: pointer;
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 15.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -73,7 +73,7 @@
 }
 
 .item .status{
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 14.0px;
   text-align: left;
   line-height: 16.0px;
@@ -111,7 +111,7 @@
 
 .item .value{
   text-align: right;
-  font-family: Helvetica, Arial, serif;
+  font-family: Roboto, Arial, serif;
   font-size: 18.0px;
   color: rgba(0, 0, 0, 1.0);
   letter-spacing: -0.38px;

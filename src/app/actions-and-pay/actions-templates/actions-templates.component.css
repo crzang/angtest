@@ -30,8 +30,7 @@
 }
 
 .itemsBlock hr{
-
-  color: rgba(216,216,216,0.5);
+  border: 1px solid rgba(216,216,216,0.5);
   margin: 0px 16px;
 }
 
