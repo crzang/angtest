@@ -71,9 +71,9 @@
 }
 
 @keyframes showRoute {
-  0% {left: 100em;}
-  0% {left: 100em;}
-  100% {left: 0em; }
+  0% {left: 100em;opacity: 0}
+  90% {left: 5em; opacity: 0.3}
+  100% {left: 0em; opacity: 1}
 }
 
 .hideRoute{
@@ -167,7 +167,7 @@
 }
 
 .leftPartTwo.credits {
-  background: radial-gradient(135px 100% at 106% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(188,53,51,0.9) 0%, rgba(235,67,63,0.9) 100%)
+  background: radial-gradient(135px 100% at 106% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(188,53,51,0.9) 60.5%, rgba(235,67,63,0.9) 100%)
 }
 .main{
   background: rgba(255,255,255,0)
@@ -187,11 +187,11 @@
 }
 
 .history{
-  background: radial-gradient(135px 100% at 120% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(158,41,75,0.9) 0%, rgba(158,41,75,0.9) 100%)
+  background: radial-gradient(135px 100% at 120% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60.5%, rgba(158,41,75,0.9) 60.5%, rgba(158,41,75,0.9) 100%)
 }
 
 .statistic{
-  background: radial-gradient(135px 100% at 120% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(149,47,94,0.9) 0%, rgba(149,47,94,0.9) 100%)
+  background: radial-gradient(135px 100% at 120% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60.5%, rgba(149,47,94,0.9) 60.5%, rgba(149,47,94,0.9) 100%)
 }
 
 .leftPartTwo.statistic{
@@ -213,7 +213,7 @@
   to {opacity: 1}
 }
 .credits {
-  background: radial-gradient(135px 100% at 120% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(188,53,51,0.9) 0%, rgba(235,67,63,0.9) 100%)
+  background: radial-gradient(135px 100% at 120% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(188,53,51,0.9) 60.5%, rgba(235,67,63,0.9) 100%)
 }
 
 .credits_3{

@@ -54,7 +54,7 @@ import { D3Service, D3_DIRECTIVES } from './d3';
 import {SplitButtonModule} from 'primeng/splitbutton';
 import {AutoCompleteModule} from 'primeng/autocomplete';
 import { AngularResizedEventModule } from 'angular-resize-event';
-
+import  {TemplateItemComponent} from './actions-and-pay/actions-templates/templ-item/template-item.component';
 import { GraphComponent } from './visuals/graph/graph.component';
 import { SHARED_VISUALS } from './visuals/shared';
 import { StatisticDetailComponent } from './statistic-detail/statistic-detail.component';
@@ -138,7 +138,8 @@ import { WebStorageModule } from 'ngx-store';
     Pay2orgComponent,
     Pay2orgConfirmComponent,
     CheckTaxComponent,
-    SimpleButtonComponent
+    SimpleButtonComponent,
+    TemplateItemComponent
   ],
   imports: [
     BrowserModule,

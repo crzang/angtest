@@ -3,7 +3,11 @@
   width: 200px;
   /**background:linear-gradient(105deg, rgba(254,158,66,1) 0%, rgba(254,160,66,1) 97%, rgba(255,161,68,1) 97%, rgba(0,0,0,1) 97%, rgba(0,0,0,1) 100%);**/
 }
-
+.logo{
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 150px;
+}
 @keyframes showMenu {
   from {margin-left: 20%; width: 100%}
   to {margin-left: 0px; width: 200px}
