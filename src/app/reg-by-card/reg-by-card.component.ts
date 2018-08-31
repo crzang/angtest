@@ -24,6 +24,9 @@ export class RegByCardComponent implements AfterViewInit {
   cardMonth = '';
   cardYear = '';
   cardCVV = '';
+
+  bankVisibility = 'hidden';
+  brandVisibility = 'hidden';
   constructor() {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
@@ -51,7 +54,7 @@ export class RegByCardComponent implements AfterViewInit {
     if (cardInfo.backgroundGradient !== 'linear-gradient(135deg, #eeeeee, #dddddd)') {
       this.body.nativeElement.style.background = cardInfo.backgroundGradient;
     } else {
-      this.body.nativeElement.style.background = 'linear-gradient(45deg, #EC5741 0%, #F68B40 100%)';
+      this.body.nativeElement.style.background = 'linear-gradient(90deg, #ea4442 0%, #bb3853 100%)';
     }
     if (cardInfo.backgroundColor !== '#eeeeee') {
       this.cardImg.nativeElement.style.background = cardInfo.backgroundColor;
@@ -59,11 +62,13 @@ export class RegByCardComponent implements AfterViewInit {
       this.cardImg.nativeElement.style.background = '#F27B3A';
     }
     this.bankLogo = cardInfo.bankLogo;
-
+    this.bankVisibility = this.bankLogo === null ? 'hidden' : 'visible';
     this.brandLogo = cardInfo.brandLogoPng;
+    this.brandVisibility = this.brandLogo === null ? 'hidden' : 'visible';
     this.codeName = cardInfo.codeName;
     this.checkInput();
   }
+
   onCardMonthChange(e) {
     this.cardMonth = e.target.value;
     this.checkInput();
@@ -78,5 +83,9 @@ export class RegByCardComponent implements AfterViewInit {
   }
   checkInput() {
     this.btnNextEnabled = this.cardNumber.length === 16 && this.cardMonth.length === 2 && this.cardYear.length === 2 && this.cardCVV.length === 3;
+  }
+
+  changeTitle(title) {
+    this.title = title;
   }
 }

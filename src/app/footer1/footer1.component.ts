@@ -7,14 +7,20 @@ import {Component, ViewChild, AfterViewInit, ElementRef, Input} from '@angular/c
 })
 export class Footer1Component implements AfterViewInit {
   @ViewChild('footer') footer: ElementRef;
+
   @Input() route = '/regChoice';
   @Input() mainTitle = 'Зарегистрироваться';
+  @Input() secondTitle = 'Нет аккаунта?';
+
   baseHeight = 768;
+  secondTitleWidth='768px';
+
 
   constructor() {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
     }
+    this.secondTitleWidth=window.innerWidth+"px"
   }
 
   ngAfterViewInit() {

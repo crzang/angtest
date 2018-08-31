@@ -93,7 +93,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   }
 
   onClick = (e, targetBlock) => {
-    this.clearActive();
+    this.clearActive({});
     e.target.className = 'active';
     this.router.navigateByUrl('/' + targetBlock);
 

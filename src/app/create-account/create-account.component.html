@@ -8,7 +8,8 @@
   <br>
   <div #passwordBlock class="ui-float-label loginBlock">
     <input id="passwordInput" class="passInputField" type="password" pInputText (input)="onPassChange($event)">
-    <label for="passwordInput" class="inputFloatingLabel">Пароль</label>
+    <button pButton type="button" icon="far fa-eye-slash" class="ui-button-warn"></button>
+    <label for="passwordInput"  class="inputFloatingLabel">Пароль</label>
   </div>
   <div #passwordConfirmBlock class="ui-float-label loginBlock">
     <input id="passwordConfirmInput" class="passConfirmInputField" type="password" pInputText (input)="onPassConfirmChange($event)">

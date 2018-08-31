@@ -31,7 +31,7 @@ export class CreateAccountComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.loginBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.loginBlock.nativeElement.offsetWidth / 2 + 'px';
-    this.passwordBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordBlock.nativeElement.offsetWidth / 2 + 'px';
+    this.passwordBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordBlock.nativeElement.offsetWidth / 2 +16 + 'px';
     this.passwordConfirmBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordConfirmBlock.nativeElement.offsetWidth / 2 + 'px';
 
     this.agree.nativeElement.style.marginLeft = this.baseWith / 2 - this.agree.nativeElement.offsetWidth / 2 + 'px';

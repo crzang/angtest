@@ -11,7 +11,7 @@ export class AuthGuardService implements CanActivate {
 
   constructor(private router: Router) {}
 
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<boolean> {
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
     const isSignInPath = route.data['isSignInPath'];
     if (this.userId !== '') {
       return !isSignInPath;

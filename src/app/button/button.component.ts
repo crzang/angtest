@@ -15,7 +15,7 @@ export class ButtonComponent implements AfterViewInit, DoCheck, OnInit {
   @Input() bgColor;
   @Input() color;
   @Input() route = '';
-  @Input() borderColor='rgba(255,255,255,0.3)'
+  @Input() borderColor = 'rgba(255,255,255,0.3)';
 
   @ViewChild('main') main: ElementRef;
   baseWidth = 1024;
@@ -54,7 +54,9 @@ export class ButtonComponent implements AfterViewInit, DoCheck, OnInit {
     if (this.color) {
       this.main.nativeElement.style.color = this.color;
     }
-    this.main.nativeElement.style.borderColor=this.borderColor
+    if (this.borderColor !== 'rgba(255,255,255,0.3)') {
+      this.main.nativeElement.style.borderColor = this.borderColor;
+    }
   }
 
   ngAfterViewInit() {

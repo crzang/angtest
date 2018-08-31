@@ -6,7 +6,7 @@
 }
 
 .offset {
-  height: 370px;
+  height: 450px;
 }
 
 .title {
@@ -45,7 +45,7 @@
 }
 
 .successImg {
-  top: 110px;
+  top: 20%;
   position: absolute;
 }
 
