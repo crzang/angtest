@@ -1,1 +1,3 @@
-<img #mainImg [style.marginLeft]="logoOffset"  src="assets/img/registration-card-fora-logo-copy-2.png" class="logo">
+<div (resized)="onResize($event)">
+<img  #mainImg [style.marginLeft]="logoOffset"  src="assets/img/registration-card-fora-logo-copy-2.png" class="logo">
+</div>

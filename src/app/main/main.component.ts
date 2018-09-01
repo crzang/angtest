@@ -13,6 +13,10 @@ export class MainComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+
+  }
+  onResize(event) {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
     }
@@ -20,7 +24,5 @@ export class MainComponent implements OnInit {
       this.baseWidth = (window.innerWidth - 210) + 'px';
     }
     this.mainHeight = (this.baseHeight - 21 ) + 'px';
-
   }
-
 }

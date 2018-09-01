@@ -80,16 +80,7 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    let bHeight = 768;
-    if (window.innerHeight > 768) {
-      bHeight = window.innerHeight;
-    }
-    if (window.innerWidth > 1024) {
-      this.baseWidth = (window.innerWidth - 230) + 'px';
-    }
-    this.baseHeight = bHeight + 'px';
-    this.mainHeight = (bHeight - 21) + 'px';
-    this.baseHeight = bHeight + 'px';
+
   }
 
   onClick = (e, targetBlock) => {
@@ -119,7 +110,18 @@ export class DashboardComponent implements OnInit, AfterViewInit {
        }
      }, 1000);*/
   }
-
+  onResize(event) {
+    let bHeight = 768;
+    if (window.innerHeight > 768) {
+      bHeight = window.innerHeight;
+    }
+    if (window.innerWidth > 1024) {
+      this.baseWidth = (window.innerWidth - 230) + 'px';
+    }
+    this.baseHeight = bHeight + 'px';
+    this.mainHeight = (bHeight - 21) + 'px';
+    this.baseHeight = bHeight + 'px';
+  }
   isLogged() {
     return this.authGuard.islogged();
   }

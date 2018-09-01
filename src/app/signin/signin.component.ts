@@ -23,6 +23,9 @@ export class SigninComponent implements AfterViewInit {
   btnEnterEnabled = false;
 
   constructor(private router: Router, private authGuard: AuthGuardService) {
+
+  }
+  onResize(event) {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
     }
@@ -30,8 +33,10 @@ export class SigninComponent implements AfterViewInit {
       this.baseWith = window.innerWidth;
     }
     this.mainHeight = this.baseHeight + 'px';
-  }
 
+    this.loginBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.loginBlock.nativeElement.offsetWidth / 2 + 'px';
+    this.passwordBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordBlock.nativeElement.offsetWidth / 2 + 'px';
+  }
   onLoginChange(e) {
     this.login = e.target.value;
     this.checkData();
@@ -47,8 +52,7 @@ export class SigninComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.loginBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.loginBlock.nativeElement.offsetWidth / 2 + 'px';
-    this.passwordBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordBlock.nativeElement.offsetWidth / 2 + 'px';
+
   }
 
   doLogin() {

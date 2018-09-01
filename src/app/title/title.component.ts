@@ -12,12 +12,15 @@ export class TitleComponent implements AfterViewInit {
 
   baseWith = 1024;
   constructor() {
+
+  }
+  onResize(event) {
     if (window.innerWidth > 1024) {
       this.baseWith = window.innerWidth;
     }
+    this.main.nativeElement.style.marginLeft = this.baseWith / 2 - this.main.nativeElement.offsetWidth / 2 + 'px';
   }
-
   ngAfterViewInit() {
-   this.main.nativeElement.style.marginLeft = this.baseWith / 2 - this.main.nativeElement.offsetWidth / 2 + 'px';
+
   }
 }

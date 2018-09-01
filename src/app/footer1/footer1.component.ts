@@ -1,4 +1,4 @@
-import {Component, ViewChild, AfterViewInit, ElementRef, Input} from '@angular/core';
+import {Component, ViewChild, AfterViewInit, ElementRef, Input, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-footer1',
@@ -17,15 +17,19 @@ export class Footer1Component implements AfterViewInit {
 
 
   constructor() {
+
+  }
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
     }
     this.secondTitleWidth=window.innerWidth+"px"
-  }
-
-  ngAfterViewInit() {
     const lostPasswordPos = this.baseHeight - this.footer.nativeElement.offsetHeight - 50;
     this.footer.nativeElement.style.top = lostPasswordPos + 'px';
+  }
+  ngAfterViewInit() {
+    this.onResize({})
   }
 
 }

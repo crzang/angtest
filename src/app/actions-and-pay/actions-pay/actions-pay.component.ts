@@ -1,4 +1,4 @@
-import {Component, ViewChild, AfterViewInit, ElementRef,Input} from '@angular/core';
+import {Component, ViewChild, AfterViewInit, ElementRef, Input, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-actions-pay',
@@ -12,13 +12,18 @@ export class ActionsPayComponent implements AfterViewInit {
   width=''
   imageSize=10
   constructor() {
-    let w = (window.innerWidth - 350 - window.innerWidth*0.1)/5;
-    this.width=w+'px'
-    this.imageSize=Math.round(w/3)
+
   }
 
   ngAfterViewInit() {
+    this.onResize({})
+  }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    let w = (window.innerWidth - 350 - window.innerWidth*0.1)/5;
+    this.width=w+'px'
+    this.imageSize=Math.round(w/3)
   }
 
   getItemSize() {

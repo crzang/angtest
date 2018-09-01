@@ -1,4 +1,4 @@
-import {Component, OnInit, DoCheck, Input, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
+import {Component, OnInit, DoCheck, Input, ViewChild, AfterViewInit, ElementRef, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -24,8 +24,8 @@ export class ButtonComponent implements AfterViewInit, DoCheck, OnInit {
   constructor() {
 
   }
-
-  ngOnInit() {
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     if (this.useWindowWidth === true) {
       if (window.innerWidth > 1024) {
         this.baseWidth = window.innerWidth;
@@ -33,6 +33,11 @@ export class ButtonComponent implements AfterViewInit, DoCheck, OnInit {
     } else {
       this.baseWidth = this.main.nativeElement.parentElement.parentElement.innerWidth;
     }
+    this.main.nativeElement.style.marginLeft = this.baseWidth / 2 - this.main.nativeElement.offsetWidth / 2 + 'px';
+    this.main.nativeElement.style.width = this.width;
+  }
+  ngOnInit() {
+
   }
 
   ngDoCheck() {
@@ -60,8 +65,7 @@ export class ButtonComponent implements AfterViewInit, DoCheck, OnInit {
   }
 
   ngAfterViewInit() {
-    this.main.nativeElement.style.marginLeft = this.baseWidth / 2 - this.main.nativeElement.offsetWidth / 2 + 'px';
-    this.main.nativeElement.style.width = this.width;
+    this.onResize({})
   }
 
 }

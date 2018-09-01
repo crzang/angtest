@@ -16,6 +16,9 @@ export class ForaLogoComponent implements OnInit {
   }
 
   ngOnInit() {
+
+  }
+  onResize(event) {
     let baseWidth = 1024;
     if (window.innerWidth > 1024) {
       baseWidth = window.innerWidth;
@@ -26,5 +29,4 @@ export class ForaLogoComponent implements OnInit {
     this.logoOffset = baseWidth / 2 - 188 / 2 + 'px';
     this.mainImg.nativeElement.style.transform = 'scale(' + this.scale + ')';
   }
-
 }
