@@ -1,4 +1,4 @@
-import {Component, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
+import {Component, ViewChild, AfterViewInit, ElementRef, HostListener} from '@angular/core';
 import {CardInfo} from 'card-info';
 @Component({
   selector: 'app-reg-by-card',
@@ -28,12 +28,7 @@ export class RegByCardComponent implements AfterViewInit {
   bankVisibility = 'hidden';
   brandVisibility = 'hidden';
   constructor() {
-    if (window.innerHeight > 768) {
-      this.baseHeight = window.innerHeight;
-    }
-    if (window.innerWidth > 1024) {
-      this.baseWith = window.innerWidth;
-    }
+
     CardInfo.setDefaultOptions({
       banksLogosPath: '/assets/banks-logos/',
       brandsLogosPath: '/assets/brands-logos/'
@@ -41,12 +36,22 @@ export class RegByCardComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
+    this.onResize({});
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    if (window.innerHeight > 768) {
+      this.baseHeight = window.innerHeight;
+    }
+    if (window.innerWidth > 1024) {
+      this.baseWith = window.innerWidth;
+    }
     this.btnContinue.nativeElement.style.marginLeft = this.baseWith / 2 - this.btnContinue.nativeElement.offsetWidth / 2 + 'px';
     this.card.nativeElement.style.left = this.baseWith / 2 - this.card.nativeElement.offsetWidth / 2 + 'px';
     const btnContinuePos = this.baseHeight - this.btnContinue.nativeElement.offsetTop - this.btnContinue.nativeElement.offsetHeight;
     this.btnCancel.nativeElement.style.marginTop = (btnContinuePos - 150) + 'px';
   }
-
   onCardNumberChange = (e) => {
     this.cardNumber = e.target.value;
     const cardInfo = new CardInfo(this.cardNumber);

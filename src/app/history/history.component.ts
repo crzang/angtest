@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef,HostListener,AfterViewInit} from '@angular/core';
 import {SelectItem} from 'primeng/components/common/selectitem';
 
 @Component({
@@ -6,7 +6,7 @@ import {SelectItem} from 'primeng/components/common/selectitem';
   templateUrl: './history.component.html',
   styleUrls: ['./history.component.css']
 })
-export class HistoryComponent implements OnInit {
+export class HistoryComponent implements AfterViewInit {
   @ViewChild('main') main: ElementRef;
   typeOperations: SelectItem[];
   operations = [];
@@ -82,12 +82,16 @@ export class HistoryComponent implements OnInit {
     ];
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.onResize({})
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const clientWidth = window.innerWidth;
     const clientHeight = window.innerHeight;
     this.main.nativeElement.style.height = clientHeight + 'px';
     this.main.nativeElement.style.width = (clientWidth - 210) * 0.8 + 'px';
-
   }
 
   getItemClass(operation) {

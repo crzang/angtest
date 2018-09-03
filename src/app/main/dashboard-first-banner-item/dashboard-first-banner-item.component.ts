@@ -23,6 +23,7 @@ export class DashboardFirstBannerItemComponent implements OnInit {
 
   }
 
+
   ngOnInit() {
     if (this.extraIcon !== '' ){
       this.hideExtra = false;

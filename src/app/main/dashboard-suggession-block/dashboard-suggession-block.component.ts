@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, HostListener, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-main-suggession-block',
@@ -9,7 +9,13 @@ export class DashboardSuggessionBlockComponent implements AfterViewInit {
   @ViewChild('block') block: ElementRef;
   constructor() { }
 
+
   ngAfterViewInit() {
+    this.onResize({})
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const mainWidth = this.block.nativeElement.offsetWidth / 2;
     const parentWidth = this.block.nativeElement.parentElement.offsetWidth / 2;
     const newMargin = parentWidth - mainWidth
@@ -17,5 +23,4 @@ export class DashboardSuggessionBlockComponent implements AfterViewInit {
       this.block.nativeElement.style.marginLeft = newMargin + 'px';
     }
   }
-
 }

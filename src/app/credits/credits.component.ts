@@ -1,16 +1,21 @@
-import { Component, OnInit, Input,ViewChild,ElementRef } from '@angular/core';
+import { Component, AfterViewInit, Input, ViewChild, ElementRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-credits',
   templateUrl: './credits.component.html',
   styleUrls: ['./credits.component.css']
 })
-export class CreditsComponent implements OnInit {
+export class CreditsComponent implements AfterViewInit {
   @ViewChild('main') main: ElementRef;
   baseHeight = '768px';
   constructor() { }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.onResize({});
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const clientWidth = window.innerWidth;
     const clientHeight = window.innerHeight;
     this.main.nativeElement.style.height = clientHeight - 50 + 'px';

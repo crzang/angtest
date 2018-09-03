@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild,HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-main-footer-block',
@@ -18,6 +18,11 @@ export class DashboardFooterBlockComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
+    this.onResize({})
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const clientWidth = this.main.nativeElement.parentElement.parentElement.clientWidth;
     const marginLeft = (clientWidth / 2 - 480 - clientWidth * 0.1) + 'px';
     this.info.nativeElement.style.marginLeft = marginLeft;

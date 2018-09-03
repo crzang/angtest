@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit} from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-card2card-confirm',
@@ -19,18 +19,23 @@ export class Card2cardConfirmComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    const clientWidth = window.innerWidth;
-    const clientHeight = window.innerHeight;
-    this.main.nativeElement.style.height = clientHeight + 'px';
-    this.main.nativeElement.style.width = clientWidth  + 'px';
+
 
   }
 
   ngAfterViewInit() {
+    this.onResize({});
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    const clientWidth = window.innerWidth;
+    const clientHeight = window.innerHeight;
+    this.main.nativeElement.style.height = clientHeight + 'px';
+    this.main.nativeElement.style.width = clientWidth  + 'px';
     this.table.nativeElement.style.marginLeft = window.innerWidth / 2 - this.table.nativeElement.offsetWidth / 2 + 'px';
     this.inputBox.nativeElement.style.marginLeft = window.innerWidth / 2 - this.inputBox.nativeElement.offsetWidth / 2 + 'px';
   }
-
   inputCode(e) {
     this.enabledNext = e.target.value.length === 4;
   }

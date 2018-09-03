@@ -1,4 +1,4 @@
-import {Component, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
+import {Component, ViewChild, AfterViewInit, ElementRef,HostListener} from '@angular/core';
 import {InputTextModule} from 'primeng/inputtext';
 import { Router } from '@angular/router';
 import { environment } from '../../environments/environment';
@@ -25,6 +25,11 @@ export class SigninComponent implements AfterViewInit {
   constructor(private router: Router, private authGuard: AuthGuardService) {
 
   }
+  ngAfterViewInit() {
+    this.onResize({})
+  }
+
+  @HostListener('window:resize', ['$event'])
   onResize(event) {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
@@ -49,10 +54,6 @@ export class SigninComponent implements AfterViewInit {
 
   checkData() {
     this.btnEnterEnabled = this.login.length !== 0 && this.pass.length !== 0;
-  }
-
-  ngAfterViewInit() {
-
   }
 
   doLogin() {

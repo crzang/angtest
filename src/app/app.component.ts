@@ -1,4 +1,4 @@
-import {Component, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
+import {Component, ViewChild, AfterViewInit, ElementRef, HostListener} from '@angular/core';
 import {InputTextModule} from 'primeng/inputtext';
 import { environment } from '../environments/environment';
 
@@ -7,7 +7,7 @@ import { environment } from '../environments/environment';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
 
   baseHeight = 768;
   baseWith = 1024;
@@ -16,6 +16,11 @@ export class AppComponent {
   constructor() {
   }
 
+  ngAfterViewInit() {
+    this.onResize({});
+  }
+
+  @HostListener('window:resize', ['$event'])
   onResize(event) {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;

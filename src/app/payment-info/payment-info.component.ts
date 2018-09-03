@@ -1,11 +1,11 @@
-import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import {Component, AfterViewInit, ViewChild, ElementRef,HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-payment-info',
   templateUrl: './payment-info.component.html',
   styleUrls: ['./payment-info.component.css']
 })
-export class PaymentInfoComponent implements OnInit {
+export class PaymentInfoComponent implements AfterViewInit {
   @ViewChild('main') main: ElementRef;
   cards = [];
   details = [];
@@ -26,13 +26,17 @@ export class PaymentInfoComponent implements OnInit {
     ];
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.onResize({})
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const clientWidth = window.innerWidth;
     const clientHeight = window.innerHeight;
     this.main.nativeElement.style.height = clientHeight + 'px';
     this.main.nativeElement.style.width = clientWidth - 210 + 'px';
   }
-
   showDetail(id){
     this.details.forEach((d)=>{
       d.className="extra hiddenDetail"

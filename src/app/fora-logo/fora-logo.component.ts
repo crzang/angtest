@@ -1,12 +1,12 @@
-import { Component, OnInit, Input, ViewChild, ElementRef,AfterViewInit } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-fora-logo',
   templateUrl: './fora-logo.component.html',
   styleUrls: ['./fora-logo.component.css']
 })
-export class ForaLogoComponent implements OnInit {
-  @Input() width ='0';
+export class ForaLogoComponent implements AfterViewInit {
+  @Input() width = '0';
   @Input() scale = 1;
   @ViewChild('mainImg') mainImg: ElementRef;
 
@@ -15,9 +15,11 @@ export class ForaLogoComponent implements OnInit {
 
   }
 
-  ngOnInit() {
-
+  ngAfterViewInit() {
+    this.onResize({});
   }
+
+  @HostListener('window:resize', ['$event'])
   onResize(event) {
     let baseWidth = 1024;
     if (window.innerWidth > 1024) {

@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, Input } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef, Input, HostListener } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
 import { environment } from '../../environments/environment';
 import {AuthGuardService} from '../auth-guard.service';
@@ -46,11 +46,14 @@ export class LeftMenuComponent implements OnInit, AfterViewInit {
       }
     );
   }
+  @HostListener('window:resize', ['$event'])
   onResize(event) {
     if (window.innerHeight > 768) {
       this.baseHeight = window.innerHeight;
     }
     this.mainHeight = this.baseHeight + 'px';
+    const lostPasswordPos = this.baseHeight - this.footer.nativeElement.offsetHeight - 50;
+    this.footer.nativeElement.style.top = lostPasswordPos + 'px';
   }
   visible(vis) {
     this.main.nativeElement.hidden = vis;
@@ -60,8 +63,7 @@ export class LeftMenuComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    const lostPasswordPos = this.baseHeight - this.footer.nativeElement.offsetHeight - 50;
-    this.footer.nativeElement.style.top = lostPasswordPos + 'px';
+    this.onResize({});
   }
 
   logout() {

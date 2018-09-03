@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild, ElementRef, AfterViewInit} from '@angular/core';
+import {Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener} from '@angular/core';
 import {Location} from '@angular/common';
 import {Router, ActivatedRoute, NavigationEnd, NavigationStart} from '@angular/router';
 import {LeftMenuComponent} from '../left-menu/left-menu.component';
@@ -104,12 +104,10 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    /* setTimeout(() => {
-       if (this.routeLevel < 2) {
-         this.visibility = 'visible';
-       }
-     }, 1000);*/
+    this.onResize({});
   }
+
+  @HostListener('window:resize', ['$event'])
   onResize(event) {
     let bHeight = 768;
     if (window.innerHeight > 768) {

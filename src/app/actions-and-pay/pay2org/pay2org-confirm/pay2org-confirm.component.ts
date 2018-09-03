@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit} from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-pay2org-confirm',
@@ -20,17 +20,22 @@ export class Pay2orgConfirmComponent implements OnInit, AfterViewInit {
       {label: 'Сумма платежа', value: '2575', className: 'amount'}];
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.onResize({});
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const clientWidth = window.innerWidth;
     const clientHeight = window.innerHeight;
     this.main.nativeElement.style.height = clientHeight + 'px';
     this.main.nativeElement.style.width = clientWidth  + 'px';
-
-  }
-
-  ngAfterViewInit() {
     this.table.nativeElement.style.marginLeft = window.innerWidth / 2 - this.table.nativeElement.offsetWidth / 2 + 'px';
     this.inputBox.nativeElement.style.marginLeft = window.innerWidth / 2 - this.inputBox.nativeElement.offsetWidth / 2 + 'px';
+
+  }
+  ngOnInit() {
+
   }
 
   inputCode(e) {

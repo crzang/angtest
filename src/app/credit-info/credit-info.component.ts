@@ -1,11 +1,11 @@
-import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import {Component, AfterViewInit, ViewChild, ElementRef, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-credit-info',
   templateUrl: './credit-info.component.html',
   styleUrls: ['./credit-info.component.css']
 })
-export class CreditInfoComponent implements OnInit {
+export class CreditInfoComponent implements AfterViewInit {
   @ViewChild('main') main: ElementRef;
 
   credits = [];
@@ -35,11 +35,18 @@ export class CreditInfoComponent implements OnInit {
   }
 
   ngOnInit() {
+
+  }
+  ngAfterViewInit() {
+    this.onResize({});
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const clientWidth = window.innerWidth;
     const clientHeight = window.innerHeight;
     this.main.nativeElement.style.height = clientHeight + 'px';
     this.main.nativeElement.style.width = clientWidth - 210 + 'px';
   }
-
 
 }

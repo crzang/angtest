@@ -1,11 +1,11 @@
-import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import {Component, AfterViewInit, ViewChild, ElementRef,HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-statistic-detail',
   templateUrl: './statistic-detail.component.html',
   styleUrls: ['./statistic-detail.component.css']
 })
-export class StatisticDetailComponent implements OnInit {
+export class StatisticDetailComponent implements AfterViewInit {
   @ViewChild('main') main: ElementRef;
   details = [];
   cards = [];
@@ -36,11 +36,15 @@ export class StatisticDetailComponent implements OnInit {
     ];
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.onResize({})
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const clientWidth = window.innerWidth;
     const clientHeight = window.innerHeight;
     this.main.nativeElement.style.height = clientHeight + 'px';
     this.main.nativeElement.style.width = clientWidth - 210 + 'px';
   }
-
 }

@@ -1,4 +1,4 @@
-import {Component, Input, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
+import {Component, Input, ViewChild, AfterViewInit, ElementRef, HostListener} from '@angular/core';
 
 
 @Component({
@@ -14,13 +14,15 @@ export class TitleComponent implements AfterViewInit {
   constructor() {
 
   }
+  ngAfterViewInit() {
+    this.onResize({});
+  }
+
+  @HostListener('window:resize', ['$event'])
   onResize(event) {
     if (window.innerWidth > 1024) {
       this.baseWith = window.innerWidth;
     }
     this.main.nativeElement.style.marginLeft = this.baseWith / 2 - this.main.nativeElement.offsetWidth / 2 + 'px';
-  }
-  ngAfterViewInit() {
-
   }
 }

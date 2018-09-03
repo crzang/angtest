@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, ElementRef, ViewChild, AfterViewInit} from '@angular/core';
+import {Component, OnInit, Input, ElementRef, ViewChild, AfterViewInit, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-suggession-block-item',
@@ -22,8 +22,12 @@ export class DashboardSuggessionBlockItemComponent implements OnInit , AfterView
     }
 
   }
-
   ngAfterViewInit() {
+    this.onResize({});
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const marginTop = 240 - this.textBlock.nativeElement.clientHeight ;
     this.footer.nativeElement.style.marginTop = marginTop + 'px';
   }

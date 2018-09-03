@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, ViewChild, ElementRef} from '@angular/core';
+import {Component, AfterViewInit, Input, ViewChild, ElementRef,HostListener} from '@angular/core';
 import {SelectItem} from 'primeng/api';
 import {Node, Link} from '../d3';
 import {Router, ActivatedRoute} from '@angular/router';
@@ -8,7 +8,7 @@ import {Router, ActivatedRoute} from '@angular/router';
   templateUrl: './statistic.component.html',
   styleUrls: ['./statistic.component.css']
 })
-export class StatisticComponent implements OnInit {
+export class StatisticComponent implements AfterViewInit {
   @ViewChild('main') main: ElementRef;
   orders: SelectItem[];
   nodes: Node[] = [];
@@ -52,13 +52,17 @@ export class StatisticComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.onResize({})
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const clientWidth = window.innerWidth;
     const clientHeight = window.innerHeight;
     this.main.nativeElement.style.height = clientHeight - 50 + 'px';
     this.main.nativeElement.style.width = clientWidth - 300 + 'px';
   }
-
   getStyleForeItem(item) {
     let className = 'item ';
     if (item.selected) {

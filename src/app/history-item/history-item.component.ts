@@ -1,11 +1,11 @@
-import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
+import {Component, AfterViewInit, ViewChild, ElementRef, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-history-item',
   templateUrl: './history-item.component.html',
   styleUrls: ['./history-item.component.css']
 })
-export class HistoryItemComponent implements OnInit {
+export class HistoryItemComponent implements AfterViewInit {
   @ViewChild('main') main: ElementRef;
   details = [];
 
@@ -19,10 +19,16 @@ export class HistoryItemComponent implements OnInit {
     ];
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.onResize({});
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     const clientWidth = window.innerWidth;
     const clientHeight = window.innerHeight;
     this.main.nativeElement.style.height = clientHeight + 'px';
     this.main.nativeElement.style.width = clientWidth - 210 + 'px';
   }
+
 }

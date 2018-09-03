@@ -1,4 +1,4 @@
-import {Component, ViewChild, AfterViewInit, ElementRef} from '@angular/core';
+import {Component, ViewChild, AfterViewInit, ElementRef, HostListener} from '@angular/core';
 
 
 @Component({
@@ -28,18 +28,20 @@ export class CreateAccountComponent implements AfterViewInit {
       this.baseWith = window.innerWidth;
     }
   }
-
   ngAfterViewInit() {
+    this.onResize({});
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
     this.loginBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.loginBlock.nativeElement.offsetWidth / 2 + 'px';
-    this.passwordBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordBlock.nativeElement.offsetWidth / 2 +16 + 'px';
+    this.passwordBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordBlock.nativeElement.offsetWidth / 2 + 16 + 'px';
     this.passwordConfirmBlock.nativeElement.style.marginLeft = this.baseWith / 2 - this.passwordConfirmBlock.nativeElement.offsetWidth / 2 + 'px';
 
     this.agree.nativeElement.style.marginLeft = this.baseWith / 2 - this.agree.nativeElement.offsetWidth / 2 + 'px';
     const btnContinuePos = this.baseHeight - this.btnNext.nativeElement.offsetTop - this.btnNext.nativeElement.offsetHeight;
     this.footerBlock.nativeElement.style.marginTop = (btnContinuePos - 150) + 'px';
-
   }
-
   onLoginChange(e) {
     this.login = e.target.value;
     this.checkInput();
