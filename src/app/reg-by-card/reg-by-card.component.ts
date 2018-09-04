@@ -12,6 +12,7 @@ export class RegByCardComponent implements AfterViewInit {
   @ViewChild('card') card: ElementRef;
   @ViewChild('cardImg') cardImg: ElementRef;
   @ViewChild('body') body: ElementRef;
+  @ViewChild('ccNumber') ccNumber: ElementRef;
 
   title = 'Введите номер карты';
   baseHeight = 768;
@@ -25,6 +26,8 @@ export class RegByCardComponent implements AfterViewInit {
   cardYear = '';
   cardCVV = '';
 
+  expMask = [/\d/, /\d/];
+  cvvMask = [/\d/, /\d/, /\d/];
   bankVisibility = 'hidden';
   brandVisibility = 'hidden';
   constructor() {
@@ -92,5 +95,8 @@ export class RegByCardComponent implements AfterViewInit {
 
   changeTitle(title) {
     this.title = title;
+    if (this.cardNumber.length === 16) {
+      this.ccNumber.nativeElement.value = '**** **** **** ' + this.cardNumber.slice(12);
+    }
   }
 }

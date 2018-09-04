@@ -19,10 +19,10 @@
 }
 
 .tabs div {
-  height: 30px;
+  height: 40px;
   width: 100px;
   display: inline-block;
-  line-height: 30px;
+  line-height: 40px;
   text-align: center;
 }
 

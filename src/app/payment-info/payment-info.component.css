@@ -89,7 +89,7 @@
 }
 .detailBlock .title{
   margin-top: 3em;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 32.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: right;
@@ -98,7 +98,7 @@
 }
 
 .detailBlock .total .totalBonus{
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(128, 128, 128, 1.0);
   text-align: right;
@@ -154,7 +154,7 @@
   line-height: 18.0px;
 }
 .detailsBody .day{
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -182,7 +182,7 @@
   position: absolute;
   left: 70px;
   margin-top: 35px;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 15.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -194,7 +194,7 @@
   position: absolute;
   left: 70px;
   margin-top: 50px;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -216,7 +216,7 @@
 }
 
 .detailsBody .item .data .bonus{
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 14.0px;
   color: rgba(128, 128, 128, 1.0);
   text-align: right;
@@ -263,7 +263,7 @@
 
 .title{
   margin-top: 10px;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 32.0px;
   color: rgba(242, 242, 242, 1.0);
   text-align: left;
@@ -612,7 +612,7 @@
 }
 
 .detailBlock .items .name{
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -656,7 +656,7 @@
 
 @keyframes showDetail {
   from {margin-left: 100%;width:0%}
-  to {margin-left: 30%;width: 100%}
+  to {margin-left: 30%;width: 70%}
 }
 
 .detailRightPart{

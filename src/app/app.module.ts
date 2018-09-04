@@ -76,6 +76,8 @@ import { Pay2orgConfirmComponent } from './actions-and-pay/pay2org/pay2org-confi
 import { CheckTaxComponent } from './actions-and-pay/check-tax/check-tax.component';
 import { SimpleButtonComponent } from './simple-button/simple-button.component';
 import { WebStorageModule } from 'ngx-store';
+import { CreditCardDirectivesModule } from 'angular-cc-library';
+import { TextMaskModule } from 'angular2-text-mask';
 
 @NgModule({
   declarations: [
@@ -157,7 +159,9 @@ import { WebStorageModule } from 'ngx-store';
     SplitButtonModule,
     AutoCompleteModule,
     AngularResizedEventModule,
-    WebStorageModule
+    WebStorageModule,
+    CreditCardDirectivesModule,
+    TextMaskModule
   ],
   providers: [D3Service],
   bootstrap: [AppComponent]

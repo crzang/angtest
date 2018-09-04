@@ -156,7 +156,7 @@
 .mainBlock .title{
   margin-top: 114px;
   width: 300px;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 32.0px;
   color: rgba(242, 242, 242, 1.0);
   text-align: left;
@@ -546,7 +546,7 @@
 }
 
 .detailBlock .alreadyPaid div{
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 14.0px;
   color: rgba(118, 118, 118, 1.0);
   text-align: left;
@@ -565,7 +565,7 @@
 }
 .detailBlock .leftPay {
   opacity: 0.5;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 32.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: right;
@@ -640,7 +640,7 @@ progress::-webkit-progress-value {
   border-bottom: 0px solid;
   border-color: #000000;
   height: 85px;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(0, 0, 0, 1.0);
   letter-spacing: -0.11px;
@@ -692,7 +692,7 @@ progress::-webkit-progress-value {
   display: none;
 
   background: none;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 14.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: center;

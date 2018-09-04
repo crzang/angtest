@@ -44,7 +44,7 @@
 
 .search input{
   width: 150px;
-  height: 30px;
+  height: 40px;
 }
 
 .body{
@@ -54,7 +54,7 @@
 
 .body .day{
   margin-top: 20px;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 15.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;

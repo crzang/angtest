@@ -44,7 +44,7 @@
 .title{
   margin-top: 114px;
   margin-left: 10%;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 32.0px;
   color: black;
   text-align: left;
@@ -78,7 +78,7 @@
 .selectedItemValue{
   vertical-align:middle;
   float:right;
-  font-family:Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(161, 161, 161, 1.0);
   text-align: left;
@@ -87,7 +87,7 @@
 .itemValue{
   vertical-align:middle;
   float:right;
-  font-family:Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 16.0px;
   color: rgba(161, 161, 161, 1.0);
   text-align: left;
@@ -129,7 +129,7 @@
 .leftFill_visible{
   visibility: visible;
   opacity: 0.43;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 15.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;

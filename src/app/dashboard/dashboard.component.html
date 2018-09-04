@@ -1,5 +1,5 @@
 <div  class="main" *ngIf="isLogged(); else loggedOut">
-  <div #body class="mainBody" [style.width]="baseWidth">
+  <div #body class="mainBody" >
     <div [style.visibility]="visibility" class="header" #header>
       <span id="main" class="active" (click)="onClick($event,'main')" >Состояние дел</span>
       <span id='cards' class="notactive" (click)="onClick($event,'cards')" >Карты</span>
@@ -10,11 +10,11 @@
     </div>
 
     <div #container class="showContainer">
-      <div #leftpartOne class="leftPart" [style.height]="baseHeight">
+      <div #leftpartOne class="leftPart" >
       </div>
-      <div #leftpartTwo [class]="leftPartTwoClass" [style.height]="baseHeight">
+      <div #leftpartTwo [class]="leftPartTwoClass" >
       </div>
-      <div  [class]="leftPart3Class" [style.height]="baseHeight">
+      <div #leftpartTre [class]="leftPart3Class" >
       </div>
       <div #routeContainer class="showRoute">
       <router-outlet ></router-outlet>

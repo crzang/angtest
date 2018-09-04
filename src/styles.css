@@ -102,13 +102,14 @@ input{
   background: 0;
 }
 
+
 .ui-dropdown label.ui-dropdown-label{
   font-family: Roboto, Arial, serif;
   font-size: 18px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
   letter-spacing: -0.53px;
-  line-height: 18px;
+  line-height: 26px;
   padding-left: 1em;
 }
 
@@ -140,5 +141,5 @@ input{
 }
 
 .ui-widget {
-  font-family:   Helvetica, Arial, sans-serif;
+  font-family:Roboto, Arial, sans-serif;
 }

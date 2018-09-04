@@ -1,5 +1,10 @@
 <div #body class="regByCard">
   <app-fora-logo></app-fora-logo>
+  <div class="progress">
+    <div class="checked"></div>
+    <div class="next"></div>
+    <div class="next"></div>
+  </div>
   <div class="title">
   <app-title title="{{title}}"></app-title>
   </div>
@@ -14,21 +19,21 @@
     <img [style.visibility]="bankVisibility" class="bankLogo" src="{{bankLogo}}">
     <img [style.visibility]="brandVisibility" class="brandLogo" src="{{brandLogo}}">
     <div class="ui-float-label cardNumber">
-      <input id="cardNumber"  type="text" pInputText (focus)="changeTitle('Введите номер карты')" (input)="onCardNumberChange($event)" >
+      <input #ccNumber id="cardNumber" type="text" pInputText (focus)="changeTitle('Введите номер карты')" (input)="onCardNumberChange($event)" >
       <label for="cardNumber" class="inputFloatingLabel">Номер карты</label>
     </div>
     <div class="ui-float-label cardMonth">
-      <input id="cardMonth" type="text" pInputText (focus)="changeTitle('Укажите срок действия')" (input)="onCardMonthChange($event)">
+      <input id="cardMonth" [textMask]="{mask: expMask}" type="text" pInputText (focus)="changeTitle('Укажите срок действия')" (input)="onCardMonthChange($event)">
       <label for="cardMonth" class="inputFloatingLabel">ММ</label>
     </div>
     <div class="cardMYSeparator">/</div>
     <div  class="ui-float-label cardYear">
-      <input id="cardYear"  type="text" pInputText (focus)="changeTitle('Укажите срок действия')" (input)="onCardYearChange($event)">
+      <input id="cardYear"  [textMask]="{mask: expMask}" type="text" pInputText (focus)="changeTitle('Укажите срок действия')" (input)="onCardYearChange($event)">
       <label for="cardYear" class="inputFloatingLabel">ГГ</label>
     </div>
 
     <div class="ui-float-label cardCVV">
-      <input id="cardCVV"  type="password" pInputText (focus)="changeTitle('Введите код безопасности')" (input)="onCardCVVChange($event)">
+      <input id="cardCVV" [textMask]="{mask: cvvMask}" type="password" pInputText (focus)="changeTitle('Введите код безопасности')" (input)="onCardCVVChange($event)">
       <label for="cardCVV" class="inputFloatingLabel">{{codeName}}</label>
     </div>
   </div>

@@ -19,15 +19,15 @@
   line-height: 29.0px;
 }
 .tabs {
-  margin-top: -27px;
+  margin-top: 20px;
   float: right;
 }
 
 .tabs div {
-  height: 30px;
+  height: 40px;
   width: 100px;
   display: inline-block;
-  line-height: 30px;
+  line-height: 40px;
   text-align: center;
 }
 

@@ -1,4 +1,4 @@
-import { Component, AfterViewInit,HostListener } from '@angular/core';
+import { Component, AfterViewInit, HostListener, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -9,11 +9,14 @@ export class MainComponent implements AfterViewInit {
   baseHeight = 768;
   baseWidth = '1024';
   mainHeight = this.baseHeight + 'px';
+  @ViewChild('main') main: ElementRef;
 
-  constructor() { }
+  constructor() {
+    this.onResize({});
+  }
 
   ngAfterViewInit() {
-    this.onResize({})
+
   }
 
   @HostListener('window:resize', ['$event'])

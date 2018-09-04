@@ -6,7 +6,7 @@
 }
 
 .label {
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 32.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -19,15 +19,15 @@
 .tabs {
   position: absolute;
   right: 10%;
-  margin-top: 10px;
+  margin-top: -5px;
   margin-bottom: 10px;
 }
 
 .tabs div {
-  height: 30px;
+  height: 40px;
   width: 100px;
   display: inline-block;
-  line-height: 30px;
+  line-height: 40px;
   text-align: center;
 }
 

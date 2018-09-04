@@ -166,3 +166,24 @@
 .btnCancel{
   margin-top: 100px;
 }
+
+.progress{
+  margin-top: 40px;
+  width: 20%;
+  margin-left: 40%;
+  height: 2px;
+  display: flex;
+}
+
+.progress div{
+  width: 30%;
+  height: 2px;
+  margin: 1%;
+}
+.progress .checked{
+  background: rgba(255,255,255,0.8);
+}
+
+.progress .next{
+  background: rgba(255,255,255,0.3);
+}

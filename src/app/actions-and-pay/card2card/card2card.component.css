@@ -45,7 +45,7 @@
 
 .title{
   margin-top: 20px;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 32.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;
@@ -176,7 +176,7 @@
 }
 
 .valueLabel{
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 45.0px;
   color: rgba(218, 218, 218, 1.0);
   text-align: left;
@@ -186,7 +186,7 @@
 .valueTerms{
   margin-top: 20px;
   width: 300px;
-  font-family:  Helvetica, Arial, serif;
+  font-family:Roboto, Arial, serif;
   font-size: 15.0px;
   color: rgba(0, 0, 0, 1.0);
   text-align: left;

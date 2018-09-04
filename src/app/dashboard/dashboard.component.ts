@@ -14,6 +14,8 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   @ViewChild('header') header: ElementRef;
   @ViewChild('body') body: ElementRef;
   @ViewChild('leftpartOne') leftpartOne: ElementRef;
+  @ViewChild('leftpartTwo') leftpartTwo: ElementRef;
+  @ViewChild('leftpartTre') leftpartTre: ElementRef;
   @ViewChild('container') container: ElementRef;
   @ViewChild('routeContainer') routeContainer: ElementRef;
   @ViewChild('leftMenu') leftMenu: LeftMenuComponent;
@@ -119,6 +121,10 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     this.baseHeight = bHeight + 'px';
     this.mainHeight = (bHeight - 21) + 'px';
     this.baseHeight = bHeight + 'px';
+    this.body.nativeElement.style.width = this.baseWidth;
+    this.leftpartOne.nativeElement.style.heigth = this.baseHeight;
+    this.leftpartTwo.nativeElement.style.heigth = this.baseHeight;
+    this.leftpartTre.nativeElement.style.heigth = this.baseHeight;
   }
   isLogged() {
     return this.authGuard.islogged();
