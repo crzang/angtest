@@ -138,7 +138,7 @@
 
 .show {
   visibility: visible;
-  animation:showLeftPartTwo 4000ms ease-in-out both;
+  animation:showLeftPartTwo 2000ms ease-in-out both;
 }
 
 @keyframes showLeftPartTwo {
@@ -189,11 +189,11 @@
 }
 
 .history{
-  background: radial-gradient(135px 100% at 120% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60.5%, rgba(158,41,75,0.9) 60.5%, rgba(158,41,75,0.9) 100%)
+  background: radial-gradient(135px 100% at 120% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(158,41,75,0.9) 60.5%, rgba(158,41,75,0.9) 100%)
 }
 
 .statistic{
-  background: radial-gradient(135px 100% at 120% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60.5%, rgba(149,47,94,0.9) 60.5%, rgba(149,47,94,0.9) 100%)
+  background: radial-gradient(135px 100% at 120% 50%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 60%, rgba(149,47,94,0.9) 60.5%, rgba(149,47,94,0.9) 100%)
 }
 
 .leftPartTwo.statistic{
@@ -207,7 +207,7 @@
 }
 .leftPartTwo.history{
   width: 151em;
-  animation:showLeftPartTwoHist 4000ms ease-in-out both;
+  animation:showLeftPartTwoHist 2000ms ease-in-out both;
 }
 
 @keyframes showLeftPartTwoHist {
